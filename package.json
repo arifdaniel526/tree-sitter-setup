@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-demo",
+  "version": "1.0.0",
+  "main": "analyze_code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tree-sitter": "^0.22.4",
+    "tree-sitter-java": "^0.23.5",
+    "tree-sitter-python": "^0.23.6"
+  }
+}

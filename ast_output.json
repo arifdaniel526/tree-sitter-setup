@@ -1,0 +1,388 @@
+{
+  "type": "module",
+  "startPosition": {
+    "row": 0,
+    "column": 0
+  },
+  "endPosition": {
+    "row": 1,
+    "column": 33
+  },
+  "text": "def greet(name):\n    print(\"Hello, \" + name + \"!\")",
+  "children": [
+    {
+      "type": "function_definition",
+      "startPosition": {
+        "row": 0,
+        "column": 0
+      },
+      "endPosition": {
+        "row": 1,
+        "column": 33
+      },
+      "text": "def greet(name):\n    print(\"Hello, \" + name + \"!\")",
+      "children": [
+        {
+          "type": "def",
+          "startPosition": {
+            "row": 0,
+            "column": 0
+          },
+          "endPosition": {
+            "row": 0,
+            "column": 3
+          },
+          "text": "def",
+          "children": []
+        },
+        {
+          "type": "identifier",
+          "startPosition": {
+            "row": 0,
+            "column": 4
+          },
+          "endPosition": {
+            "row": 0,
+            "column": 9
+          },
+          "text": "greet",
+          "children": []
+        },
+        {
+          "type": "parameters",
+          "startPosition": {
+            "row": 0,
+            "column": 9
+          },
+          "endPosition": {
+            "row": 0,
+            "column": 15
+          },
+          "text": "(name)",
+          "children": [
+            {
+              "type": "(",
+              "startPosition": {
+                "row": 0,
+                "column": 9
+              },
+              "endPosition": {
+                "row": 0,
+                "column": 10
+              },
+              "text": "(",
+              "children": []
+            },
+            {
+              "type": "identifier",
+              "startPosition": {
+                "row": 0,
+                "column": 10
+              },
+              "endPosition": {
+                "row": 0,
+                "column": 14
+              },
+              "text": "name",
+              "children": []
+            },
+            {
+              "type": ")",
+              "startPosition": {
+                "row": 0,
+                "column": 14
+              },
+              "endPosition": {
+                "row": 0,
+                "column": 15
+              },
+              "text": ")",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": ":",
+          "startPosition": {
+            "row": 0,
+            "column": 15
+          },
+          "endPosition": {
+            "row": 0,
+            "column": 16
+          },
+          "text": ":",
+          "children": []
+        },
+        {
+          "type": "block",
+          "startPosition": {
+            "row": 1,
+            "column": 4
+          },
+          "endPosition": {
+            "row": 1,
+            "column": 33
+          },
+          "text": "print(\"Hello, \" + name + \"!\")",
+          "children": [
+            {
+              "type": "expression_statement",
+              "startPosition": {
+                "row": 1,
+                "column": 4
+              },
+              "endPosition": {
+                "row": 1,
+                "column": 33
+              },
+              "text": "print(\"Hello, \" + name + \"!\")",
+              "children": [
+                {
+                  "type": "call",
+                  "startPosition": {
+                    "row": 1,
+                    "column": 4
+                  },
+                  "endPosition": {
+                    "row": 1,
+                    "column": 33
+                  },
+                  "text": "print(\"Hello, \" + name + \"!\")",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "startPosition": {
+                        "row": 1,
+                        "column": 4
+                      },
+                      "endPosition": {
+                        "row": 1,
+                        "column": 9
+                      },
+                      "text": "print",
+                      "children": []
+                    },
+                    {
+                      "type": "argument_list",
+                      "startPosition": {
+                        "row": 1,
+                        "column": 9
+                      },
+                      "endPosition": {
+                        "row": 1,
+                        "column": 33
+                      },
+                      "text": "(\"Hello, \" + name + \"!\")",
+                      "children": [
+                        {
+                          "type": "(",
+                          "startPosition": {
+                            "row": 1,
+                            "column": 9
+                          },
+                          "endPosition": {
+                            "row": 1,
+                            "column": 10
+                          },
+                          "text": "(",
+                          "children": []
+                        },
+                        {
+                          "type": "binary_operator",
+                          "startPosition": {
+                            "row": 1,
+                            "column": 10
+                          },
+                          "endPosition": {
+                            "row": 1,
+                            "column": 32
+                          },
+                          "text": "\"Hello, \" + name + \"!\"",
+                          "children": [
+                            {
+                              "type": "binary_operator",
+                              "startPosition": {
+                                "row": 1,
+                                "column": 10
+                              },
+                              "endPosition": {
+                                "row": 1,
+                                "column": 26
+                              },
+                              "text": "\"Hello, \" + name",
+                              "children": [
+                                {
+                                  "type": "string",
+                                  "startPosition": {
+                                    "row": 1,
+                                    "column": 10
+                                  },
+                                  "endPosition": {
+                                    "row": 1,
+                                    "column": 19
+                                  },
+                                  "text": "\"Hello, \"",
+                                  "children": [
+                                    {
+                                      "type": "string_start",
+                                      "startPosition": {
+                                        "row": 1,
+                                        "column": 10
+                                      },
+                                      "endPosition": {
+                                        "row": 1,
+                                        "column": 11
+                                      },
+                                      "text": "\"",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "string_content",
+                                      "startPosition": {
+                                        "row": 1,
+                                        "column": 11
+                                      },
+                                      "endPosition": {
+                                        "row": 1,
+                                        "column": 18
+                                      },
+                                      "text": "Hello, ",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "string_end",
+                                      "startPosition": {
+                                        "row": 1,
+                                        "column": 18
+                                      },
+                                      "endPosition": {
+                                        "row": 1,
+                                        "column": 19
+                                      },
+                                      "text": "\"",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "+",
+                                  "startPosition": {
+                                    "row": 1,
+                                    "column": 20
+                                  },
+                                  "endPosition": {
+                                    "row": 1,
+                                    "column": 21
+                                  },
+                                  "text": "+",
+                                  "children": []
+                                },
+                                {
+                                  "type": "identifier",
+                                  "startPosition": {
+                                    "row": 1,
+                                    "column": 22
+                                  },
+                                  "endPosition": {
+                                    "row": 1,
+                                    "column": 26
+                                  },
+                                  "text": "name",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "+",
+                              "startPosition": {
+                                "row": 1,
+                                "column": 27
+                              },
+                              "endPosition": {
+                                "row": 1,
+                                "column": 28
+                              },
+                              "text": "+",
+                              "children": []
+                            },
+                            {
+                              "type": "string",
+                              "startPosition": {
+                                "row": 1,
+                                "column": 29
+                              },
+                              "endPosition": {
+                                "row": 1,
+                                "column": 32
+                              },
+                              "text": "\"!\"",
+                              "children": [
+                                {
+                                  "type": "string_start",
+                                  "startPosition": {
+                                    "row": 1,
+                                    "column": 29
+                                  },
+                                  "endPosition": {
+                                    "row": 1,
+                                    "column": 30
+                                  },
+                                  "text": "\"",
+                                  "children": []
+                                },
+                                {
+                                  "type": "string_content",
+                                  "startPosition": {
+                                    "row": 1,
+                                    "column": 30
+                                  },
+                                  "endPosition": {
+                                    "row": 1,
+                                    "column": 31
+                                  },
+                                  "text": "!",
+                                  "children": []
+                                },
+                                {
+                                  "type": "string_end",
+                                  "startPosition": {
+                                    "row": 1,
+                                    "column": 31
+                                  },
+                                  "endPosition": {
+                                    "row": 1,
+                                    "column": 32
+                                  },
+                                  "text": "\"",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": ")",
+                          "startPosition": {
+                            "row": 1,
+                            "column": 32
+                          },
+                          "endPosition": {
+                            "row": 1,
+                            "column": 33
+                          },
+                          "text": ")",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
