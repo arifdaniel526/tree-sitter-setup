@@ -26,10 +26,25 @@ It supports:
 
 ---
 
+## 📦 Install tree-sitter and grammar language
+
+From the root of the repo:
+
+1. Install tree-sitter-python
+```bash
+npm install tree-sitter tree-sitter-python
+```
+2. Install tree-sitter-java
+```bash
+npm install tree-sitter-java --legacy-peer-deps
+```
+
+---
+
 ## 🚀 How to run
 - **Generate AST JSON**:
   ```bash
-  node analyze_code.js <project-folder-path>
+  node analyze_code.js "<project-folder-path>"
 
 - **View the AST Tree-sitter**:
   1. Open the viewer.html
