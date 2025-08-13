@@ -1,0 +1,711 @@
+[
+  {
+    "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+    "ast": {
+      "type": "program",
+      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+      "startLine": 1,
+      "startCol": 1,
+      "endLine": 10,
+      "endCol": 1,
+      "children": [
+        {
+          "type": "package_declaration",
+          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+          "startLine": 1,
+          "startCol": 1,
+          "endLine": 1,
+          "endCol": 24,
+          "children": [
+            {
+              "type": "package",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 1,
+              "startCol": 1,
+              "endLine": 1,
+              "endCol": 8,
+              "children": []
+            },
+            {
+              "type": "identifier",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 1,
+              "startCol": 9,
+              "endLine": 1,
+              "endCol": 23,
+              "children": []
+            },
+            {
+              "type": ";",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 1,
+              "startCol": 23,
+              "endLine": 1,
+              "endCol": 24,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "class_declaration",
+          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+          "startLine": 3,
+          "startCol": 1,
+          "endLine": 9,
+          "endCol": 2,
+          "children": [
+            {
+              "type": "modifiers",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 3,
+              "startCol": 1,
+              "endLine": 3,
+              "endCol": 7,
+              "children": [
+                {
+                  "type": "public",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                  "startLine": 3,
+                  "startCol": 1,
+                  "endLine": 3,
+                  "endCol": 7,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "class",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 3,
+              "startCol": 8,
+              "endLine": 3,
+              "endCol": 13,
+              "children": []
+            },
+            {
+              "type": "identifier",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 3,
+              "startCol": 14,
+              "endLine": 3,
+              "endCol": 23,
+              "children": []
+            },
+            {
+              "type": "class_body",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+              "startLine": 3,
+              "startCol": 24,
+              "endLine": 9,
+              "endCol": 2,
+              "children": [
+                {
+                  "type": "{",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                  "startLine": 3,
+                  "startCol": 24,
+                  "endLine": 3,
+                  "endCol": 25,
+                  "children": []
+                },
+                {
+                  "type": "method_declaration",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                  "startLine": 5,
+                  "startCol": 5,
+                  "endLine": 8,
+                  "endCol": 6,
+                  "children": [
+                    {
+                      "type": "modifiers",
+                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                      "startLine": 5,
+                      "startCol": 5,
+                      "endLine": 5,
+                      "endCol": 11,
+                      "children": [
+                        {
+                          "type": "public",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 5,
+                          "startCol": 5,
+                          "endLine": 5,
+                          "endCol": 11,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "void_type",
+                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                      "startLine": 5,
+                      "startCol": 12,
+                      "endLine": 5,
+                      "endCol": 16,
+                      "children": []
+                    },
+                    {
+                      "type": "identifier",
+                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                      "startLine": 5,
+                      "startCol": 17,
+                      "endLine": 5,
+                      "endCol": 21,
+                      "children": []
+                    },
+                    {
+                      "type": "formal_parameters",
+                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                      "startLine": 5,
+                      "startCol": 21,
+                      "endLine": 5,
+                      "endCol": 36,
+                      "children": [
+                        {
+                          "type": "(",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 5,
+                          "startCol": 21,
+                          "endLine": 5,
+                          "endCol": 22,
+                          "children": []
+                        },
+                        {
+                          "type": "formal_parameter",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 5,
+                          "startCol": 22,
+                          "endLine": 5,
+                          "endCol": 35,
+                          "children": [
+                            {
+                              "type": "array_type",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 5,
+                              "startCol": 22,
+                              "endLine": 5,
+                              "endCol": 30,
+                              "children": [
+                                {
+                                  "type": "type_identifier",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 5,
+                                  "startCol": 22,
+                                  "endLine": 5,
+                                  "endCol": 28,
+                                  "children": []
+                                },
+                                {
+                                  "type": "dimensions",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 5,
+                                  "startCol": 28,
+                                  "endLine": 5,
+                                  "endCol": 30,
+                                  "children": [
+                                    {
+                                      "type": "[",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 5,
+                                      "startCol": 28,
+                                      "endLine": 5,
+                                      "endCol": 29,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "]",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 5,
+                                      "startCol": 29,
+                                      "endLine": 5,
+                                      "endCol": 30,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "identifier",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 5,
+                              "startCol": 31,
+                              "endLine": 5,
+                              "endCol": 35,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ")",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 5,
+                          "startCol": 35,
+                          "endLine": 5,
+                          "endCol": 36,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "block",
+                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                      "startLine": 5,
+                      "startCol": 37,
+                      "endLine": 8,
+                      "endCol": 6,
+                      "children": [
+                        {
+                          "type": "{",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 5,
+                          "startCol": 37,
+                          "endLine": 5,
+                          "endCol": 38,
+                          "children": []
+                        },
+                        {
+                          "type": "local_variable_declaration",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 6,
+                          "startCol": 9,
+                          "endLine": 6,
+                          "endCol": 29,
+                          "children": [
+                            {
+                              "type": "type_identifier",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 6,
+                              "startCol": 9,
+                              "endLine": 6,
+                              "endCol": 15,
+                              "children": []
+                            },
+                            {
+                              "type": "variable_declarator",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 6,
+                              "startCol": 16,
+                              "endLine": 6,
+                              "endCol": 28,
+                              "children": [
+                                {
+                                  "type": "identifier",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 6,
+                                  "startCol": 16,
+                                  "endLine": 6,
+                                  "endCol": 20,
+                                  "children": []
+                                },
+                                {
+                                  "type": "=",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 6,
+                                  "startCol": 21,
+                                  "endLine": 6,
+                                  "endCol": 22,
+                                  "children": []
+                                },
+                                {
+                                  "type": "string_literal",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 6,
+                                  "startCol": 23,
+                                  "endLine": 6,
+                                  "endCol": 28,
+                                  "children": [
+                                    {
+                                      "type": "\"",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 6,
+                                      "startCol": 23,
+                                      "endLine": 6,
+                                      "endCol": 24,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "string_fragment",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 6,
+                                      "startCol": 24,
+                                      "endLine": 6,
+                                      "endCol": 27,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "\"",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 6,
+                                      "startCol": 27,
+                                      "endLine": 6,
+                                      "endCol": 28,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": ";",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 6,
+                              "startCol": 28,
+                              "endLine": 6,
+                              "endCol": 29,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "expression_statement",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 7,
+                          "startCol": 9,
+                          "endLine": 7,
+                          "endCol": 34,
+                          "children": [
+                            {
+                              "type": "method_invocation",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 7,
+                              "startCol": 9,
+                              "endLine": 7,
+                              "endCol": 33,
+                              "children": [
+                                {
+                                  "type": "field_access",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 7,
+                                  "startCol": 9,
+                                  "endLine": 7,
+                                  "endCol": 19,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 7,
+                                      "startCol": 9,
+                                      "endLine": 7,
+                                      "endCol": 15,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": ".",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 7,
+                                      "startCol": 15,
+                                      "endLine": 7,
+                                      "endCol": 16,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "identifier",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 7,
+                                      "startCol": 16,
+                                      "endLine": 7,
+                                      "endCol": 19,
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": ".",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 7,
+                                  "startCol": 19,
+                                  "endLine": 7,
+                                  "endCol": 20,
+                                  "children": []
+                                },
+                                {
+                                  "type": "identifier",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 7,
+                                  "startCol": 20,
+                                  "endLine": 7,
+                                  "endCol": 27,
+                                  "children": []
+                                },
+                                {
+                                  "type": "argument_list",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                  "startLine": 7,
+                                  "startCol": 27,
+                                  "endLine": 7,
+                                  "endCol": 33,
+                                  "children": [
+                                    {
+                                      "type": "(",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 7,
+                                      "startCol": 27,
+                                      "endLine": 7,
+                                      "endCol": 28,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "identifier",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 7,
+                                      "startCol": 28,
+                                      "endLine": 7,
+                                      "endCol": 32,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": ")",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                                      "startLine": 7,
+                                      "startCol": 32,
+                                      "endLine": 7,
+                                      "endCol": 33,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": ";",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                              "startLine": 7,
+                              "startCol": 33,
+                              "endLine": 7,
+                              "endCol": 34,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "}",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                          "startLine": 8,
+                          "startCol": 5,
+                          "endLine": 8,
+                          "endCol": 6,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "}",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.java",
+                  "startLine": 9,
+                  "startCol": 1,
+                  "endLine": 9,
+                  "endCol": 2,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+    "ast": {
+      "type": "module",
+      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+      "startLine": 1,
+      "startCol": 1,
+      "endLine": 2,
+      "endCol": 34,
+      "children": [
+        {
+          "type": "function_definition",
+          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+          "startLine": 1,
+          "startCol": 1,
+          "endLine": 2,
+          "endCol": 34,
+          "children": [
+            {
+              "type": "def",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+              "startLine": 1,
+              "startCol": 1,
+              "endLine": 1,
+              "endCol": 4,
+              "children": []
+            },
+            {
+              "type": "identifier",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+              "startLine": 1,
+              "startCol": 5,
+              "endLine": 1,
+              "endCol": 10,
+              "children": []
+            },
+            {
+              "type": "parameters",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+              "startLine": 1,
+              "startCol": 10,
+              "endLine": 1,
+              "endCol": 16,
+              "children": [
+                {
+                  "type": "(",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                  "startLine": 1,
+                  "startCol": 10,
+                  "endLine": 1,
+                  "endCol": 11,
+                  "children": []
+                },
+                {
+                  "type": "identifier",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                  "startLine": 1,
+                  "startCol": 11,
+                  "endLine": 1,
+                  "endCol": 15,
+                  "children": []
+                },
+                {
+                  "type": ")",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                  "startLine": 1,
+                  "startCol": 15,
+                  "endLine": 1,
+                  "endCol": 16,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": ":",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+              "startLine": 1,
+              "startCol": 16,
+              "endLine": 1,
+              "endCol": 17,
+              "children": []
+            },
+            {
+              "type": "block",
+              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+              "startLine": 2,
+              "startCol": 5,
+              "endLine": 2,
+              "endCol": 34,
+              "children": [
+                {
+                  "type": "expression_statement",
+                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                  "startLine": 2,
+                  "startCol": 5,
+                  "endLine": 2,
+                  "endCol": 34,
+                  "children": [
+                    {
+                      "type": "call",
+                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                      "startLine": 2,
+                      "startCol": 5,
+                      "endLine": 2,
+                      "endCol": 34,
+                      "children": [
+                        {
+                          "type": "identifier",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                          "startLine": 2,
+                          "startCol": 5,
+                          "endLine": 2,
+                          "endCol": 10,
+                          "children": []
+                        },
+                        {
+                          "type": "argument_list",
+                          "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                          "startLine": 2,
+                          "startCol": 10,
+                          "endLine": 2,
+                          "endCol": 34,
+                          "children": [
+                            {
+                              "type": "(",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                              "startLine": 2,
+                              "startCol": 10,
+                              "endLine": 2,
+                              "endCol": 11,
+                              "children": []
+                            },
+                            {
+                              "type": "binary_operator",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                              "startLine": 2,
+                              "startCol": 11,
+                              "endLine": 2,
+                              "endCol": 33,
+                              "children": [
+                                {
+                                  "type": "binary_operator",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                                  "startLine": 2,
+                                  "startCol": 11,
+                                  "endLine": 2,
+                                  "endCol": 27,
+                                  "children": [
+                                    {
+                                      "type": "+",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                                      "startLine": 2,
+                                      "startCol": 21,
+                                      "endLine": 2,
+                                      "endCol": 22,
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "identifier",
+                                      "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                                      "startLine": 2,
+                                      "startCol": 23,
+                                      "endLine": 2,
+                                      "endCol": 27,
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "+",
+                                  "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                                  "startLine": 2,
+                                  "startCol": 28,
+                                  "endLine": 2,
+                                  "endCol": 29,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": ")",
+                              "file": "C:\\Users\\myusoff\\Tree-sitter-demo\\sample_project\\your_code.py",
+                              "startLine": 2,
+                              "startCol": 33,
+                              "endLine": 2,
+                              "endCol": 34,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
