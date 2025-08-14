@@ -1,5 +1,5 @@
 digraph AST {
-subgraph cluster_0 { label="C:\Users\myusoff\Tree-sitter-demo\sample_project\your_code.java";
+subgraph cluster_0 { label="sample_project\your_code.java";
   node0 [label="program"];
   node1 [label="package_declaration"];
   node0 -> node1;
@@ -108,7 +108,7 @@ subgraph cluster_0 { label="C:\Users\myusoff\Tree-sitter-demo\sample_project\you
   node53 [label="}"];
   node10 -> node53;
 }
-subgraph cluster_54 { label="C:\Users\myusoff\Tree-sitter-demo\sample_project\your_code.py";
+subgraph cluster_54 { label="sample_project\your_code.py";
   node54 [label="module"];
   node55 [label="function_definition"];
   node54 -> node55;

@@ -1,25 +1,28 @@
 {
-  "name": "tree-sitter-demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arifdaniel526/tree-sitter-setup.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/arifdaniel526/tree-sitter-setup/issues"
-  },
-  "homepage": "https://github.com/arifdaniel526/tree-sitter-setup#readme",
-  "dependencies": {
-    "tree-sitter": "^0.22.4",
-    "tree-sitter-java": "^0.23.5",
-    "tree-sitter-python": "^0.23.6"
-  }
+	"name": "tree-sitter-demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode development",
+		"dev": "node analyze_code.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/arifdaniel526/tree-sitter-setup.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/arifdaniel526/tree-sitter-setup/issues"
+	},
+	"homepage": "https://github.com/arifdaniel526/tree-sitter-setup#readme",
+	"dependencies": {
+		"prompt-sync": "^4.2.0",
+		"tree-sitter": "^0.21.1",
+		"tree-sitter-java": "^0.23.5",
+		"tree-sitter-python": "^0.23.6"
+	}
 }
