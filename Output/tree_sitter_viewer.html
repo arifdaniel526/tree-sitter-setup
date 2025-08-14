@@ -1,12 +1,9 @@
-Viewer.html code version 2
-- Display nodes without collapsing children nodes
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Interactive AST Viewer</title>
+    <title>Tree-sitter AST Viewer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +21,7 @@ Viewer.html code version 2
         .node text {
             font-size: 14px;
             pointer-events: none;
-            font-weight: 500;
+            font-weight: bold;
             fill: #222;
         }
 
@@ -47,16 +44,31 @@ Viewer.html code version 2
         svg:active {
             cursor: grabbing;
         }
+
+        /* Tooltip styles */
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 8px;
+            font-size: 13px;
+            border-radius: 4px;
+            pointer-events: none;
+            max-width: 550px;
+            white-space: pre-wrap;
+        }
     </style>
 </head>
 
 <body>
     <div id="tree"></div>
+    <div class="tooltip" style="opacity:0;"></div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
         const width = window.innerWidth;
         const height = window.innerHeight;
+        const tooltip = d3.select(".tooltip");
 
         const svg = d3.select("#tree")
             .append("svg")
@@ -67,20 +79,19 @@ Viewer.html code version 2
             }));
 
         const g = svg.append("g").attr("transform", "translate(100,50)");
-
         const treeLayout = d3.tree().nodeSize([40, 220]);
         let root;
 
+        // generate from JSON file
         d3.json("project_ast.json").then(data => {
-            let rootData = Array.isArray(data) ? { type: "Project", children: data } : data;
+            let rootData = Array.isArray(data)
+                ? { type: "Project folder", children: data }
+                : data;
 
             root = d3.hierarchy(rootData, d => d.children || (d.ast ? [d.ast] : []));
             root.x0 = 0;
             root.y0 = 0;
-
-            // Initially collapse all children
             root.children?.forEach(collapse);
-
             update(root);
         });
 
@@ -92,6 +103,16 @@ Viewer.html code version 2
             }
         }
 
+        // collapse children node
+        function collapseAll(d) {
+            if (d.children) {
+                d._children = d.children;
+                d._children.forEach(collapseAll);
+                d.children = null;
+            }
+        }
+
+        // expand all children node
         function expandAll(d) {
             if (d._children) {
                 d.children = d._children;
@@ -102,13 +123,20 @@ Viewer.html code version 2
             }
         }
 
+        // extract the code from file
+        function showCodeSnippet(nodeData) {
+            if (!nodeData.data.file) return;
+            const filePath = nodeData.data.file.replace(/\\/g, '/');
+            const line = nodeData.data.startLine || 1;
+            const vscodeUri = `vscode://file/${filePath}:${line}`;
+            window.location.href = vscodeUri;
+        }
+
         function update(source) {
             treeLayout(root);
-
             const nodes = root.descendants();
             const links = root.links();
 
-            // NODES
             const nodeSel = g.selectAll(".node")
                 .data(nodes, d => d.id || (d.id = Math.random()));
 
@@ -118,23 +146,39 @@ Viewer.html code version 2
                 .attr("transform", d => `translate(${source.y0},${source.x0})`)
                 .on("click", (event, d) => {
                     if (d.children) {
-                        // Collapse everything under this node
-                        d._children = d.children;
-                        d._children.forEach(collapse);
-                        d.children = null;
-                    } else {
-                        // Expand all descendants
-                        if (d._children) {
-                            d.children = d._children;
-                            d._children = null;
-                        }
-                        expandAll(d); // fully expand
+                        collapseAll(d);
+                    } else if (d._children) {
+                        expandAll(d);
                     }
                     update(d);
+                })
+                .on("dblclick", (event, d) => { // double click node will redirect to the file in VSCode
+                    showCodeSnippet(d);
+                })
+                .on("mouseover", (event, d) => { // show information about the node
+                    const snippet = d.data.text
+                        ? d.data.text.substring(0, 200) + (d.data.text.length > 200 ? "..." : "")
+                        : "No snippet available";
+
+                    tooltip.style("opacity", 1)
+                        .html(
+                            `<b>Type:</b> ${d.data.type || "N/A"}<br>` +
+                            `<b>File path:</b> ${d.data.file || "N/A"}<br>` +
+                            `<b>Start line:</b> ${d.data.startLine || "?"}, <b>End line:</b> ${d.data.endLine || "?"}<br>` +
+                            `<b>Snippet code:</b><br><pre>${snippet}</pre>`
+                        )
+                        .style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY + 15) + "px");
+                })
+                .on("mousemove", (event) => {
+                    tooltip.style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY + 15) + "px");
+                })
+                .on("mouseout", () => {
+                    tooltip.style("opacity", 0);
                 });
 
-            nodeEnter.append("circle")
-                .attr("r", 10);
+            nodeEnter.append("circle").attr("r", 10);
 
             nodeEnter.append("text")
                 .attr("dy", 4)
@@ -155,7 +199,6 @@ Viewer.html code version 2
                 .attr("transform", d => `translate(${source.y},${source.x})`)
                 .remove();
 
-            // LINKS
             const linkSel = g.selectAll(".link")
                 .data(links, d => d.target.id);
 
@@ -179,7 +222,6 @@ Viewer.html code version 2
                     .y(d => source.x))
                 .remove();
 
-            // Store old positions for transitions
             nodes.forEach(d => {
                 d.x0 = d.x;
                 d.y0 = d.y;
