@@ -156,6 +156,10 @@ d3.json(jsonFile).then((data) => {
 			.attr("opacity", (l) => (l.source === d ? 1 : 0.2));
 	});
 
+	node.on("dblclick", (event, d) => {
+		showCodeSnippet(d);
+	});
+
 	// Let's list the force we wanna apply on the network
 	const simulation = d3
 		.forceSimulation(data.nodes)
@@ -178,11 +182,6 @@ d3.json(jsonFile).then((data) => {
 
 	// This function is run at each iteration of the force algorithm, updating the nodes position.
 	function ticked() {
-		// link.attr(
-		// 	"d",
-		// 	(d) =>
-		// 		`M${d.source.x},${d.source.y}A0,0 0 0,1 ${d.target.x},${d.target.y}`
-		// );
 		link.attr("d", (d) => {
 			const targetRectWidth = d.target.bboxWidth || 40;
 			const targetRectHeight = d.target.bboxHeight || 40;
@@ -209,29 +208,10 @@ d3.json(jsonFile).then((data) => {
 	}
 });
 
-function collapse(d) {
-	if (d.children) {
-		d._children = d.children;
-		d._children.forEach(collapse);
-		d.children = null;
-	}
-}
-
-function expandAll(d) {
-	if (d._children) {
-		d.children = d._children;
-		d._children = null;
-	}
-	if (d.children) {
-		d.children.forEach(expandAll);
-	}
-}
-
 // Redirect to VSCode upon double clicking
 function showCodeSnippet(nodeData) {
-	if (!nodeData.data.file) return;
-	const filePath = nodeData.data.file.replace(/\\/g, "/");
-	const line = nodeData.data.startLine || 1;
-	const vscodeUri = `vscode://file/${filePath}:${line}`;
+	if (!nodeData.name) return;
+	const filePath = nodeData.name.replace(/\\/g, "/");
+	const vscodeUri = `vscode://file/${filePath}:1`;
 	window.location.href = vscodeUri;
 }

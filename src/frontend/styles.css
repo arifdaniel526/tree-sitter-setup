@@ -37,3 +37,15 @@ svg {
 svg:active {
 	cursor: grabbing;
 }
+
+.tooltip {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 8px;
+	font-size: 13px;
+	border-radius: 4px;
+	pointer-events: none;
+	max-width: 550px;
+	white-space: pre-wrap;
+}

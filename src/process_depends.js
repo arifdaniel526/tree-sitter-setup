@@ -39,7 +39,7 @@ function processDependsJson(data) {
 	});
 	// process node list
 	const nodeList = data.variables.map((node, i) => {
-		return { id: Number(i), name: path.basename(node) };
+		return { id: Number(i), name: node };
 	});
 
 	return { nodes: nodeList, links: cellList };

@@ -25,33 +25,26 @@ async function getAllFiles(dir) {
 	return files;
 }
 
-// Parse code and return AST root node
-async function parseCode(codePath, language) {
-	const parser = new TreeSitter();
-	parser.setLanguage(language);
-	const codeContent = await fs.readFile(codePath, "utf8");
-	const tree = parser.parse(codeContent);
-	return tree.rootNode;
-}
-
 // Serialize AST to JSON
-function serializeNode(node, filePath) {
-	if (
-		node.type === "comment" ||
-		node.type === "string" ||
-		node.type === "whitespace"
-	) {
+function serializeNode(node, filePath, fileContent) {
+	// Filter out node types
+	if (node.type === "comment" || node.type === "whitespace") {
 		return null;
 	}
+
+	const startIndex = node.startIndex;
+	const endIndex = node.endIndex;
+	const snippet = fileContent.slice(startIndex, endIndex); // Extract the code for the node
 	return {
 		type: node.type,
 		file: filePath,
-		startLine: node.startPosition.row + 1, // Tree-sitter is 0-indexed
+		startLine: node.startPosition.row + 1,
 		startCol: node.startPosition.column + 1,
 		endLine: node.endPosition.row + 1,
 		endCol: node.endPosition.column + 1,
+		text: snippet.trim(), // Code snippet text
 		children: node.children
-			.map((child) => serializeNode(child, filePath))
+			.map((child) => serializeNode(child, filePath, fileContent))
 			.filter(Boolean),
 	};
 }
@@ -98,16 +91,21 @@ async function main(projectPath) {
 			const ext = path.extname(file);
 			const language = langMap[ext];
 
-			const rootNode = await parseCode(file, language);
+			// Parse code logic
+			const codeContent = await fs.readFile(file, "utf8");
+			const parser = new TreeSitter();
+			parser.setLanguage(language);
+			const tree = parser.parse(codeContent);
+
 			combinedAstJson.push({
 				file: file,
-				ast: serializeNode(rootNode, file),
+				ast: serializeNode(tree.rootNode, file, codeContent),
 			});
 
 			combinedDotLines.push(
 				`subgraph cluster_${nodeIdRef.current} { label="${file}";`
 			);
-			astToDot(rootNode, null, nodeIdRef, combinedDotLines);
+			astToDot(tree.rootNode, null, nodeIdRef, combinedDotLines);
 			combinedDotLines.push("}");
 		}
 
@@ -129,7 +127,7 @@ async function main(projectPath) {
 
 		const { exec } = require("child_process");
 
-		// After writing DOT:
+		// Export DOT to PNG format
 		exec(
 			`dot -Tpng ${dotOutputPath} -o ${path.join(
 				outputDir,
@@ -155,7 +153,7 @@ async function main(projectPath) {
 	}
 }
 
-// CLI usage
+// CLI usage for error input
 if (process.argv.length < 3) {
 	console.error("Usage: node analyze_code.js <project-folder-path>");
 	process.exit(1);
