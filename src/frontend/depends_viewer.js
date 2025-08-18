@@ -41,7 +41,8 @@ d3.json(jsonFile).then((data) => {
 		.selectAll("marker")
 		.data([
 			{ id: "arrows", color: "#aaa" }, // default
-			{ id: "arrows-highlight", color: "#ff6600" }, // highlighted
+			{ id: "arrows-out", color: "#ff6600" }, // highlighted,
+			{ id: "arrows-in", color: "#0066cc" }, // highlighted
 		])
 		.join("marker")
 		.attr("id", (d) => d.id)
@@ -67,16 +68,20 @@ d3.json(jsonFile).then((data) => {
 		.attr("marker-end", "url(#arrows)");
 
 	// Initialize the nodes
-	const nodeSel = g
-		.selectAll(".node")
-		.data(data.nodes, (d) => d.id || (d.id = Math.random()));
+	const nodeSel = g.selectAll(".node").data(data.nodes, (d) => d.id);
 
 	const node = nodeSel
 		.data(data.nodes)
 		.enter()
 		.append("g")
 		.attr("class", "node")
-		.call(d3.drag().on("start", dragStarted).on("drag", dragged));
+		.call(
+			d3
+				.drag()
+				.on("start", dragStarted)
+				.on("drag", dragged)
+				.on("end", dragEnded)
+		);
 
 	// node.append("circle").attr("r", 20);
 
@@ -109,21 +114,52 @@ d3.json(jsonFile).then((data) => {
 
 	// Drag event functions
 	function dragStarted(event, d) {
-		if (!event.active) simulation.alphaTarget(0.3).restart();
+		// if (!event.active) simulation.alphaTarget(0.3).restart();
 		d.fx = d.x;
 		d.fy = d.y;
 	}
 
 	function dragged(event, d) {
+		// d.fx = event.x;
+		// d.fy = event.y;
+		// update only this node’s fixed position
+		d.x = event.x;
+		d.y = event.y;
+		d.fx = event.x;
+		d.fy = event.y;
+
+		// manually update node position
+		d3.select(this).attr("transform", `translate(${event.x},${event.y})`);
+
+		// update links connected to this node
+		link.attr("d", (l) => {
+			const targetRectWidth = l.target.bboxWidth || 40;
+			const targetRectHeight = l.target.bboxHeight || 40;
+
+			const dx = l.target.x - l.source.x;
+			const dy = l.target.y - l.source.y;
+
+			const hw = targetRectWidth / 2;
+			const hh = targetRectHeight / 2;
+
+			const scaleX = hw / Math.abs(dx);
+			const scaleY = hh / Math.abs(dy);
+			const scale = Math.min(scaleX, scaleY);
+
+			const endX = l.target.x - dx * scale;
+			const endY = l.target.y - dy * scale;
+
+			return `M${l.source.x},${l.source.y} L${endX},${endY}`;
+		});
+	}
+
+	function dragEnded(event, d) {
+		// if (!event.active) simulation.alphaTarget(0);
+		// d.fx = null;
+		// d.fy = null; // release after drag so simulation can continue
 		d.fx = event.x;
 		d.fy = event.y;
 	}
-
-	// function dragEnded(event, d) {
-	// 	if (!event.active) simulation.alphaTarget(0);
-	// 	d.fx = null;
-	// 	d.fy = null; // release after drag so simulation can continue
-	// }
 
 	let selectedNode = null;
 
@@ -148,12 +184,42 @@ d3.json(jsonFile).then((data) => {
 		d3.select(this).select("rect").attr("fill", "#ffcc00");
 
 		// Highlight outgoing links from this node
-		link.attr("marker-end", (l) =>
-			l.source === d ? "url(#arrows-highlight)" : "url(#arrows)"
-		)
-			.style("stroke", (l) => (l.source === d ? "#ff6600" : "#aaa"))
-			.style("stroke-width", (l) => (l.source === d ? 3 : 1.5))
-			.attr("opacity", (l) => (l.source === d ? 1 : 0.2));
+		link.attr("marker-end", (l) => {
+			if (l.source === d) return "url(#arrows-out)"; // outgoing
+			if (l.target === d) return "url(#arrows-in)"; // incoming
+			return "url(#arrows)";
+		})
+			.style("stroke", (l) => {
+				if (l.source === d) return "#ff6600"; // outgoing
+				if (l.target === d) return "#0066cc"; // incoming
+				return "#aaa";
+			})
+			.style("stroke-width", (l) =>
+				l.source === d || l.target === d ? 3 : 1.5
+			)
+			.attr("opacity", (l) =>
+				l.source === d || l.target === d ? 1 : 0.2
+			);
+
+		// Highlight the connected nodes too
+		// Highlight the connected nodes
+		node.select("rect").attr("fill", (n) => {
+			if (n === d) return "#ffcc00"; // clicked node
+
+			// Outgoing neighbor
+			const isOutgoing = link
+				.data()
+				.some((l) => l.source === d && l.target === n);
+
+			// Incoming neighbor
+			const isIncoming = link
+				.data()
+				.some((l) => l.target === d && l.source === n);
+
+			if (isOutgoing) return "#ff9966";
+			if (isIncoming) return "#66b3ff";
+			return "#fff"; // not connected
+		});
 	});
 
 	node.on("dblclick", (event, d) => {
@@ -169,6 +235,7 @@ d3.json(jsonFile).then((data) => {
 				.forceLink()
 				.id((d) => d.id)
 				.links(data.links)
+			// .distance(200)
 		)
 		.force("charge", d3.forceManyBody().strength(-1000))
 		.force("x", d3.forceX())
@@ -176,8 +243,10 @@ d3.json(jsonFile).then((data) => {
 		.force("center", d3.forceCenter(width / 2, height / 2))
 		.force(
 			"collide",
-			d3.forceCollide((d) => 65)
+			d3.forceCollide((d) => 80)
 		)
+		.alphaDecay(0.05) // default ~0.0228 → faster cooling
+		.velocityDecay(0.5) // default ~0.4 → more damping
 		.on("tick", ticked);
 
 	// This function is run at each iteration of the force algorithm, updating the nodes position.

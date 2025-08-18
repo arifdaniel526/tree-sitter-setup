@@ -1,6 +1,34 @@
 const path = require("path");
 const fs = require("fs").promises;
 
+function extractPackageName(filePath) {
+	// normalize slashes
+	const normalized = filePath.replace(/\\/g, "/");
+
+	// try to find "src/" or "java/" in path
+	let idx = normalized.lastIndexOf("/src/");
+	if (idx === -1) {
+		idx = normalized.lastIndexOf("/java/");
+	}
+
+	let pkgPath;
+	if (idx !== -1) {
+		// take everything after src/ or java/
+		pkgPath = normalized.substring(idx + 5);
+	} else {
+		// fallback: relative to file's parent directory
+		pkgPath = path.dirname(normalized).split(path.sep).join("/");
+	}
+
+	// remove filename if still there
+	if (pkgPath.includes("/")) {
+		pkgPath = pkgPath.substring(0, pkgPath.lastIndexOf("/"));
+	}
+
+	// convert to package notation
+	return pkgPath.replace(/\//g, ".");
+}
+
 async function runDepends(
 	fileType,
 	projectPath,
@@ -32,14 +60,32 @@ async function runDepends(
 	});
 }
 
+// function processDependsJson(data) {
+// 	// preprocess cells to only get src and dest
+// 	const cellList = data.cells.map((node) => {
+// 		return { source: node.src, target: node.dest };
+// 	});
+// 	// process node list
+// 	const nodeList = data.variables.map((node, i) => {
+// 		return { id: Number(i), name: node };
+// 	});
+
+// 	return { nodes: nodeList, links: cellList };
+// }
+
 function processDependsJson(data) {
 	// preprocess cells to only get src and dest
 	const cellList = data.cells.map((node) => {
 		return { source: node.src, target: node.dest };
 	});
-	// process node list
+
+	// node list: keep full path, add package
 	const nodeList = data.variables.map((node, i) => {
-		return { id: Number(i), name: node };
+		return {
+			id: Number(i),
+			name: node, // keep full path
+			package: extractPackageName(node),
+		};
 	});
 
 	return { nodes: nodeList, links: cellList };
@@ -76,7 +122,8 @@ async function processDepends() {
 		// testing
 		await runDepends(
 			"java",
-			"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\maybank assignment\\backend-assignment\\src"
+			//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\maybank assignment\\backend-assignment\\src",
+			"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\test"
 		);
 		await parseDependsOutput();
 	} catch (err) {
