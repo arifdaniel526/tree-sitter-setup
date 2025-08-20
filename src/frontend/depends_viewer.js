@@ -580,7 +580,7 @@ d3.json(jsonFile).then((data) => {
 			"collide",
 			d3.forceCollide((d) => 130)
 		)
-		.force("boxRepel", forceBoxRepel(-0.8))
+		//.force("boxRepel", forceBoxRepel(-5))
 		.alphaDecay(0.05)
 		.velocityDecay(0.5)
 		.on("tick", ticked);
@@ -626,6 +626,7 @@ d3.json(jsonFile).then((data) => {
 		d.fx = d.x;
 		d.fy = d.y;
 	}
+
 	function dragged(event, d) {
 		d.x = event.x;
 		d.y = event.y;
@@ -633,7 +634,7 @@ d3.json(jsonFile).then((data) => {
 		d.fy = event.y;
 		// Let the tick handler move links/nodes. But keep boxes in sync now:
 		updateBoxes();
-		simulation.alpha(0.3).restart();
+		simulation.alpha(0).restart();
 
 		// move dragged node
 		d3.select(this).attr("transform", `translate(${event.x},${event.y})`);
@@ -648,7 +649,7 @@ d3.json(jsonFile).then((data) => {
 	}
 
 	function boxDragStarted(event, d) {
-		if (!event.active) simulation.alphaTarget(0.3).restart();
+		if (!event.active) simulation.alphaTarget(0).restart();
 		// Fix positions of all children before drag
 		d.files.forEach((f) => {
 			f.fx = f.x;
@@ -664,18 +665,21 @@ d3.json(jsonFile).then((data) => {
 			f.x = f.fx;
 			f.y = f.fy;
 		});
+		simulation.alpha(0).restart();
 
 		updateBoxes(); // resize + reposition box
-		simulation.alpha(0.3).restart(); // heat sim so others react (repel)
+		//simulation.alpha(0).restart(); // heat sim so others react (repel)
 	}
 
 	function boxDragEnded(event, d) {
-		if (!event.active) simulation.alphaTarget(0);
+		// (!event.active) simulation.alphaTarget(0.3).restart();
 		// Release all children so sim can move them again
 		d.files.forEach((f) => {
-			f.fx = null;
-			f.fy = null;
+			f.fx = f.x;
+			f.fy = f.y;
 		});
+		//updateBoxes(); // resize + reposition box
+		if (!event.active) simulation.alphaTarget(0).restart();
 	}
 
 	function updateBoxes() {
@@ -706,6 +710,12 @@ d3.json(jsonFile).then((data) => {
 
 			// 🔑 Persist bounds into the data for forceBoxRepel
 			d.bounds = { minX, maxX, minY, maxY };
+			d.repulsionBounds = {
+				minX: minX - 40,
+				maxX: maxX + 40,
+				minY: minY - 40,
+				maxY: maxY + 40,
+			};
 
 			// move the whole group to top-left corner
 			const gBox = d3
@@ -724,92 +734,92 @@ d3.json(jsonFile).then((data) => {
 		});
 	}
 
-	function forceBoxRepel(strength = -0.8) {
-		let nodes;
+	// 	function forceBoxRepel(strength = -0.8) {
+	// 		let nodes;
 
-		function force(alpha) {
-			if (!nodes) return;
+	// 		function force(alpha) {
+	// 			if (!nodes) return;
 
-			// 1. Box ↔ Node repel
-			groupBoxes.forEach((box) => {
-				if (!box.bounds) return;
-				const { minX, maxX, minY, maxY } = box.bounds;
+	// 			// 1. Box ↔ Node repel
+	// 			groupBoxes.forEach((box) => {
+	// 				if (!box.bounds) return;
+	// 				const { minX, maxX, minY, maxY } = box.bounds;
 
-				nodes.forEach((n) => {
-					if (box.files.includes(n)) return; // skip children
+	// 				nodes.forEach((n) => {
+	// 					if (box.files.includes(n)) return; // skip children
 
-					const insideX = n.x > minX && n.x < maxX;
-					const insideY = n.y > minY && n.y < maxY;
+	// 					const insideX = n.x > minX && n.x < maxX;
+	// 					const insideY = n.y > minY && n.y < maxY;
 
-					if (insideX && insideY) {
-						const dx = Math.min(n.x - minX, maxX - n.x);
-						const dy = Math.min(n.y - minY, maxY - n.y);
+	// 					if (insideX && insideY) {
+	// 						const dx = Math.min(n.x - minX, maxX - n.x);
+	// 						const dy = Math.min(n.y - minY, maxY - n.y);
 
-						if (dx < dy) {
-							n.vx +=
-								(n.x < (minX + maxX) / 2 ? -1 : 1) *
-								Math.abs(strength) *
-								alpha *
-								10;
-						} else {
-							n.vy +=
-								(n.y < (minY + maxY) / 2 ? -1 : 1) *
-								Math.abs(strength) *
-								alpha *
-								10;
-						}
-					}
-				});
-			});
+	// 						if (dx < dy) {
+	// 							n.vx +=
+	// 								(n.x < (minX + maxX) / 2 ? -1 : 1) *
+	// 								Math.abs(strength) *
+	// 								alpha *
+	// 								10;
+	// 						} else {
+	// 							n.vy +=
+	// 								(n.y < (minY + maxY) / 2 ? -1 : 1) *
+	// 								Math.abs(strength) *
+	// 								alpha *
+	// 								10;
+	// 						}
+	// 					}
+	// 				});
+	// 			});
 
-			// 2. Box ↔ Box repel
-			for (let i = 0; i < groupBoxes.length; i++) {
-				for (let j = i + 1; j < groupBoxes.length; j++) {
-					const a = groupBoxes[i];
-					const b = groupBoxes[j];
-					if (!a.bounds || !b.bounds) continue;
+	// 			// 2. Box ↔ Box repel
+	// 			for (let i = 0; i < groupBoxes.length; i++) {
+	// 				for (let j = i + 1; j < groupBoxes.length; j++) {
+	// 					const a = groupBoxes[i];
+	// 					const b = groupBoxes[j];
+	// 					if (!a.bounds || !b.bounds) continue;
 
-					const overlapX =
-						Math.min(a.bounds.maxX, b.bounds.maxX) -
-						Math.max(a.bounds.minX, b.bounds.minX);
-					const overlapY =
-						Math.min(a.bounds.maxY, b.bounds.maxY) -
-						Math.max(a.bounds.minY, b.bounds.minY);
+	// 					const overlapX =
+	// 						Math.min(a.bounds.maxX, b.bounds.maxX) -
+	// 						Math.max(a.bounds.minX, b.bounds.minX);
+	// 					const overlapY =
+	// 						Math.min(a.bounds.maxY, b.bounds.maxY) -
+	// 						Math.max(a.bounds.minY, b.bounds.minY);
 
-					if (overlapX > 0 && overlapY > 0) {
-						// overlap exists → push boxes apart
-						const centerAx = (a.bounds.minX + a.bounds.maxX) / 2;
-						const centerAy = (a.bounds.minY + a.bounds.maxY) / 2;
-						const centerBx = (b.bounds.minX + b.bounds.maxX) / 2;
-						const centerBy = (b.bounds.minY + b.bounds.maxY) / 2;
+	// 					if (overlapX > 0 && overlapY > 0) {
+	// 						// overlap exists → push boxes apart
+	// 						const centerAx = (a.bounds.minX + a.bounds.maxX) / 2;
+	// 						const centerAy = (a.bounds.minY + a.bounds.maxY) / 2;
+	// 						const centerBx = (b.bounds.minX + b.bounds.maxX) / 2;
+	// 						const centerBy = (b.bounds.minY + b.bounds.maxY) / 2;
 
-						const dx = centerBx - centerAx;
-						const dy = centerBy - centerAy;
-						const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+	// 						const dx = centerBx - centerAx;
+	// 						const dy = centerBy - centerAy;
+	// 						const dist = Math.sqrt(dx * dx + dy * dy) || 1;
 
-						const push =
-							(Math.min(overlapX, overlapY) / dist) *
-							strength *
-							alpha *
-							20;
+	// 						const push =
+	// 							(Math.min(overlapX, overlapY) / dist) *
+	// 							strength *
+	// 							alpha *
+	// 							20;
 
-						// apply to all files in each package
-						a.files.forEach((n) => {
-							n.vx += (dx / dist) * push;
-							n.vy += (dy / dist) * push;
-						});
-						b.files.forEach((n) => {
-							n.vx -= (dx / dist) * push;
-							n.vy -= (dy / dist) * push;
-						});
-					}
-				}
-			}
-		}
+	// 						// apply to all files in each package
+	// 						a.files.forEach((n) => {
+	// 							n.vx += (dx / dist) * push;
+	// 							n.vy += (dy / dist) * push;
+	// 						});
+	// 						b.files.forEach((n) => {
+	// 							n.vx -= (dx / dist) * push;
+	// 							n.vy -= (dy / dist) * push;
+	// 						});
+	// 					}
+	// 				}
+	// 			}
+	// 		}
 
-		force.initialize = (_) => (nodes = _);
-		return force;
-	}
+	// 		force.initialize = (_) => (nodes = _);
+	// 		return force;
+	// 	}
 });
 
 // Redirect to VSCode upon double clicking a file
