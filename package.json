@@ -20,6 +20,7 @@
 	},
 	"homepage": "https://github.com/arifdaniel526/tree-sitter-setup#readme",
 	"dependencies": {
+		"madge": "^8.0.0",
 		"prompt-sync": "^4.2.0",
 		"tree-sitter": "^0.21.1",
 		"tree-sitter-java": "^0.23.5",

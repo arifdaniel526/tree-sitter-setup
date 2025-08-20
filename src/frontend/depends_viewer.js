@@ -2,7 +2,8 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
-const jsonFile = "../../Output/processed_depends.json";
+//const jsonFile = "../../Output/processed_depends.json";
+const jsonFile = "../../Output/process_madge.json";
 
 const svg = d3
 	.select("#tree")
