@@ -91,17 +91,9 @@
             root = d3.hierarchy(rootData, d => d.children || (d.ast ? [d.ast] : []));
             root.x0 = 0;
             root.y0 = 0;
-            root.children?.forEach(collapse);
+            root.children?.forEach(collapseAll);
             update(root);
         });
-
-        function collapse(d) {
-            if (d.children) {
-                d._children = d.children;
-                d._children.forEach(collapse);
-                d.children = null;
-            }
-        }
 
         // collapse children node
         function collapseAll(d) {
@@ -120,6 +112,14 @@
             }
             if (d.children) {
                 d.children.forEach(expandAll);
+            }
+        }
+
+        // Expand only direct children
+        function expandChildren(d) {
+            if (d._children) {
+                d.children = d._children;
+                d._children = null;
             }
         }
 
@@ -146,14 +146,21 @@
                 .attr("transform", d => `translate(${source.y0},${source.x0})`)
                 .on("click", (event, d) => {
                     if (d.children) {
-                        collapseAll(d);
+                        collapseAll(d); // collapase all nodes
                     } else if (d._children) {
-                        expandAll(d);
+                        if (d.data.type == "Project folder") {
+                            expandChildren(d); // collapse only their children
+                        } else {
+                            expandAll(d); // expand all nodes
+                        }
                     }
                     update(d);
                 })
-                .on("dblclick", (event, d) => { // double click node will redirect to the file in VSCode
-                    showCodeSnippet(d);
+                .on("mousedown", (event, d) => { // mouse wheel click node will redirect to the file in VSCode
+                    if (event.button === 1) {  // middle mouse button
+                        event.preventDefault();
+                        showCodeSnippet(d);   // open code snippet in VSCode
+                    }
                 })
                 .on("mouseover", (event, d) => { // show information about the node
                     const snippet = d.data.text
