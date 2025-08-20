@@ -122,8 +122,9 @@ async function processDepends() {
 		// testing
 		await runDepends(
 			"java",
-			//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\maybank assignment\\backend-assignment\\src"
-			"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\test"
+			//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\maybank assignment\\backend-assignment\\src",
+			//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\test"
+			"C:\\Users\\aahmadridzuanullah\\Calculator-master\\src"
 		);
 		await parseDependsOutput();
 	} catch (err) {

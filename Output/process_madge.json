@@ -1,0 +1,1051 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "docs/content/api/swagger/swagger-ui-bundle.js",
+      "package": "docs.content.api.swagger.swagger-ui-bundle"
+    },
+    {
+      "id": 1,
+      "name": "example/browser/example.js",
+      "package": "example.browser.example"
+    },
+    {
+      "id": 2,
+      "name": "package.json",
+      "package": "package.json"
+    },
+    {
+      "id": 3,
+      "name": "example/browser/js/startup.js",
+      "package": "example.browser.js.startup"
+    },
+    {
+      "id": 4,
+      "name": "lib/AlertManager.js",
+      "package": "lib.AlertManager"
+    },
+    {
+      "id": 5,
+      "name": "lib/adapters/AdapterForHttp.js",
+      "package": "lib.adapters.AdapterForHttp"
+    },
+    {
+      "id": 6,
+      "name": "lib/adapters/AdapterForSocketIo.js",
+      "package": "lib.adapters.AdapterForSocketIo"
+    },
+    {
+      "id": 7,
+      "name": "lib/security/JwtProvider.js",
+      "package": "lib.security.JwtProvider"
+    },
+    {
+      "id": 8,
+      "name": "lib/security/demo/getJwtGenerator.js",
+      "package": "lib.security.demo.getJwtGenerator"
+    },
+    {
+      "id": 9,
+      "name": "example/mobile/.eslintrc.js",
+      "package": "example.mobile..eslintrc"
+    },
+    {
+      "id": 10,
+      "name": "example/mobile/__tests__/App-test.js",
+      "package": "example.mobile.__tests__.App-test"
+    },
+    {
+      "id": 11,
+      "name": "example/mobile/app.json",
+      "package": "example.mobile.app.json"
+    },
+    {
+      "id": 12,
+      "name": "example/mobile/babel.config.js",
+      "package": "example.mobile.babel.config"
+    },
+    {
+      "id": 13,
+      "name": "example/mobile/index.js",
+      "package": "example.mobile.index"
+    },
+    {
+      "id": 14,
+      "name": "example/mobile/src/App.js",
+      "package": "example.mobile.src.App"
+    },
+    {
+      "id": 15,
+      "name": "example/mobile/src/utils/notifications.js",
+      "package": "example.mobile.src.utils.notifications"
+    },
+    {
+      "id": 16,
+      "name": "example/mobile/metro.config.js",
+      "package": "example.mobile.metro.config"
+    },
+    {
+      "id": 17,
+      "name": "example/mobile/src/redux/index.js",
+      "package": "example.mobile.src.redux.index"
+    },
+    {
+      "id": 18,
+      "name": "example/mobile/src/rootNavigation/index.js",
+      "package": "example.mobile.src.rootNavigation.index"
+    },
+    {
+      "id": 19,
+      "name": "example/mobile/src/screens/AlertsScreen/AlertsScreen.js",
+      "package": "example.mobile.src.screens.AlertsScreen.AlertsScreen"
+    },
+    {
+      "id": 20,
+      "name": "example/mobile/src/screens/HomeScreen/HomeScreen.js",
+      "package": "example.mobile.src.screens.HomeScreen.HomeScreen"
+    },
+    {
+      "id": 21,
+      "name": "example/mobile/src/screens/LatestPushScreen/LatestPushScreen.js",
+      "package": "example.mobile.src.screens.LatestPushScreen.LatestPushScreen"
+    },
+    {
+      "id": 22,
+      "name": "example/mobile/src/screens/LoginScreen/LoginScreen.js",
+      "package": "example.mobile.src.screens.LoginScreen.LoginScreen"
+    },
+    {
+      "id": 23,
+      "name": "example/mobile/src/screens/TriggersScreen/TriggersScreen.js",
+      "package": "example.mobile.src.screens.TriggersScreen.TriggersScreen"
+    },
+    {
+      "id": 24,
+      "name": "example/mobile/src/components/AlertsList/AlertsList.js",
+      "package": "example.mobile.src.components.AlertsList.AlertsList"
+    },
+    {
+      "id": 25,
+      "name": "example/mobile/src/redux/actions/alerts.js",
+      "package": "example.mobile.src.redux.actions.alerts"
+    },
+    {
+      "id": 26,
+      "name": "example/mobile/src/utils/AlertManager.js",
+      "package": "example.mobile.src.utils.AlertManager"
+    },
+    {
+      "id": 27,
+      "name": "example/mobile/src/components/NoItems/NoItems.js",
+      "package": "example.mobile.src.components.NoItems.NoItems"
+    },
+    {
+      "id": 28,
+      "name": "example/mobile/src/components/TriggersList/TriggersList.js",
+      "package": "example.mobile.src.components.TriggersList.TriggersList"
+    },
+    {
+      "id": 29,
+      "name": "example/mobile/src/redux/reducers/index.js",
+      "package": "example.mobile.src.redux.reducers.index"
+    },
+    {
+      "id": 30,
+      "name": "example/mobile/src/redux/reducers/alerts.js",
+      "package": "example.mobile.src.redux.reducers.alerts"
+    },
+    {
+      "id": 31,
+      "name": "example/mobile/src/utils/PushNotificationProvider.js",
+      "package": "example.mobile.src.utils.PushNotificationProvider"
+    },
+    {
+      "id": 32,
+      "name": "example/mobile/src/utils/asyncStore.js",
+      "package": "example.mobile.src.utils.asyncStore"
+    },
+    {
+      "id": 33,
+      "name": "example/node/example.js",
+      "package": "example.node.example"
+    },
+    {
+      "id": 34,
+      "name": "example/node/logging/CustomLoggingProvider.js",
+      "package": "example.node.logging.CustomLoggingProvider"
+    },
+    {
+      "id": 35,
+      "name": "lib/logging/LoggerFactory.js",
+      "package": "lib.logging.LoggerFactory"
+    },
+    {
+      "id": 36,
+      "name": "example/node/example10.js",
+      "package": "example.node.example10"
+    },
+    {
+      "id": 37,
+      "name": "example/node/example2.js",
+      "package": "example.node.example2"
+    },
+    {
+      "id": 38,
+      "name": "example/node/example3.js",
+      "package": "example.node.example3"
+    },
+    {
+      "id": 39,
+      "name": "example/node/example4.js",
+      "package": "example.node.example4"
+    },
+    {
+      "id": 40,
+      "name": "example/node/example5.js",
+      "package": "example.node.example5"
+    },
+    {
+      "id": 41,
+      "name": "example/node/example6.js",
+      "package": "example.node.example6"
+    },
+    {
+      "id": 42,
+      "name": "example/node/example7.js",
+      "package": "example.node.example7"
+    },
+    {
+      "id": 43,
+      "name": "example/node/example8.js",
+      "package": "example.node.example8"
+    },
+    {
+      "id": 44,
+      "name": "example/node/example9.js",
+      "package": "example.node.example9"
+    },
+    {
+      "id": 45,
+      "name": "lib/logging/Logger.js",
+      "package": "lib.logging.Logger"
+    },
+    {
+      "id": 46,
+      "name": "lib/logging/LoggerProvider.js",
+      "package": "lib.logging.LoggerProvider"
+    },
+    {
+      "id": 47,
+      "name": "gulpfile.js",
+      "package": "gulpfile"
+    },
+    {
+      "id": 48,
+      "name": "lib/adapters/AdapterBase.js",
+      "package": "lib.adapters.AdapterBase"
+    },
+    {
+      "id": 49,
+      "name": "lib/common/Configuration.js",
+      "package": "lib.common.Configuration"
+    },
+    {
+      "id": 50,
+      "name": "lib/data/validators/validate.js",
+      "package": "lib.data.validators.validate"
+    },
+    {
+      "id": 51,
+      "name": "lib/meta.js",
+      "package": "lib.meta"
+    },
+    {
+      "id": 52,
+      "name": "lib/adapters/AdapterForWebSockets.js",
+      "package": "lib.adapters.AdapterForWebSockets"
+    },
+    {
+      "id": 53,
+      "name": "lib/builder/builders/AlertBuilder.js",
+      "package": "lib.builder.builders.AlertBuilder"
+    },
+    {
+      "id": 54,
+      "name": "lib/builder/builders/ConditionBuilder.js",
+      "package": "lib.builder.builders.ConditionBuilder"
+    },
+    {
+      "id": 55,
+      "name": "lib/builder/builders/PublisherBuilder.js",
+      "package": "lib.builder.builders.PublisherBuilder"
+    },
+    {
+      "id": 56,
+      "name": "lib/builder/builders/ScheduleBuilder.js",
+      "package": "lib.builder.builders.ScheduleBuilder"
+    },
+    {
+      "id": 57,
+      "name": "lib/builder/data/Alert.js",
+      "package": "lib.builder.data.Alert"
+    },
+    {
+      "id": 58,
+      "name": "lib/builder/builders/OperatorBuilder.js",
+      "package": "lib.builder.builders.OperatorBuilder"
+    },
+    {
+      "id": 59,
+      "name": "lib/builder/builders/PropertyBuilder.js",
+      "package": "lib.builder.builders.PropertyBuilder"
+    },
+    {
+      "id": 60,
+      "name": "lib/builder/data/Condition.js",
+      "package": "lib.builder.data.Condition"
+    },
+    {
+      "id": 61,
+      "name": "lib/builder/builders/ModifierBuilder.js",
+      "package": "lib.builder.builders.ModifierBuilder"
+    },
+    {
+      "id": 62,
+      "name": "lib/builder/data/Modifier.js",
+      "package": "lib.builder.data.Modifier"
+    },
+    {
+      "id": 63,
+      "name": "lib/builder/data/Operator.js",
+      "package": "lib.builder.data.Operator"
+    },
+    {
+      "id": 64,
+      "name": "lib/builder/data/Property.js",
+      "package": "lib.builder.data.Property"
+    },
+    {
+      "id": 65,
+      "name": "lib/builder/data/Publisher.js",
+      "package": "lib.builder.data.Publisher"
+    },
+    {
+      "id": 66,
+      "name": "lib/builder/data/Schedule.js",
+      "package": "lib.builder.data.Schedule"
+    },
+    {
+      "id": 67,
+      "name": "lib/callbacks/.meta.js",
+      "package": "lib.callbacks..meta"
+    },
+    {
+      "id": 68,
+      "name": "lib/data/.meta.js",
+      "package": "lib.data..meta"
+    },
+    {
+      "id": 69,
+      "name": "lib/data/validators/alert.js",
+      "package": "lib.data.validators.alert"
+    },
+    {
+      "id": 70,
+      "name": "lib/data/validators/condition.js",
+      "package": "lib.data.validators.condition"
+    },
+    {
+      "id": 71,
+      "name": "lib/data/validators/publisher.js",
+      "package": "lib.data.validators.publisher"
+    },
+    {
+      "id": 72,
+      "name": "lib/data/validators/instrument.js",
+      "package": "lib.data.validators.instrument"
+    },
+    {
+      "id": 73,
+      "name": "lib/data/validators/publisherTypeDefault.js",
+      "package": "lib.data.validators.publisherTypeDefault"
+    },
+    {
+      "id": 74,
+      "name": "lib/data/validators/template.js",
+      "package": "lib.data.validators.template"
+    },
+    {
+      "id": 75,
+      "name": "lib/data/validators/templateCondition.js",
+      "package": "lib.data.validators.templateCondition"
+    },
+    {
+      "id": 76,
+      "name": "lib/data/validators/trigger.js",
+      "package": "lib.data.validators.trigger"
+    },
+    {
+      "id": 77,
+      "name": "lib/logging/.meta.js",
+      "package": "lib.logging..meta"
+    },
+    {
+      "id": 78,
+      "name": "lib/security/.meta.js",
+      "package": "lib.security..meta"
+    },
+    {
+      "id": 79,
+      "name": "lib/security/JwtPayload.js",
+      "package": "lib.security.JwtPayload"
+    },
+    {
+      "id": 80,
+      "name": "lib/security/demo/.meta.js",
+      "package": "lib.security.demo..meta"
+    },
+    {
+      "id": 81,
+      "name": "test/SpecRunner.js",
+      "package": "test.SpecRunner"
+    },
+    {
+      "id": 82,
+      "name": "test/specs/builder/AlertBuilderSpec.js",
+      "package": "test.specs.builder.AlertBuilderSpec"
+    },
+    {
+      "id": 83,
+      "name": "test/specs/security/JwtPayloadSpec.js",
+      "package": "test.specs.security.JwtPayloadSpec"
+    },
+    {
+      "id": 84,
+      "name": "test/specs/validators/alertSpec.js",
+      "package": "test.specs.validators.alertSpec"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2
+    },
+    {
+      "source": 3,
+      "target": 4
+    },
+    {
+      "source": 3,
+      "target": 5
+    },
+    {
+      "source": 3,
+      "target": 6
+    },
+    {
+      "source": 3,
+      "target": 7
+    },
+    {
+      "source": 3,
+      "target": 8
+    },
+    {
+      "source": 13,
+      "target": 11
+    },
+    {
+      "source": 13,
+      "target": 14
+    },
+    {
+      "source": 13,
+      "target": 15
+    },
+    {
+      "source": 14,
+      "target": 17
+    },
+    {
+      "source": 14,
+      "target": 18
+    },
+    {
+      "source": 14,
+      "target": 19
+    },
+    {
+      "source": 14,
+      "target": 20
+    },
+    {
+      "source": 14,
+      "target": 21
+    },
+    {
+      "source": 14,
+      "target": 22
+    },
+    {
+      "source": 14,
+      "target": 23
+    },
+    {
+      "source": 24,
+      "target": 25
+    },
+    {
+      "source": 24,
+      "target": 26
+    },
+    {
+      "source": 28,
+      "target": 25
+    },
+    {
+      "source": 28,
+      "target": 26
+    },
+    {
+      "source": 17,
+      "target": 29
+    },
+    {
+      "source": 29,
+      "target": 30
+    },
+    {
+      "source": 19,
+      "target": 24
+    },
+    {
+      "source": 19,
+      "target": 27
+    },
+    {
+      "source": 20,
+      "target": 25
+    },
+    {
+      "source": 20,
+      "target": 26
+    },
+    {
+      "source": 21,
+      "target": 27
+    },
+    {
+      "source": 22,
+      "target": 25
+    },
+    {
+      "source": 22,
+      "target": 26
+    },
+    {
+      "source": 22,
+      "target": 31
+    },
+    {
+      "source": 23,
+      "target": 27
+    },
+    {
+      "source": 23,
+      "target": 28
+    },
+    {
+      "source": 31,
+      "target": 32
+    },
+    {
+      "source": 31,
+      "target": 15
+    },
+    {
+      "source": 15,
+      "target": 25
+    },
+    {
+      "source": 15,
+      "target": 17
+    },
+    {
+      "source": 15,
+      "target": 18
+    },
+    {
+      "source": 15,
+      "target": 32
+    },
+    {
+      "source": 33,
+      "target": 34
+    },
+    {
+      "source": 33,
+      "target": 4
+    },
+    {
+      "source": 33,
+      "target": 5
+    },
+    {
+      "source": 33,
+      "target": 6
+    },
+    {
+      "source": 33,
+      "target": 35
+    },
+    {
+      "source": 33,
+      "target": 7
+    },
+    {
+      "source": 33,
+      "target": 8
+    },
+    {
+      "source": 36,
+      "target": 34
+    },
+    {
+      "source": 36,
+      "target": 4
+    },
+    {
+      "source": 36,
+      "target": 5
+    },
+    {
+      "source": 36,
+      "target": 6
+    },
+    {
+      "source": 36,
+      "target": 35
+    },
+    {
+      "source": 36,
+      "target": 7
+    },
+    {
+      "source": 36,
+      "target": 8
+    },
+    {
+      "source": 37,
+      "target": 34
+    },
+    {
+      "source": 37,
+      "target": 4
+    },
+    {
+      "source": 37,
+      "target": 5
+    },
+    {
+      "source": 37,
+      "target": 6
+    },
+    {
+      "source": 37,
+      "target": 35
+    },
+    {
+      "source": 37,
+      "target": 7
+    },
+    {
+      "source": 37,
+      "target": 8
+    },
+    {
+      "source": 38,
+      "target": 34
+    },
+    {
+      "source": 38,
+      "target": 4
+    },
+    {
+      "source": 38,
+      "target": 5
+    },
+    {
+      "source": 38,
+      "target": 6
+    },
+    {
+      "source": 38,
+      "target": 35
+    },
+    {
+      "source": 38,
+      "target": 7
+    },
+    {
+      "source": 38,
+      "target": 8
+    },
+    {
+      "source": 39,
+      "target": 34
+    },
+    {
+      "source": 39,
+      "target": 4
+    },
+    {
+      "source": 39,
+      "target": 5
+    },
+    {
+      "source": 39,
+      "target": 6
+    },
+    {
+      "source": 39,
+      "target": 35
+    },
+    {
+      "source": 39,
+      "target": 7
+    },
+    {
+      "source": 39,
+      "target": 8
+    },
+    {
+      "source": 40,
+      "target": 34
+    },
+    {
+      "source": 40,
+      "target": 4
+    },
+    {
+      "source": 40,
+      "target": 5
+    },
+    {
+      "source": 40,
+      "target": 6
+    },
+    {
+      "source": 40,
+      "target": 35
+    },
+    {
+      "source": 40,
+      "target": 7
+    },
+    {
+      "source": 40,
+      "target": 8
+    },
+    {
+      "source": 41,
+      "target": 34
+    },
+    {
+      "source": 41,
+      "target": 4
+    },
+    {
+      "source": 41,
+      "target": 5
+    },
+    {
+      "source": 41,
+      "target": 6
+    },
+    {
+      "source": 41,
+      "target": 35
+    },
+    {
+      "source": 41,
+      "target": 7
+    },
+    {
+      "source": 41,
+      "target": 8
+    },
+    {
+      "source": 42,
+      "target": 34
+    },
+    {
+      "source": 42,
+      "target": 4
+    },
+    {
+      "source": 42,
+      "target": 5
+    },
+    {
+      "source": 42,
+      "target": 6
+    },
+    {
+      "source": 42,
+      "target": 35
+    },
+    {
+      "source": 42,
+      "target": 7
+    },
+    {
+      "source": 42,
+      "target": 8
+    },
+    {
+      "source": 43,
+      "target": 34
+    },
+    {
+      "source": 43,
+      "target": 4
+    },
+    {
+      "source": 43,
+      "target": 5
+    },
+    {
+      "source": 43,
+      "target": 6
+    },
+    {
+      "source": 43,
+      "target": 35
+    },
+    {
+      "source": 43,
+      "target": 7
+    },
+    {
+      "source": 43,
+      "target": 8
+    },
+    {
+      "source": 44,
+      "target": 34
+    },
+    {
+      "source": 44,
+      "target": 4
+    },
+    {
+      "source": 44,
+      "target": 5
+    },
+    {
+      "source": 44,
+      "target": 6
+    },
+    {
+      "source": 44,
+      "target": 35
+    },
+    {
+      "source": 44,
+      "target": 7
+    },
+    {
+      "source": 44,
+      "target": 8
+    },
+    {
+      "source": 34,
+      "target": 45
+    },
+    {
+      "source": 34,
+      "target": 46
+    },
+    {
+      "source": 4,
+      "target": 48
+    },
+    {
+      "source": 4,
+      "target": 49
+    },
+    {
+      "source": 4,
+      "target": 50
+    },
+    {
+      "source": 4,
+      "target": 51
+    },
+    {
+      "source": 4,
+      "target": 7
+    },
+    {
+      "source": 5,
+      "target": 48
+    },
+    {
+      "source": 5,
+      "target": 7
+    },
+    {
+      "source": 6,
+      "target": 48
+    },
+    {
+      "source": 6,
+      "target": 7
+    },
+    {
+      "source": 52,
+      "target": 48
+    },
+    {
+      "source": 53,
+      "target": 54
+    },
+    {
+      "source": 53,
+      "target": 55
+    },
+    {
+      "source": 53,
+      "target": 56
+    },
+    {
+      "source": 53,
+      "target": 57
+    },
+    {
+      "source": 54,
+      "target": 58
+    },
+    {
+      "source": 54,
+      "target": 59
+    },
+    {
+      "source": 54,
+      "target": 60
+    },
+    {
+      "source": 61,
+      "target": 62
+    },
+    {
+      "source": 58,
+      "target": 61
+    },
+    {
+      "source": 58,
+      "target": 63
+    },
+    {
+      "source": 59,
+      "target": 64
+    },
+    {
+      "source": 55,
+      "target": 65
+    },
+    {
+      "source": 56,
+      "target": 66
+    },
+    {
+      "source": 69,
+      "target": 70
+    },
+    {
+      "source": 69,
+      "target": 71
+    },
+    {
+      "source": 74,
+      "target": 75
+    },
+    {
+      "source": 50,
+      "target": 69
+    },
+    {
+      "source": 50,
+      "target": 70
+    },
+    {
+      "source": 50,
+      "target": 72
+    },
+    {
+      "source": 50,
+      "target": 71
+    },
+    {
+      "source": 50,
+      "target": 73
+    },
+    {
+      "source": 50,
+      "target": 74
+    },
+    {
+      "source": 50,
+      "target": 75
+    },
+    {
+      "source": 50,
+      "target": 76
+    },
+    {
+      "source": 35,
+      "target": 45
+    },
+    {
+      "source": 35,
+      "target": 46
+    },
+    {
+      "source": 7,
+      "target": 49
+    },
+    {
+      "source": 8,
+      "target": 79
+    },
+    {
+      "source": 82,
+      "target": 4
+    },
+    {
+      "source": 82,
+      "target": 5
+    },
+    {
+      "source": 82,
+      "target": 53
+    },
+    {
+      "source": 82,
+      "target": 7
+    },
+    {
+      "source": 82,
+      "target": 8
+    },
+    {
+      "source": 83,
+      "target": 79
+    },
+    {
+      "source": 84,
+      "target": 69
+    }
+  ]
+}

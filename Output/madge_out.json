@@ -1,0 +1,288 @@
+{
+  "docs/content/api/swagger/swagger-ui-bundle.js": [],
+  "example/browser/example.js": [
+    "package.json"
+  ],
+  "example/browser/js/startup.js": [
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/mobile/.eslintrc.js": [],
+  "example/mobile/__tests__/App-test.js": [],
+  "example/mobile/app.json": [],
+  "example/mobile/babel.config.js": [],
+  "example/mobile/index.js": [
+    "example/mobile/app.json",
+    "example/mobile/src/App.js",
+    "example/mobile/src/utils/notifications.js"
+  ],
+  "example/mobile/metro.config.js": [],
+  "example/mobile/src/App.js": [
+    "example/mobile/src/redux/index.js",
+    "example/mobile/src/rootNavigation/index.js",
+    "example/mobile/src/screens/AlertsScreen/AlertsScreen.js",
+    "example/mobile/src/screens/HomeScreen/HomeScreen.js",
+    "example/mobile/src/screens/LatestPushScreen/LatestPushScreen.js",
+    "example/mobile/src/screens/LoginScreen/LoginScreen.js",
+    "example/mobile/src/screens/TriggersScreen/TriggersScreen.js"
+  ],
+  "example/mobile/src/components/AlertsList/AlertsList.js": [
+    "example/mobile/src/redux/actions/alerts.js",
+    "example/mobile/src/utils/AlertManager.js"
+  ],
+  "example/mobile/src/components/NoItems/NoItems.js": [],
+  "example/mobile/src/components/TriggersList/TriggersList.js": [
+    "example/mobile/src/redux/actions/alerts.js",
+    "example/mobile/src/utils/AlertManager.js"
+  ],
+  "example/mobile/src/redux/actions/alerts.js": [],
+  "example/mobile/src/redux/index.js": [
+    "example/mobile/src/redux/reducers/index.js"
+  ],
+  "example/mobile/src/redux/reducers/alerts.js": [],
+  "example/mobile/src/redux/reducers/index.js": [
+    "example/mobile/src/redux/reducers/alerts.js"
+  ],
+  "example/mobile/src/rootNavigation/index.js": [],
+  "example/mobile/src/screens/AlertsScreen/AlertsScreen.js": [
+    "example/mobile/src/components/AlertsList/AlertsList.js",
+    "example/mobile/src/components/NoItems/NoItems.js"
+  ],
+  "example/mobile/src/screens/HomeScreen/HomeScreen.js": [
+    "example/mobile/src/redux/actions/alerts.js",
+    "example/mobile/src/utils/AlertManager.js"
+  ],
+  "example/mobile/src/screens/LatestPushScreen/LatestPushScreen.js": [
+    "example/mobile/src/components/NoItems/NoItems.js"
+  ],
+  "example/mobile/src/screens/LoginScreen/LoginScreen.js": [
+    "example/mobile/src/redux/actions/alerts.js",
+    "example/mobile/src/utils/AlertManager.js",
+    "example/mobile/src/utils/PushNotificationProvider.js"
+  ],
+  "example/mobile/src/screens/TriggersScreen/TriggersScreen.js": [
+    "example/mobile/src/components/NoItems/NoItems.js",
+    "example/mobile/src/components/TriggersList/TriggersList.js"
+  ],
+  "example/mobile/src/utils/AlertManager.js": [],
+  "example/mobile/src/utils/PushNotificationProvider.js": [
+    "example/mobile/src/utils/asyncStore.js",
+    "example/mobile/src/utils/notifications.js"
+  ],
+  "example/mobile/src/utils/asyncStore.js": [],
+  "example/mobile/src/utils/notifications.js": [
+    "example/mobile/src/redux/actions/alerts.js",
+    "example/mobile/src/redux/index.js",
+    "example/mobile/src/rootNavigation/index.js",
+    "example/mobile/src/utils/asyncStore.js"
+  ],
+  "example/node/example.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example10.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example2.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example3.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example4.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example5.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example6.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example7.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example8.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/example9.js": [
+    "example/node/logging/CustomLoggingProvider.js",
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/adapters/AdapterForSocketIo.js",
+    "lib/logging/LoggerFactory.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "example/node/logging/CustomLoggingProvider.js": [
+    "lib/logging/Logger.js",
+    "lib/logging/LoggerProvider.js"
+  ],
+  "gulpfile.js": [],
+  "lib/AlertManager.js": [
+    "lib/adapters/AdapterBase.js",
+    "lib/common/Configuration.js",
+    "lib/data/validators/validate.js",
+    "lib/meta.js",
+    "lib/security/JwtProvider.js"
+  ],
+  "lib/adapters/AdapterBase.js": [],
+  "lib/adapters/AdapterForHttp.js": [
+    "lib/adapters/AdapterBase.js",
+    "lib/security/JwtProvider.js"
+  ],
+  "lib/adapters/AdapterForSocketIo.js": [
+    "lib/adapters/AdapterBase.js",
+    "lib/security/JwtProvider.js"
+  ],
+  "lib/adapters/AdapterForWebSockets.js": [
+    "lib/adapters/AdapterBase.js"
+  ],
+  "lib/builder/builders/AlertBuilder.js": [
+    "lib/builder/builders/ConditionBuilder.js",
+    "lib/builder/builders/PublisherBuilder.js",
+    "lib/builder/builders/ScheduleBuilder.js",
+    "lib/builder/data/Alert.js"
+  ],
+  "lib/builder/builders/ConditionBuilder.js": [
+    "lib/builder/builders/OperatorBuilder.js",
+    "lib/builder/builders/PropertyBuilder.js",
+    "lib/builder/data/Condition.js"
+  ],
+  "lib/builder/builders/ModifierBuilder.js": [
+    "lib/builder/data/Modifier.js"
+  ],
+  "lib/builder/builders/OperatorBuilder.js": [
+    "lib/builder/builders/ModifierBuilder.js",
+    "lib/builder/data/Operator.js"
+  ],
+  "lib/builder/builders/PropertyBuilder.js": [
+    "lib/builder/data/Property.js"
+  ],
+  "lib/builder/builders/PublisherBuilder.js": [
+    "lib/builder/data/Publisher.js"
+  ],
+  "lib/builder/builders/ScheduleBuilder.js": [
+    "lib/builder/data/Schedule.js"
+  ],
+  "lib/builder/data/Alert.js": [],
+  "lib/builder/data/Condition.js": [],
+  "lib/builder/data/Modifier.js": [],
+  "lib/builder/data/Operator.js": [],
+  "lib/builder/data/Property.js": [],
+  "lib/builder/data/Publisher.js": [],
+  "lib/builder/data/Schedule.js": [],
+  "lib/callbacks/.meta.js": [],
+  "lib/common/Configuration.js": [],
+  "lib/data/.meta.js": [],
+  "lib/data/validators/alert.js": [
+    "lib/data/validators/condition.js",
+    "lib/data/validators/publisher.js"
+  ],
+  "lib/data/validators/condition.js": [],
+  "lib/data/validators/instrument.js": [],
+  "lib/data/validators/publisher.js": [],
+  "lib/data/validators/publisherTypeDefault.js": [],
+  "lib/data/validators/template.js": [
+    "lib/data/validators/templateCondition.js"
+  ],
+  "lib/data/validators/templateCondition.js": [],
+  "lib/data/validators/trigger.js": [],
+  "lib/data/validators/validate.js": [
+    "lib/data/validators/alert.js",
+    "lib/data/validators/condition.js",
+    "lib/data/validators/instrument.js",
+    "lib/data/validators/publisher.js",
+    "lib/data/validators/publisherTypeDefault.js",
+    "lib/data/validators/template.js",
+    "lib/data/validators/templateCondition.js",
+    "lib/data/validators/trigger.js"
+  ],
+  "lib/logging/.meta.js": [],
+  "lib/logging/Logger.js": [],
+  "lib/logging/LoggerFactory.js": [
+    "lib/logging/Logger.js",
+    "lib/logging/LoggerProvider.js"
+  ],
+  "lib/logging/LoggerProvider.js": [],
+  "lib/meta.js": [],
+  "lib/security/.meta.js": [],
+  "lib/security/JwtPayload.js": [],
+  "lib/security/JwtProvider.js": [
+    "lib/common/Configuration.js"
+  ],
+  "lib/security/demo/.meta.js": [],
+  "lib/security/demo/getJwtGenerator.js": [
+    "lib/security/JwtPayload.js"
+  ],
+  "package.json": [],
+  "test/SpecRunner.js": [],
+  "test/specs/builder/AlertBuilderSpec.js": [
+    "lib/AlertManager.js",
+    "lib/adapters/AdapterForHttp.js",
+    "lib/builder/builders/AlertBuilder.js",
+    "lib/security/JwtProvider.js",
+    "lib/security/demo/getJwtGenerator.js"
+  ],
+  "test/specs/security/JwtPayloadSpec.js": [
+    "lib/security/JwtPayload.js"
+  ],
+  "test/specs/validators/alertSpec.js": [
+    "lib/data/validators/alert.js"
+  ]
+}
