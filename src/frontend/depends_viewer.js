@@ -2,8 +2,8 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
-//const jsonFile = "../../Output/processed_depends.json";
-const jsonFile = "../../Output/process_madge.json";
+const jsonFile = "../../Output/processed_depends.json";
+//const jsonFile = "../../Output/process_madge.json";
 
 const svg = d3
 	.select("#tree")
@@ -182,12 +182,34 @@ d3.json(jsonFile).then((data) => {
 		node.select("rect").attr("fill", "#fff");
 		d3.select(this).select("rect").attr("fill", "#ffcc00");
 
+		// recolouring nodes
+		node.select("rect").attr("fill", (n) => {
+			if (n === d) return "#ffcc00";
+			const isOutgoing = link
+				.data()
+				.some((l) => l.source === d && l.target === n);
+			const isIncoming = link
+				.data()
+				.some((l) => l.target === d && l.source === n);
+			if (isOutgoing && isIncoming) {
+				//d.bidirectional = true;
+				return "#3aca6fff";
+			}
+			//d.bidirectional = false;
+			if (isOutgoing) return "#ff9966";
+			if (isIncoming) return "#66b3ff";
+			return "#fff";
+		});
+
+		// recolouring links
 		link.attr("marker-end", (l) => {
 			if (l.source === d) return "url(#arrows-out)";
 			if (l.target === d) return "url(#arrows-in)";
 			return "url(#arrows)";
 		})
 			.style("stroke", (l) => {
+				//console.log(d.bidirectional);
+				//if (d.bidirectional) return "#3aca6fff";
 				if (l.source === d) return "#ff6600";
 				if (l.target === d) return "#0066cc";
 				return "#aaa";
@@ -198,19 +220,6 @@ d3.json(jsonFile).then((data) => {
 			.attr("opacity", (l) =>
 				l.source === d || l.target === d ? 1 : 0.2
 			);
-
-		node.select("rect").attr("fill", (n) => {
-			if (n === d) return "#ffcc00";
-			const isOutgoing = link
-				.data()
-				.some((l) => l.source === d && l.target === n);
-			const isIncoming = link
-				.data()
-				.some((l) => l.target === d && l.source === n);
-			if (isOutgoing) return "#ff9966";
-			if (isIncoming) return "#66b3ff";
-			return "#fff";
-		});
 	}
 
 	function handleDblClick(event, d) {
@@ -345,6 +354,7 @@ d3.json(jsonFile).then((data) => {
 		restart();
 	}
 
+	// restart sim
 	function restart() {
 		link = linkGroup
 			.selectAll("path")
@@ -397,55 +407,6 @@ d3.json(jsonFile).then((data) => {
 							.attr("ry", 6)
 							.attr("fill", "#fff")
 							.attr("stroke", "#000");
-					});
-
-					let selectedNode = null;
-
-					node.on("click", function (event, d) {
-						if (selectedNode === d) {
-							selectedNode = null;
-							node.select("rect").attr("fill", "#fff");
-							link.attr("marker-end", "url(#arrows)")
-								.style("stroke", "#aaa")
-								.style("stroke-width", 1)
-								.attr("opacity", 1);
-							return;
-						}
-
-						selectedNode = d;
-
-						node.select("rect").attr("fill", "#fff");
-						d3.select(this).select("rect").attr("fill", "#ffcc00");
-
-						link.attr("marker-end", (l) => {
-							if (l.source === d) return "url(#arrows-out)";
-							if (l.target === d) return "url(#arrows-in)";
-							return "url(#arrows)";
-						})
-							.style("stroke", (l) => {
-								if (l.source === d) return "#ff6600";
-								if (l.target === d) return "#0066cc";
-								return "#aaa";
-							})
-							.style("stroke-width", (l) =>
-								l.source === d || l.target === d ? 3 : 1.5
-							)
-							.attr("opacity", (l) =>
-								l.source === d || l.target === d ? 1 : 0.2
-							);
-
-						node.select("rect").attr("fill", (n) => {
-							if (n === d) return "#ffcc00";
-							const isOutgoing = link
-								.data()
-								.some((l) => l.source === d && l.target === n);
-							const isIncoming = link
-								.data()
-								.some((l) => l.target === d && l.source === n);
-							if (isOutgoing) return "#ff9966";
-							if (isIncoming) return "#66b3ff";
-							return "#fff";
-						});
 					});
 					return n;
 				},
@@ -635,7 +596,7 @@ d3.json(jsonFile).then((data) => {
 		d.fy = event.y;
 		// Let the tick handler move links/nodes. But keep boxes in sync now:
 		updateBoxes();
-		simulation.alpha(0).restart();
+		//simulation.alpha(0).restart();
 
 		// move dragged node
 		d3.select(this).attr("transform", `translate(${event.x},${event.y})`);
@@ -650,7 +611,6 @@ d3.json(jsonFile).then((data) => {
 	}
 
 	function boxDragStarted(event, d) {
-		if (!event.active) simulation.alphaTarget(0).restart();
 		// Fix positions of all children before drag
 		d.files.forEach((f) => {
 			f.fx = f.x;
@@ -666,21 +626,18 @@ d3.json(jsonFile).then((data) => {
 			f.x = f.fx;
 			f.y = f.fy;
 		});
-		simulation.alpha(0).restart();
 
 		updateBoxes(); // resize + reposition box
-		//simulation.alpha(0).restart(); // heat sim so others react (repel)
+		simulation.alpha(0).restart(); // heat sim so others react (repel)
 	}
 
 	function boxDragEnded(event, d) {
-		// (!event.active) simulation.alphaTarget(0.3).restart();
 		// Release all children so sim can move them again
 		d.files.forEach((f) => {
 			f.fx = f.x;
 			f.fy = f.y;
 		});
 		//updateBoxes(); // resize + reposition box
-		if (!event.active) simulation.alphaTarget(0).restart();
 	}
 
 	function updateBoxes() {
@@ -709,7 +666,7 @@ d3.json(jsonFile).then((data) => {
 			const boxWidth = maxX - minX;
 			const boxHeight = maxY - minY + 30; // +30 for title space
 
-			// 🔑 Persist bounds into the data for forceBoxRepel
+			// Persist bounds into the data for forceBoxRepel
 			d.bounds = { minX, maxX, minY, maxY };
 			d.repulsionBounds = {
 				minX: minX - 40,
