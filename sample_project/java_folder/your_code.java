@@ -1,4 +1,4 @@
-package sample_project;
+package sample_project.java_folder;
 
 public class your_code {
 
