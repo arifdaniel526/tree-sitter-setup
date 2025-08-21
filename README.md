@@ -51,3 +51,10 @@ npm install tree-sitter-java --legacy-peer-deps
   2. Right click and open with live server
 
 ---
+
+## 🛠️ Interact with tree-sitter
+- **Click the node to expand and collapse**
+- **Mouse wheel click the node to open the code snippet in VSCode**
+- **Hover the node to display information of the node**
+ 
+---
