@@ -79,15 +79,19 @@
             }));
 
         const g = svg.append("g").attr("transform", "translate(100,50)");
-        const treeLayout = d3.tree().nodeSize([40, 220]);
+        const treeLayout = d3.tree().nodeSize([50, 270]);
         let root;
 
         // generate from JSON file
         d3.json("project_ast.json").then(data => {
+            // if you open viewer.html from another folder, point to "./Output/project_ast.json"
+            // example: d3.json("./Output/project_ast.json").then(...)
+
             let rootData = Array.isArray(data)
                 ? { type: "Project folder", children: data }
                 : data;
 
+            // children if present, or if a legacy { ast } shape exists, need to treat it as a single child
             root = d3.hierarchy(rootData, d => d.children || (d.ast ? [d.ast] : []));
             root.x0 = 0;
             root.y0 = 0;
@@ -115,7 +119,7 @@
             }
         }
 
-        // Expand only direct children
+        // expand only direct children
         function expandChildren(d) {
             if (d._children) {
                 d.children = d._children;
@@ -148,7 +152,7 @@
                     if (d.children) {
                         collapseAll(d); // collapase all nodes
                     } else if (d._children) {
-                        if (d.data.type == "Project folder") {
+                        if (d.data.type == "Project folder" || d.data.type == "Folder") {
                             expandChildren(d); // collapse only their children
                         } else {
                             expandAll(d); // expand all nodes
@@ -157,7 +161,7 @@
                     update(d);
                 })
                 .on("mousedown", (event, d) => { // mouse wheel click node will redirect to the file in VSCode
-                    if (event.button === 1) {  // middle mouse button
+                    if (event.button === 1) {  // middle mouse button, (since button 0 = left, 1 = middle, 2 = right)
                         event.preventDefault();
                         showCodeSnippet(d);   // open code snippet in VSCode
                     }
@@ -187,11 +191,23 @@
 
             nodeEnter.append("circle").attr("r", 10);
 
+            // labeling the parent node name: show folder or file names
             nodeEnter.append("text")
-                .attr("dy", 4)
+                .attr("dy", 1) // reset baseline
                 .attr("x", d => d.children || d._children ? -15 : 15)
                 .style("text-anchor", d => d.children || d._children ? "end" : "start")
-                .text(d => d.data.type || d.data.file || "Node");
+                .text(d => {
+                    console.log(d.data)
+                    console.log("filepath:", d.data.file)
+
+                    if (d.data.type === "Project folder" || d.data.type === "Folder") {
+                        return d.data.name || d.data.type;
+                    }
+                    if (d.data.type === "File") {
+                        return d.data.name || (d.data.file ? d.data.file.split(/[\\/]/).pop() : "File");
+                    }
+                    return d.data.type || "Node";
+                })
 
             const nodeUpdate = nodeEnter.merge(nodeSel)
                 .transition()
