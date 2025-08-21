@@ -3,427 +3,427 @@
     {
       "id": 0,
       "name": "docs/content/api/swagger/swagger-ui-bundle.js",
-      "package": "docs.content.api.swagger.swagger-ui-bundle"
+      "package": "docs.content.api.swagger"
     },
     {
       "id": 1,
       "name": "example/browser/example.js",
-      "package": "example.browser.example"
+      "package": "example.browser"
     },
     {
       "id": 2,
       "name": "package.json",
-      "package": "package.json"
+      "package": "root"
     },
     {
       "id": 3,
       "name": "example/browser/js/startup.js",
-      "package": "example.browser.js.startup"
+      "package": "example.browser.js"
     },
     {
       "id": 4,
       "name": "lib/AlertManager.js",
-      "package": "lib.AlertManager"
+      "package": "lib"
     },
     {
       "id": 5,
       "name": "lib/adapters/AdapterForHttp.js",
-      "package": "lib.adapters.AdapterForHttp"
+      "package": "lib.adapters"
     },
     {
       "id": 6,
       "name": "lib/adapters/AdapterForSocketIo.js",
-      "package": "lib.adapters.AdapterForSocketIo"
+      "package": "lib.adapters"
     },
     {
       "id": 7,
       "name": "lib/security/JwtProvider.js",
-      "package": "lib.security.JwtProvider"
+      "package": "lib.security"
     },
     {
       "id": 8,
       "name": "lib/security/demo/getJwtGenerator.js",
-      "package": "lib.security.demo.getJwtGenerator"
+      "package": "lib.security.demo"
     },
     {
       "id": 9,
       "name": "example/mobile/.eslintrc.js",
-      "package": "example.mobile..eslintrc"
+      "package": "example.mobile"
     },
     {
       "id": 10,
       "name": "example/mobile/__tests__/App-test.js",
-      "package": "example.mobile.__tests__.App-test"
+      "package": "example.mobile.__tests__"
     },
     {
       "id": 11,
       "name": "example/mobile/app.json",
-      "package": "example.mobile.app.json"
+      "package": "example.mobile"
     },
     {
       "id": 12,
       "name": "example/mobile/babel.config.js",
-      "package": "example.mobile.babel.config"
+      "package": "example.mobile"
     },
     {
       "id": 13,
       "name": "example/mobile/index.js",
-      "package": "example.mobile.index"
+      "package": "example.mobile"
     },
     {
       "id": 14,
       "name": "example/mobile/src/App.js",
-      "package": "example.mobile.src.App"
+      "package": "example.mobile.src"
     },
     {
       "id": 15,
       "name": "example/mobile/src/utils/notifications.js",
-      "package": "example.mobile.src.utils.notifications"
+      "package": "example.mobile.src.utils"
     },
     {
       "id": 16,
       "name": "example/mobile/metro.config.js",
-      "package": "example.mobile.metro.config"
+      "package": "example.mobile"
     },
     {
       "id": 17,
       "name": "example/mobile/src/redux/index.js",
-      "package": "example.mobile.src.redux.index"
+      "package": "example.mobile.src.redux"
     },
     {
       "id": 18,
       "name": "example/mobile/src/rootNavigation/index.js",
-      "package": "example.mobile.src.rootNavigation.index"
+      "package": "example.mobile.src.rootNavigation"
     },
     {
       "id": 19,
       "name": "example/mobile/src/screens/AlertsScreen/AlertsScreen.js",
-      "package": "example.mobile.src.screens.AlertsScreen.AlertsScreen"
+      "package": "example.mobile.src.screens.AlertsScreen"
     },
     {
       "id": 20,
       "name": "example/mobile/src/screens/HomeScreen/HomeScreen.js",
-      "package": "example.mobile.src.screens.HomeScreen.HomeScreen"
+      "package": "example.mobile.src.screens.HomeScreen"
     },
     {
       "id": 21,
       "name": "example/mobile/src/screens/LatestPushScreen/LatestPushScreen.js",
-      "package": "example.mobile.src.screens.LatestPushScreen.LatestPushScreen"
+      "package": "example.mobile.src.screens.LatestPushScreen"
     },
     {
       "id": 22,
       "name": "example/mobile/src/screens/LoginScreen/LoginScreen.js",
-      "package": "example.mobile.src.screens.LoginScreen.LoginScreen"
+      "package": "example.mobile.src.screens.LoginScreen"
     },
     {
       "id": 23,
       "name": "example/mobile/src/screens/TriggersScreen/TriggersScreen.js",
-      "package": "example.mobile.src.screens.TriggersScreen.TriggersScreen"
+      "package": "example.mobile.src.screens.TriggersScreen"
     },
     {
       "id": 24,
       "name": "example/mobile/src/components/AlertsList/AlertsList.js",
-      "package": "example.mobile.src.components.AlertsList.AlertsList"
+      "package": "example.mobile.src.components.AlertsList"
     },
     {
       "id": 25,
       "name": "example/mobile/src/redux/actions/alerts.js",
-      "package": "example.mobile.src.redux.actions.alerts"
+      "package": "example.mobile.src.redux.actions"
     },
     {
       "id": 26,
       "name": "example/mobile/src/utils/AlertManager.js",
-      "package": "example.mobile.src.utils.AlertManager"
+      "package": "example.mobile.src.utils"
     },
     {
       "id": 27,
       "name": "example/mobile/src/components/NoItems/NoItems.js",
-      "package": "example.mobile.src.components.NoItems.NoItems"
+      "package": "example.mobile.src.components.NoItems"
     },
     {
       "id": 28,
       "name": "example/mobile/src/components/TriggersList/TriggersList.js",
-      "package": "example.mobile.src.components.TriggersList.TriggersList"
+      "package": "example.mobile.src.components.TriggersList"
     },
     {
       "id": 29,
       "name": "example/mobile/src/redux/reducers/index.js",
-      "package": "example.mobile.src.redux.reducers.index"
+      "package": "example.mobile.src.redux.reducers"
     },
     {
       "id": 30,
       "name": "example/mobile/src/redux/reducers/alerts.js",
-      "package": "example.mobile.src.redux.reducers.alerts"
+      "package": "example.mobile.src.redux.reducers"
     },
     {
       "id": 31,
       "name": "example/mobile/src/utils/PushNotificationProvider.js",
-      "package": "example.mobile.src.utils.PushNotificationProvider"
+      "package": "example.mobile.src.utils"
     },
     {
       "id": 32,
       "name": "example/mobile/src/utils/asyncStore.js",
-      "package": "example.mobile.src.utils.asyncStore"
+      "package": "example.mobile.src.utils"
     },
     {
       "id": 33,
       "name": "example/node/example.js",
-      "package": "example.node.example"
+      "package": "example.node"
     },
     {
       "id": 34,
       "name": "example/node/logging/CustomLoggingProvider.js",
-      "package": "example.node.logging.CustomLoggingProvider"
+      "package": "example.node.logging"
     },
     {
       "id": 35,
       "name": "lib/logging/LoggerFactory.js",
-      "package": "lib.logging.LoggerFactory"
+      "package": "lib.logging"
     },
     {
       "id": 36,
       "name": "example/node/example10.js",
-      "package": "example.node.example10"
+      "package": "example.node"
     },
     {
       "id": 37,
       "name": "example/node/example2.js",
-      "package": "example.node.example2"
+      "package": "example.node"
     },
     {
       "id": 38,
       "name": "example/node/example3.js",
-      "package": "example.node.example3"
+      "package": "example.node"
     },
     {
       "id": 39,
       "name": "example/node/example4.js",
-      "package": "example.node.example4"
+      "package": "example.node"
     },
     {
       "id": 40,
       "name": "example/node/example5.js",
-      "package": "example.node.example5"
+      "package": "example.node"
     },
     {
       "id": 41,
       "name": "example/node/example6.js",
-      "package": "example.node.example6"
+      "package": "example.node"
     },
     {
       "id": 42,
       "name": "example/node/example7.js",
-      "package": "example.node.example7"
+      "package": "example.node"
     },
     {
       "id": 43,
       "name": "example/node/example8.js",
-      "package": "example.node.example8"
+      "package": "example.node"
     },
     {
       "id": 44,
       "name": "example/node/example9.js",
-      "package": "example.node.example9"
+      "package": "example.node"
     },
     {
       "id": 45,
       "name": "lib/logging/Logger.js",
-      "package": "lib.logging.Logger"
+      "package": "lib.logging"
     },
     {
       "id": 46,
       "name": "lib/logging/LoggerProvider.js",
-      "package": "lib.logging.LoggerProvider"
+      "package": "lib.logging"
     },
     {
       "id": 47,
       "name": "gulpfile.js",
-      "package": "gulpfile"
+      "package": "root"
     },
     {
       "id": 48,
       "name": "lib/adapters/AdapterBase.js",
-      "package": "lib.adapters.AdapterBase"
+      "package": "lib.adapters"
     },
     {
       "id": 49,
       "name": "lib/common/Configuration.js",
-      "package": "lib.common.Configuration"
+      "package": "lib.common"
     },
     {
       "id": 50,
       "name": "lib/data/validators/validate.js",
-      "package": "lib.data.validators.validate"
+      "package": "lib.data.validators"
     },
     {
       "id": 51,
       "name": "lib/meta.js",
-      "package": "lib.meta"
+      "package": "lib"
     },
     {
       "id": 52,
       "name": "lib/adapters/AdapterForWebSockets.js",
-      "package": "lib.adapters.AdapterForWebSockets"
+      "package": "lib.adapters"
     },
     {
       "id": 53,
       "name": "lib/builder/builders/AlertBuilder.js",
-      "package": "lib.builder.builders.AlertBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 54,
       "name": "lib/builder/builders/ConditionBuilder.js",
-      "package": "lib.builder.builders.ConditionBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 55,
       "name": "lib/builder/builders/PublisherBuilder.js",
-      "package": "lib.builder.builders.PublisherBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 56,
       "name": "lib/builder/builders/ScheduleBuilder.js",
-      "package": "lib.builder.builders.ScheduleBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 57,
       "name": "lib/builder/data/Alert.js",
-      "package": "lib.builder.data.Alert"
+      "package": "lib.builder.data"
     },
     {
       "id": 58,
       "name": "lib/builder/builders/OperatorBuilder.js",
-      "package": "lib.builder.builders.OperatorBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 59,
       "name": "lib/builder/builders/PropertyBuilder.js",
-      "package": "lib.builder.builders.PropertyBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 60,
       "name": "lib/builder/data/Condition.js",
-      "package": "lib.builder.data.Condition"
+      "package": "lib.builder.data"
     },
     {
       "id": 61,
       "name": "lib/builder/builders/ModifierBuilder.js",
-      "package": "lib.builder.builders.ModifierBuilder"
+      "package": "lib.builder.builders"
     },
     {
       "id": 62,
       "name": "lib/builder/data/Modifier.js",
-      "package": "lib.builder.data.Modifier"
+      "package": "lib.builder.data"
     },
     {
       "id": 63,
       "name": "lib/builder/data/Operator.js",
-      "package": "lib.builder.data.Operator"
+      "package": "lib.builder.data"
     },
     {
       "id": 64,
       "name": "lib/builder/data/Property.js",
-      "package": "lib.builder.data.Property"
+      "package": "lib.builder.data"
     },
     {
       "id": 65,
       "name": "lib/builder/data/Publisher.js",
-      "package": "lib.builder.data.Publisher"
+      "package": "lib.builder.data"
     },
     {
       "id": 66,
       "name": "lib/builder/data/Schedule.js",
-      "package": "lib.builder.data.Schedule"
+      "package": "lib.builder.data"
     },
     {
       "id": 67,
       "name": "lib/callbacks/.meta.js",
-      "package": "lib.callbacks..meta"
+      "package": "lib.callbacks"
     },
     {
       "id": 68,
       "name": "lib/data/.meta.js",
-      "package": "lib.data..meta"
+      "package": "lib.data"
     },
     {
       "id": 69,
       "name": "lib/data/validators/alert.js",
-      "package": "lib.data.validators.alert"
+      "package": "lib.data.validators"
     },
     {
       "id": 70,
       "name": "lib/data/validators/condition.js",
-      "package": "lib.data.validators.condition"
+      "package": "lib.data.validators"
     },
     {
       "id": 71,
       "name": "lib/data/validators/publisher.js",
-      "package": "lib.data.validators.publisher"
+      "package": "lib.data.validators"
     },
     {
       "id": 72,
       "name": "lib/data/validators/instrument.js",
-      "package": "lib.data.validators.instrument"
+      "package": "lib.data.validators"
     },
     {
       "id": 73,
       "name": "lib/data/validators/publisherTypeDefault.js",
-      "package": "lib.data.validators.publisherTypeDefault"
+      "package": "lib.data.validators"
     },
     {
       "id": 74,
       "name": "lib/data/validators/template.js",
-      "package": "lib.data.validators.template"
+      "package": "lib.data.validators"
     },
     {
       "id": 75,
       "name": "lib/data/validators/templateCondition.js",
-      "package": "lib.data.validators.templateCondition"
+      "package": "lib.data.validators"
     },
     {
       "id": 76,
       "name": "lib/data/validators/trigger.js",
-      "package": "lib.data.validators.trigger"
+      "package": "lib.data.validators"
     },
     {
       "id": 77,
       "name": "lib/logging/.meta.js",
-      "package": "lib.logging..meta"
+      "package": "lib.logging"
     },
     {
       "id": 78,
       "name": "lib/security/.meta.js",
-      "package": "lib.security..meta"
+      "package": "lib.security"
     },
     {
       "id": 79,
       "name": "lib/security/JwtPayload.js",
-      "package": "lib.security.JwtPayload"
+      "package": "lib.security"
     },
     {
       "id": 80,
       "name": "lib/security/demo/.meta.js",
-      "package": "lib.security.demo..meta"
+      "package": "lib.security.demo"
     },
     {
       "id": 81,
       "name": "test/SpecRunner.js",
-      "package": "test.SpecRunner"
+      "package": "test"
     },
     {
       "id": 82,
       "name": "test/specs/builder/AlertBuilderSpec.js",
-      "package": "test.specs.builder.AlertBuilderSpec"
+      "package": "test.specs.builder"
     },
     {
       "id": 83,
       "name": "test/specs/security/JwtPayloadSpec.js",
-      "package": "test.specs.security.JwtPayloadSpec"
+      "package": "test.specs.security"
     },
     {
       "id": 84,
       "name": "test/specs/validators/alertSpec.js",
-      "package": "test.specs.validators.alertSpec"
+      "package": "test.specs.validators"
     }
   ],
   "links": [
