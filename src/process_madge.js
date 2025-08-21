@@ -3,19 +3,25 @@ const fs = require('fs');
 const path = require('path');
 
 function extractPackageName(filePath) {
-    const normalized = filePath.replace(/\\/g, "/");
+  const normalized = filePath.replace(/\\/g, "/");
 
-    // Find "src/main/js" or "src/test/js"
-    const match = normalized.match(/src\/(main|test)\/js\/(.+)\.js$/);
-    if (match) {
-        const type = match[1]; // main or test
-        const packagePath = match[2].replace(/\//g, "."); // convert slashes to dots
-        return `${type}.js.${packagePath}`;
-    }
+  // js file under src/main/js or src/test/js
+  const match = normalized.match(/src\/(main|test)\/js\/(.+)\/[^/]+\.js$/);
+  if (match) {
+    const type = match[1]; // main or test
+    const packagePath = match[2].replace(/\//g, ".");
+    return `${type}.js.${packagePath}`;
+  }
 
-    //remove .js and replace / with .
-    return normalized.replace(/\.js$/, "").replace(/\//g, ".");
+  //other files in subfolders (exclude filename)
+  if (normalized.includes("/")) {
+    const dirPath = normalized.substring(0, normalized.lastIndexOf("/"));
+    return dirPath.replace(/\//g, ".");
+  }
+
+  return "root";
 }
+
 
 function convertDependencyGraph(dependencyGraph) {
   const nodes = [];
