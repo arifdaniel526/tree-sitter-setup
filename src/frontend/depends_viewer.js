@@ -30,51 +30,85 @@ const zoom = d3
 svg.call(zoom).on("dblclick.zoom", null);
 
 d3.json(jsonFile).then((data) => {
+	const repoBoxLayer = g.append("g").attr("class", "repo-boxes");
 	const boxGroup = g.append("g").attr("class", "boxes");
 	const linkGroup = g.append("g").attr("class", "links");
 	const nodeGroup = g.append("g").attr("class", "nodes");
 	const measureLayer = svg.append("g").attr("visibility", "hidden");
+	let expandedRepoObjects = new Set();
 
 	//
-	// --- 1. Group files into packages ---
+	// --- 1. Group into repos → packages → files ---
 	//
+	const repoMap = new Map();
 	const packageMap = new Map();
+
 	data.nodes.forEach((n) => {
+		const repo = n.repo || "defaultRepo";
 		const pkg = n.package || "root";
-		if (!packageMap.has(pkg)) {
-			packageMap.set(pkg, {
-				id: "pkg:" + pkg,
+
+		if (!repoMap.has(repo)) {
+			repoMap.set(repo, {
+				id: "repo:" + repo,
+				name: repo,
+				type: "repo",
+				packages: [],
+			});
+		}
+		const repoNode = repoMap.get(repo);
+
+		let pkgNode = repoNode.packages.find((p) => p.name === pkg);
+		if (!pkgNode) {
+			pkgNode = {
+				id: `pkg:${repo}:${pkg}`,
+				parentRepo: repo,
 				name: pkg,
 				type: "package",
 				files: [],
-			});
+			};
+			repoNode.packages.push(pkgNode);
+			packageMap.set(`${repo}:${pkg}`, pkgNode);
 		}
-		packageMap.get(pkg).files.push({ ...n, type: "file" });
+		pkgNode.files.push({ ...n, type: "file" });
 	});
 
-	// initial nodes = packages only
-	let nodes = Array.from(packageMap.values());
+	// initial nodes = repos only
+	let nodes = Array.from(repoMap.values());
+
+	// give repos initial positions so they don't start as NaN
+	nodes.forEach((repo, i) => {
+		repo.x = width / 2 + (i * 200 - 100);
+		repo.y = height / 2;
+	});
 
 	//
 	// --- 2. Package-level links ---
 	//
-	let links = data.links.map((l) => {
-		const sPkg = data.nodes.find((n) => n.id === l.source).package;
-		const tPkg = data.nodes.find((n) => n.id === l.target).package;
-		return {
-			source: packageMap.get(sPkg),
-			target: packageMap.get(tPkg),
-		};
-	});
+	let links = data.links
+		.map((l) => {
+			const sNode = data.nodes.find((n) => n.id === l.source);
+			const tNode = data.nodes.find((n) => n.id === l.target);
 
-	// deduplicate package links
+			if (!sNode || !tNode) return null;
+
+			const sRepo = repoMap.get(sNode.repo);
+			const tRepo = repoMap.get(tNode.repo);
+
+			// ignore self-links inside a repo
+			if (!sRepo || !tRepo || sRepo.id === tRepo.id) return null;
+
+			return { source: sRepo, target: tRepo };
+		})
+		.filter((l) => l !== null);
+
+	// deduplicate
 	links = Array.from(
 		new Set(links.map((l) => l.source.id + "->" + l.target.id))
 	).map((key) => {
 		const [s, t] = key.split("->");
 		return {
-			source: nodes.find((n) => n.id === s),
-			target: nodes.find((n) => n.id === t),
+			source: Array.from(repoMap.values()).find((r) => r.id === s),
+			target: Array.from(repoMap.values()).find((r) => r.id === t),
 		};
 	});
 
@@ -165,6 +199,7 @@ d3.json(jsonFile).then((data) => {
 	let selectedNode = null;
 	let expandedPackages = new Set();
 	let groupBoxes = [];
+	let groupRepoBoxes = [];
 
 	function handleClick(event, d) {
 		if (selectedNode === d) {
@@ -223,7 +258,16 @@ d3.json(jsonFile).then((data) => {
 	}
 
 	function handleDblClick(event, d) {
-		if (d.type === "package") {
+		if (d.type === "repo") {
+			// Expand repo → its packages
+			if (expandedRepoObjects.has(d.id)) {
+				collapseRepo(d);
+			} else {
+				expandRepo(d);
+			}
+			restart();
+		} else if (d.type === "package") {
+			// Expand / collapse package → files
 			if (expandedPackages.has(d.id)) {
 				collapsePackage(d);
 			} else {
@@ -231,9 +275,81 @@ d3.json(jsonFile).then((data) => {
 			}
 			restart();
 		} else {
-			// file node double-click still opens in VSCode
+			// File nodes still open code
 			showCodeSnippet(d);
 		}
+	}
+
+	function expandRepo(repoNode) {
+		nodes = nodes.filter((n) => n.id !== repoNode.id);
+		const packages = repoNode.packages;
+
+		// Compute package grid size
+		const maxW = d3.max(packages, (p) => p.bboxWidth || 60);
+		const maxH = d3.max(packages, (p) => p.bboxHeight || 30);
+		const paddingX = 300;
+		const paddingY = 60;
+		const spacing = { x: maxW + paddingX, y: maxH + paddingY };
+
+		const nCols = Math.ceil(Math.sqrt(packages.length));
+		const nRows = Math.ceil(packages.length / nCols);
+
+		// Get a starting non-overlapping position
+		const totalWidth = nCols * spacing.x;
+		const totalHeight = nRows * spacing.y;
+
+		const pos = findNonOverlappingPosition(
+			totalWidth,
+			totalHeight,
+			nodes.filter((n) => n.type === "package" || n.type === "repo"),
+			repoNode.x,
+			repoNode.y
+		);
+
+		const startX = pos.x - ((nCols - 1) * spacing.x) / 2;
+		const startY = pos.y - ((nRows - 1) * spacing.y) / 2;
+
+		packages.forEach((p, i) => {
+			const col = i % nCols;
+			const row = Math.floor(i / nCols);
+			p.x = startX + col * spacing.x;
+			p.y = startY + row * spacing.y;
+			p.vx = p.vx || 0;
+			p.vy = p.vy || 0;
+		});
+
+		nodes.push(...packages);
+		expandedRepoObjects.add(repoNode);
+		groupRepoBoxes.push({
+			repoId: repoNode.id,
+			name: `repo:${repoNode.name}`,
+			packages: packages,
+		});
+
+		updateLinks();
+		restart();
+		updateRepoBoxes();
+	}
+
+	function collapseRepo(repoNode) {
+		expandedRepoObjects.delete(repoNode);
+
+		// collapse all packages first
+		repoNode.packages.forEach((d) => {
+			if (expandedPackages.has(d.id)) {
+				collapsePackage(d);
+			}
+		});
+
+		// remove package nodes + bounding box
+		nodes = nodes.filter((n) => !repoNode.packages.includes(n));
+		//groupRepoBoxes = groupRepoBoxes.filter((g) => g.repoId !== repoNode.id);
+
+		// add back package node
+		nodes.push(repoNode);
+
+		updateLinks();
+		restart();
 	}
 
 	node.on("click", handleClick);
@@ -242,27 +358,49 @@ d3.json(jsonFile).then((data) => {
 
 	// rebuild links depending on which nodes are visible
 	function updateLinks() {
-		links = data.links
-			.map((l) => {
-				let sNode = nodes.find((n) => n.id === l.source);
-				let tNode = nodes.find((n) => n.id === l.target);
+		let newLinks = [];
 
-				if (!sNode) {
-					const sPkg = data.nodes.find(
-						(n) => n.id === l.source
-					).package;
-					sNode = nodes.find((n) => n.id === "pkg:" + sPkg);
-				}
-				if (!tNode) {
-					const tPkg = data.nodes.find(
-						(n) => n.id === l.target
-					).package;
-					tNode = nodes.find((n) => n.id === "pkg:" + tPkg);
-				}
+		data.links.forEach((l) => {
+			const sNode = data.nodes.find((n) => n.id === l.source);
+			const tNode = data.nodes.find((n) => n.id === l.target);
+			if (!sNode || !tNode) return;
 
-				return { source: sNode, target: tNode };
-			})
-			.filter((l) => l.source && l.target);
+			// resolve visible node for source
+			let sVisible = nodes.find((n) => n.id === sNode.id); // file visible?
+			if (!sVisible && sNode.package) {
+				sVisible = nodes.find(
+					(n) => n.id === `pkg:${sNode.repo}:${sNode.package}`
+				);
+			}
+			if (!sVisible) {
+				sVisible = nodes.find((n) => n.id === `repo:${sNode.repo}`);
+			}
+
+			// resolve visible node for target
+			let tVisible = nodes.find((n) => n.id === tNode.id); // file visible?
+			if (!tVisible && tNode.package) {
+				tVisible = nodes.find(
+					(n) => n.id === `pkg:${tNode.repo}:${tNode.package}`
+				);
+			}
+			if (!tVisible) {
+				tVisible = nodes.find((n) => n.id === `repo:${tNode.repo}`);
+			}
+
+			// only keep links between valid visible nodes
+			if (sVisible && tVisible && sVisible.id !== tVisible.id) {
+				newLinks.push({ source: sVisible, target: tVisible });
+			}
+		});
+
+		// deduplicate safely
+		const linkMap = new Map();
+		newLinks.forEach((l) => {
+			const key = l.source.id + "->" + l.target.id;
+			if (!linkMap.has(key)) linkMap.set(key, l);
+		});
+
+		links = Array.from(linkMap.values());
 	}
 
 	//
@@ -284,7 +422,7 @@ d3.json(jsonFile).then((data) => {
 	function expandPackage(pkgNode) {
 		expandedPackages.add(pkgNode.id);
 
-		// remove the package node
+		// remove the package node itself
 		nodes = nodes.filter((n) => n.id !== pkgNode.id);
 
 		const files = pkgNode.files;
@@ -295,20 +433,15 @@ d3.json(jsonFile).then((data) => {
 			const paddingX = 10;
 			const paddingY = 6;
 
-			// measure each file label with SVG
 			const maxW =
 				d3.max(files, (f) => measureTextWidth(fileLabel(f))) + paddingX;
-			const maxH = 12 + paddingY; // assuming ~12px font-size
+			const maxH = 12 + paddingY;
 
-			spacing = {
-				x: maxW * 1.8,
-				y: maxH * 2.2,
-			};
-
+			spacing = { x: maxW * 1.8, y: maxH * 2.2 };
 			pkgSpacing.set(pkgNode.id, spacing);
 		}
 
-		// layout
+		// lay out files inside this package
 		const nCols = Math.ceil(Math.sqrt(files.length));
 		const nRows = Math.ceil(files.length / nCols);
 
@@ -324,19 +457,124 @@ d3.json(jsonFile).then((data) => {
 			f.fy = f.y;
 		});
 
+		// save bounding box size for this package
+		pkgNode.bboxWidth = nCols * spacing.x;
+		pkgNode.bboxHeight = nRows * spacing.y * 2;
+
 		// add file nodes
 		nodes.push(...files);
 
 		// add bounding box metadata
 		groupBoxes.push({
 			packageId: pkgNode.id,
-			name: pkgNode.name,
-			files: files,
+			name: `package:${pkgNode.name}`,
+			files,
+			parentRepo: pkgNode.parentRepo,
+			pkgNode,
 		});
+
+		// --- NEW: re-layout all packages (collapsed + expanded) in this repo ---
+		const repoNode = repoMap.get(pkgNode.parentRepo);
+		if (repoNode) {
+			layoutRepoPackages(repoNode);
+		}
 
 		updateLinks();
 		restart();
 		updateBoxes();
+		updateRepoBoxes();
+	}
+
+	function layoutRepoPackages(repoNode) {
+		if (!repoNode || !repoNode.packages || repoNode.packages.length === 0)
+			return;
+
+		const pkgs = repoNode.packages;
+		const padding = 40; // gap between package cells
+
+		// compute each package's width/height (expanded packages have bboxWidth/Height set)
+		const widths = pkgs.map((p) => p.bboxWidth || 60);
+		const heights = pkgs.map((p) => p.bboxHeight || 30);
+
+		const maxW = d3.max(widths);
+		const maxH = d3.max(heights);
+
+		// cell size is uniform (simpler and avoids column math)
+		const cellW = maxW + padding;
+		const cellH = maxH + padding;
+
+		// grid dims
+		const nCols = Math.max(1, Math.ceil(Math.sqrt(pkgs.length)));
+		const nRows = Math.ceil(pkgs.length / nCols);
+
+		// center the grid on the repoNode center
+		const startX = (repoNode.x || 0) - ((nCols - 1) * cellW) / 2;
+		const startY = (repoNode.y || 0) - ((nRows - 1) * cellH) / 2;
+
+		pkgs.forEach((pkg, i) => {
+			const col = i % nCols;
+			const row = Math.floor(i / nCols);
+
+			const centerX = startX + col * cellW;
+			const centerY = startY + row * cellH;
+
+			// find groupBoxes entry if package is expanded
+			const gb = groupBoxes.find((g) => g.packageId === pkg.id);
+
+			// compute current visible center (for expanded -> center of files; for collapsed -> pkg.x/pkg.y)
+			let currentCenterX = pkg.x || 0;
+			let currentCenterY = pkg.y || 0;
+			if (gb && gb.files && gb.files.length) {
+				// use mean of file positions (more robust than min/max center)
+				currentCenterX = d3.mean(gb.files, (f) => f.x);
+				currentCenterY = d3.mean(gb.files, (f) => f.y);
+			}
+
+			const dx = centerX - currentCenterX;
+			const dy = centerY - currentCenterY;
+
+			// if expanded, translate all files so the visible box moves to center
+			if (gb && gb.files && gb.files.length) {
+				gb.files.forEach((f) => {
+					f.x = (f.x || 0) + dx;
+					f.y = (f.y || 0) + dy;
+					f.fx = f.x;
+					f.fy = f.y;
+				});
+
+				// also update stored pkgNode center if present
+				if (gb.pkgNode) {
+					gb.pkgNode.x = centerX;
+					gb.pkgNode.y = centerY;
+					gb.pkgNode.fx = gb.pkgNode.x;
+					gb.pkgNode.fy = gb.pkgNode.y;
+				}
+			}
+
+			// for collapsed package, or to keep a canonical center for both cases:
+			pkg.x = centerX;
+			pkg.y = centerY;
+			if (pkg.fx != null) {
+				pkg.fx = pkg.x;
+				pkg.fy = pkg.y;
+			}
+
+			// keep any visible package node in `nodes` in-sync
+			const visiblePkgNode = nodes.find((n) => n.id === pkg.id);
+			if (visiblePkgNode) {
+				visiblePkgNode.x = pkg.x;
+				visiblePkgNode.y = pkg.y;
+				visiblePkgNode.fx = pkg.fx;
+				visiblePkgNode.fy = pkg.fy;
+			}
+		});
+
+		// redraw visuals
+		updateBoxes();
+		updateRepoBoxes();
+
+		// nudge simulation so links & others can settle
+		simulation.alpha(0.2).restart();
 	}
 
 	// Collapse package back into single node
@@ -382,11 +620,7 @@ d3.json(jsonFile).then((data) => {
 					n.append("text")
 						.attr("dy", 4)
 						.style("text-anchor", "middle")
-						.text((d) =>
-							d.type === "package"
-								? d.name
-								: d.name.split("\\").pop().split("/").pop()
-						);
+						.text((d) => d.name.split("\\").pop().split("/").pop());
 
 					n.each(function (d) {
 						const g = d3.select(this);
@@ -444,11 +678,13 @@ d3.json(jsonFile).then((data) => {
 			.attr("stroke-dasharray", "4 2")
 			.lower()
 			.on("dblclick", (event, d) => {
-				const pkgNode = packageMap.get(d.name);
+				const pkgNode = packageMap.get(
+					`${d.parentRepo}:${d.name.substring(8)}`
+				);
 				collapsePackage(pkgNode);
 			});
 
-		// Optional: append package name text at top-left
+		// append package name text at top-left
 		boxesEnter
 			.append("text")
 			.attr("class", "pkg-name")
@@ -516,10 +752,12 @@ d3.json(jsonFile).then((data) => {
 		});
 
 		simulation.force("link").links(links);
-		simulation.nodes(nodes);
+		//simulation.nodes(nodes);
 		simulation.tick();
 		ticked();
 		updateBoxes();
+		updateRepoBoxes();
+		forceRepoBoxRepel();
 	}
 
 	//
@@ -542,6 +780,7 @@ d3.json(jsonFile).then((data) => {
 			"collide",
 			d3.forceCollide((d) => 130)
 		)
+		.force("repoBoxRepel", forceRepoBoxRepel)
 		//.force("boxRepel", forceBoxRepel(-5))
 		.alphaDecay(0.05)
 		.velocityDecay(0.5)
@@ -551,7 +790,9 @@ d3.json(jsonFile).then((data) => {
 		link.attr("d", linkPath);
 
 		node.attr("transform", (d) => `translate(${d.x},${d.y})`);
+
 		updateBoxes();
+		updateRepoBoxes();
 	}
 
 	//
@@ -596,6 +837,7 @@ d3.json(jsonFile).then((data) => {
 		d.fy = event.y;
 		// Let the tick handler move links/nodes. But keep boxes in sync now:
 		updateBoxes();
+		updateRepoBoxes();
 		//simulation.alpha(0).restart();
 
 		// move dragged node
@@ -619,21 +861,120 @@ d3.json(jsonFile).then((data) => {
 	}
 
 	function boxDragged(event, d) {
-		// Shift all files by the drag delta
+		const dx = event.dx || 0;
+		const dy = event.dy || 0;
+
+		// move files
 		d.files.forEach((f) => {
-			f.fx += event.dx;
-			f.fy += event.dy;
+			f.fx += dx;
+			f.fy += dy;
 			f.x = f.fx;
 			f.y = f.fy;
 		});
 
-		updateBoxes(); // resize + reposition box
-		simulation.alpha(0).restart(); // heat sim so others react (repel)
+		// also move the underlying package node reference
+		if (d.pkgNode) {
+			d.pkgNode.x = (d.pkgNode.x || 0) + dx;
+			d.pkgNode.y = (d.pkgNode.y || 0) + dy;
+
+			if (d.pkgNode.fx != null) {
+				d.pkgNode.fx += dx;
+				d.pkgNode.fy += dy;
+			} else {
+				d.pkgNode.fx = d.pkgNode.x;
+				d.pkgNode.fy = d.pkgNode.y;
+			}
+		}
+
+		updateBoxes();
+		updateRepoBoxes(); // now repo box sees new pkgNode coords
+		simulation.alpha(0).restart();
 	}
 
 	function boxDragEnded(event, d) {
 		// Release all children so sim can move them again
 		d.files.forEach((f) => {
+			f.fx = f.x;
+			f.fy = f.y;
+		});
+		//updateBoxes(); // resize + reposition box
+	}
+
+	function repoBoxDragStarted(event, d) {
+		// Fix positions of all children before drag
+		d.packages.forEach((f) => {
+			f.fx = f.x;
+			f.fy = f.y;
+		});
+	}
+
+	function repoBoxDragged(event, repoNode) {
+		const dx = event.dx || 0;
+		const dy = event.dy || 0;
+
+		// update repo's own center (optional bookkeeping)
+		repoNode.x = (repoNode.x || 0) + dx;
+		repoNode.y = (repoNode.y || 0) + dy;
+
+		// 1. move all package nodes (expanded or not)
+		(repoNode.packages || []).forEach((pkg) => {
+			pkg.x = (pkg.x || 0) + dx;
+			pkg.y = (pkg.y || 0) + dy;
+
+			if (pkg.fx != null) {
+				pkg.fx += dx;
+				pkg.fy += dy;
+			} else {
+				pkg.fx = pkg.x;
+				pkg.fy = pkg.y;
+			}
+
+			// 2. move all files in this package
+			(pkg.files || []).forEach((f) => {
+				f.x = (f.x || 0) + dx;
+				f.y = (f.y || 0) + dy;
+
+				if (f.fx != null) {
+					f.fx += dx;
+					f.fy += dy;
+				} else {
+					f.fx = f.x;
+					f.fy = f.y;
+				}
+			});
+		});
+
+		// 3. Optional: nudge drawn pkg-box <g> elements for immediate visual feedback
+		g.selectAll(".pkg-box")
+			.filter((pb) => pb.repo === repoNode.id)
+			.each(function (pb) {
+				const el = d3.select(this);
+				const prev = el.attr("transform") || "translate(0,0)";
+				const m = prev.match(
+					/translate\(\s*([-\d.]+)[ ,]+([-\d.]+)\s*\)/
+				);
+				let x = 0,
+					y = 0;
+				if (m) {
+					x = +m[1];
+					y = +m[2];
+				}
+				x += dx;
+				y += dy;
+				el.attr("transform", `translate(${x},${y})`);
+			});
+
+		// redraw bounding boxes
+		updateBoxes();
+		updateRepoBoxes();
+
+		// restart simulation
+		simulation.alpha(0).restart();
+	}
+
+	function repoBoxDragEnded(event, d) {
+		// Release all children so sim can move them again
+		d.packages.forEach((f) => {
 			f.fx = f.x;
 			f.fy = f.y;
 		});
@@ -690,6 +1031,197 @@ d3.json(jsonFile).then((data) => {
 			// update package name label
 			gBox.select("text.pkg-name").attr("x", 8).attr("y", 16);
 		});
+	}
+
+	function updateRepoBoxes() {
+		// repos that have visible packages
+		//console.log(expandedRepoObjects);
+		const repoBoxes = repoBoxLayer
+			.selectAll(".repo-box")
+			.data(expandedRepoObjects, (d) => d.id);
+
+		// ENTER
+		const boxEnter = repoBoxes
+			.enter()
+			.append("g")
+			.attr("class", "repo-box");
+
+		boxEnter.call(
+			d3
+				.drag()
+				.on("start", repoBoxDragStarted)
+				.on("drag", repoBoxDragged)
+				.on("end", repoBoxDragEnded)
+		);
+
+		boxEnter
+			.append("rect")
+			.attr("rx", 12)
+			.attr("ry", 12)
+			.attr("fill", "#f0f0f0")
+			.attr("stroke", "#999")
+			.attr("stroke-width", 1.5)
+			.attr("opacity", 0.3)
+			.on("dblclick", (event, d) => {
+				const repoNode = repoMap.get(d.name);
+				collapseRepo(repoNode);
+			});
+
+		boxEnter
+			.append("text")
+			.attr("class", "repo-name")
+			.style("font-size", "12px")
+			.style("font-weight", "bold")
+			.attr("fill", "#333");
+
+		// EXIT
+		repoBoxes.exit().remove();
+
+		// MERGE enter + update
+		const boxesMerge = boxEnter.merge(repoBoxes);
+
+		boxesMerge.each(function (d) {
+			const packages = d.packages;
+			if (!packages.length) return;
+
+			const minX =
+				d3.min(packages, (p) => (p.x || 0) - (p.bboxWidth || 60) / 2) -
+				30;
+			const maxX =
+				d3.max(packages, (p) => (p.x || 0) + (p.bboxWidth || 60) / 2) +
+				30;
+			const minY =
+				d3.min(packages, (p) => (p.y || 0) - (p.bboxHeight || 30) / 2) -
+				30;
+			const maxY =
+				d3.max(packages, (p) => (p.y || 0) + (p.bboxHeight || 30) / 2) +
+				30;
+
+			const boxWidth = maxX - minX;
+			const boxHeight = maxY - minY + 30;
+
+			// save bounds for force
+			d.bounds = { minX, maxX, minY, maxY };
+
+			const gBox = d3
+				.select(this)
+				.attr("transform", `translate(${minX},${minY - 20})`);
+
+			// ALWAYS update rect and text
+			gBox.select("rect")
+				.attr("width", boxWidth)
+				.attr("height", boxHeight);
+
+			gBox.select("text.repo-name").attr("x", 8).attr("y", 16).text(d.id);
+		});
+	}
+
+	function findNonOverlappingPosition(
+		newWidth,
+		newHeight,
+		existingBoxes,
+		startX,
+		startY,
+		padding = 50
+	) {
+		let x = startX;
+		let y = startY;
+		let safe = false;
+		let attempts = 0;
+
+		while (!safe && attempts < 1000) {
+			safe = true;
+			for (let box of existingBoxes) {
+				const bx = box.x || 0;
+				const by = box.y || 0;
+				const bw = box.bboxWidth || 100;
+				const bh = box.bboxHeight || 50;
+
+				const overlapX = Math.max(
+					0,
+					Math.min(x + newWidth / 2, bx + bw / 2) -
+						Math.max(x - newWidth / 2, bx - bw / 2)
+				);
+				const overlapY = Math.max(
+					0,
+					Math.min(y + newHeight / 2, by + bh / 2) -
+						Math.max(y - newHeight / 2, by - bh / 2)
+				);
+
+				if (overlapX > 0 && overlapY > 0) {
+					safe = false;
+					x += newWidth + padding; // move to the right
+					if (x > window.innerWidth - newWidth) {
+						x = padding;
+						y += newHeight + padding; // move down if hit edge
+					}
+					break;
+				}
+			}
+			attempts++;
+		}
+		return { x, y };
+	}
+
+	function forceRepoBoxRepel() {
+		for (let i = 0; i < expandedRepoObjects.length; i++) {
+			const a = expandedRepoObjects[i];
+			const aBounds = a.bounds || {
+				minX: a.x - 50,
+				maxX: a.x + 50,
+				minY: a.y - 50,
+				maxY: a.y + 50,
+			};
+			for (let j = i + 1; j < expandedRepoObjects.length; j++) {
+				const b = expandedRepoObjects[j];
+				const bBounds = b.bounds || {
+					minX: b.x - 50,
+					maxX: b.x + 50,
+					minY: b.y - 50,
+					maxY: b.y + 50,
+				};
+
+				// compute horizontal overlap
+				const overlapX = Math.max(
+					0,
+					Math.min(aBounds.maxX, bBounds.maxX) -
+						Math.max(aBounds.minX, bBounds.minX)
+				);
+				const overlapY = Math.max(
+					0,
+					Math.min(aBounds.maxY, bBounds.maxY) -
+						Math.max(aBounds.minY, bBounds.minY)
+				);
+
+				if (overlapX > 0 && overlapY > 0) {
+					// push them apart along the largest overlap
+					const pushX = overlapX * 0.5;
+					const pushY = overlapY * 0.5;
+
+					if (overlapX > overlapY) {
+						// push horizontally
+						a.packages.forEach((p) => {
+							p.vx += pushX;
+						});
+						b.packages.forEach((p) => {
+							p.vx -= pushX;
+						});
+						a.x += pushX;
+						b.x -= pushX;
+					} else {
+						// push vertically
+						a.packages.forEach((p) => {
+							p.vy += pushY;
+						});
+						b.packages.forEach((p) => {
+							p.vy -= pushY;
+						});
+						a.y += pushY;
+						b.y -= pushY;
+					}
+				}
+			}
+		}
 	}
 
 	// 	function forceBoxRepel(strength = -0.8) {
