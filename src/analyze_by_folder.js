@@ -88,7 +88,7 @@ async function main(projectPath) {
         }
 
         // verify output folder exists
-        const outputDir = path.join(__dirname, "Output");
+        const outputDir = path.join(__dirname, "..", "Output");
         await fs.mkdir(outputDir, { recursive: true });
 
         // build hierarchical JSON root
