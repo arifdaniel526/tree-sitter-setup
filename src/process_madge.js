@@ -22,7 +22,22 @@ function extractPackageName(filePath) {
 	return "root";
 }
 
-function convertDependencyGraph(dependencyGraph) {
+function extractRepoName(rootPath, filePath) {
+	const normalized = filePath.replace(/\\/g, "/");
+	const normalizedRoot = rootPath.replace(/\\/g, "/");
+
+	const splitName = path.dirname(normalized).split("/");
+	const rootSplit = normalizedRoot.split("/");
+
+	let repoPath = splitName[0];
+	if (repoPath == "src") {
+		repoPath = rootSplit[rootSplit.length - 1];
+	}
+	// console.log(rootSplit, normalizedRoot);
+	return repoPath;
+}
+
+function convertDependencyGraph(dependencyGraph, projectPath) {
 	const nodes = [];
 	const links = [];
 	const idMap = {}; // map file → id
@@ -35,6 +50,7 @@ function convertDependencyGraph(dependencyGraph) {
 				id: idMap[file],
 				name: file,
 				package: extractPackageName(file),
+				repo: extractRepoName(projectPath, file),
 			});
 		}
 
@@ -45,6 +61,7 @@ function convertDependencyGraph(dependencyGraph) {
 					id: idMap[dep],
 					name: dep,
 					package: extractPackageName(dep),
+					repo: extractRepoName(projectPath, dep),
 				});
 			}
 
@@ -72,21 +89,19 @@ function saveMadgeResult(filename, data) {
 	console.log(`Result saved to ${outputFile}`);
 }
 
-async function runMadge() {
-	const projectPath =
-		"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\test";
-
+async function runMadge(projectPath) {
 	try {
 		const result = await madge(projectPath);
 		const dependencyGraph = result.obj(); //Returns an Object with all dependencies.
 
 		saveMadgeResult("madge_out.json", dependencyGraph);
 
-		const output = convertDependencyGraph(dependencyGraph);
+		const output = convertDependencyGraph(dependencyGraph, projectPath);
 		saveMadgeResult("process_madge.json", output);
+		return output;
 	} catch (err) {
 		console.error("Madge failed", err);
 	}
 }
 
-runMadge();
+module.exports = { runMadge };

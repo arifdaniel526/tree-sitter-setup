@@ -111,23 +111,28 @@ async function parseDependsOutput(filePath, rootPath) {
 		console.log(
 			`Saved processed file at: ${filePath}processed_depends.json`
 		);
+		return processedData;
 	} catch (parseError) {
 		console.error(`JSON parse error: ${parseError}`);
 	}
 }
 
-async function processDepends() {
+async function processDepends(rootPath) {
 	try {
 		// testing
-		const rootPath =
-			//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\maybank assignment\\backend-assignment";
-			"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\backend";
-		//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\frontend\\hr-talent-review-web"
+
 		await runDepends("java", rootPath);
-		await parseDependsOutput("..\\Output\\", rootPath);
+		const res = await parseDependsOutput("..\\Output\\", rootPath);
+		return res;
 	} catch (err) {
 		console.error(err);
 	}
 }
 
-processDepends();
+const rootPath =
+	"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\maybank assignment\\backend-assignment";
+//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\backend";
+//"C:\\Users\\yosoo\\OneDrive - Deloitte (O365D)\\Documents\\App Modernisation\\talent-review\\frontend\\hr-talent-review-web"
+//processDepends(rootPath);
+
+module.exports = { processDepends };

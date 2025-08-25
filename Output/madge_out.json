@@ -1,1939 +1,1939 @@
 {
-  "hr-talent-review-web/src/PopupContent/AuditDetails.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/Popup1.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/Popup2.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/Popup3.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/Popup4.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/Popup5.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/Popup6.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/UploadCrash.js": [
-    "hr-talent-review-web/src/assets/img/Error.png",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/PopupContent/UploadError.js": [
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/assets/Talent.jpg": [],
-  "hr-talent-review-web/src/assets/img/Error.png": [],
-  "hr-talent-review-web/src/assets/img/deloitte_logo-removebg-preview.png": [],
-  "hr-talent-review-web/src/components/AuditLogRefactor/ActivityLog.js": [
-    "hr-talent-review-web/src/components/AuditLogRefactor/AuditLogTable.js",
-    "hr-talent-review-web/src/components/AuditLogRefactor/useFetch.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/mapper/audit-log/auditLogMapper.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/PaginationIconFilter.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/AuditLogRefactor/AuditLog.js": [
-    "hr-talent-review-web/src/components/AuditLogRefactor/AuditLogTable.js",
-    "hr-talent-review-web/src/components/AuditLogRefactor/useFetch.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/mapper/audit-log/auditLogMapper.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/PaginationIconFilter.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/AuditLogRefactor/AuditLogFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/AuditLogRefactor/AuditLogTable.js": [
-    "hr-talent-review-web/src/PopupContent/AuditDetails.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/AuditLogRefactor/useFetch.js": [
-    "hr-talent-review-web/src/components/AuditLogRefactor/ActivityLog.js",
-    "hr-talent-review-web/src/components/AuditLogRefactor/AuditLog.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/components/ButtonPrimary.js": [
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/ButtonSecondary.js": [
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/Filter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js"
-  ],
-  "hr-talent-review-web/src/components/NSRAutomation/DirectorSMList.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/NSRAutomation/FinanceStickyHeader.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/NSRAutomation/FinanceStickyHeader.js": [
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/NSRAutomation/ManagerList.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/NSRAutomation/StickyHeader.js": [
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js": [],
-  "hr-talent-review-web/src/components/NSRInquiry/NSRInquiryPopup.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/shared/PopUpDialog.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/NSRInquiry/NSRInquiryTableRow.js": [
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/Navbar.js": [
-    "hr-talent-review-web/src/assets/img/deloitte_logo-removebg-preview.png",
-    "hr-talent-review-web/src/components/NavigationDropdown.js",
-    "hr-talent-review-web/src/components/language-setting/LanguageSettingDialog.js",
-    "hr-talent-review-web/src/components/shared/NavBarLoader.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/routes.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/components/NavigationDropdown.js": [
-    "hr-talent-review-web/src/context/PathContext.js",
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/components/Pagination.js": [],
-  "hr-talent-review-web/src/components/PopUpModel.js": [],
-  "hr-talent-review-web/src/components/SnackbarWrapper.js": [
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/components/SwitchComponent.js": [],
-  "hr-talent-review-web/src/components/TableWrapper.js": [],
-  "hr-talent-review-web/src/components/cnb-maintenance/CustomClipboard.js": [],
-  "hr-talent-review-web/src/components/cnb-maintenance/SignatoryTable.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb-maintenance/SuggestionBlot.js": [],
-  "hr-talent-review-web/src/components/cnb-maintenance/SystemSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb-maintenance/TemplateTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/CnbPerfCycleDropdown.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/CnbReleasedLetterInquiryTable.js": [
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/CnbTable.js": [
-    "hr-talent-review-web/src/components/cnb/CnbTableRow.js",
-    "hr-talent-review-web/src/components/cnb/ColFIlterHeader.js",
-    "hr-talent-review-web/src/components/cnb/CommentDialog.js",
-    "hr-talent-review-web/src/components/cnb/StatusHistoryDialog.js",
-    "hr-talent-review-web/src/components/cnb/StickyHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/CnbTableRow.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/cnb/MemoizedSelect.js",
-    "hr-talent-review-web/src/components/cnb/MemoizedTextField.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js",
-    "hr-talent-review-web/src/view/CnbInquiry.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/ColFIlterHeader.js": [
-    "hr-talent-review-web/src/components/cnb/ColumnFilter.js",
-    "hr-talent-review-web/src/components/cnb/DateColumnFilter.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/ColumnFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/cnb/ListRenderer.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/CommentDialog.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/DateColumnFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/inquiry/DateFilter.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/ListRenderer.js": [
-    "hr-talent-review-web/src/utility/commonFunction.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/MemoizedSelect.js": [],
-  "hr-talent-review-web/src/components/cnb/MemoizedTextField.js": [],
-  "hr-talent-review-web/src/components/cnb/MultiUpdateDialog.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/ReleaseLetterFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/SelectAllDialog.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/StatusHistoryDialog.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/StickyHeader.js": [
-    "hr-talent-review-web/src/components/cnb/ColFIlterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/permissionWorker.js": [
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js"
-  ],
-  "hr-talent-review-web/src/components/cnb/worker.js": [],
-  "hr-talent-review-web/src/components/cr-analysis/PostMCReview.js": [
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cr-analysis/PostOLReview.js": [
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/cr-analysis/PostPLReview.js": [
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/distribution-curve/Distribution.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js",
-    "hr-talent-review-web/src/view/DistributionCurve.js"
-  ],
-  "hr-talent-review-web/src/components/distribution-curve/DistributionFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/filterFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/ComplianceSection.js": [
-    "hr-talent-review-web/src/config.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/KPIAchievement.js": [
-    "hr-talent-review-web/src/PopupContent/Popup2.js",
-    "hr-talent-review-web/src/config.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/Notes.js": [
-    "hr-talent-review-web/src/config.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/PerformanceSnapshot.js": [
-    "hr-talent-review-web/src/config.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/PerformanceZoneDec.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/config.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/ProfileSection.js": [
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/employee-profile/ProfileSectionSkeleton.js": [],
-  "hr-talent-review-web/src/components/employee-profile/PromotionDecision.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/config.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/financialTarget/FinTargetTableRow.js": [
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/view/FinancialTarget.js"
-  ],
-  "hr-talent-review-web/src/components/gender-review/GenderFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/filterFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/gender-review/PostMCReview.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/gender-review/PostPLReview.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/AccessGroupSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/ActionSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/FunctionMaintenanceSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/UserGroupSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/UserMaintenanceSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/UserRoleSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/iam/table/RoleFunctionActionTable.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/AccessGroupTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/ActionTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/FunctionMaintenanceTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/RoleFunctionActionTable.js": [
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/UserGroupTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/UserMaintenanceTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/table/UserRoleTable.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/utils/IAMFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/iam/utils/IAMFormSkeleton.js": [],
-  "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js": [
-    "hr-talent-review-web/src/components/inquiry/ColumnFilter.js",
-    "hr-talent-review-web/src/components/inquiry/DateColumnFilter.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/CollapibleSummary.js": [],
-  "hr-talent-review-web/src/components/inquiry/CollapsibleTd.js": [],
-  "hr-talent-review-web/src/components/inquiry/ColumnFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/inquiry/ListRenderer.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/DateColumnFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/inquiry/DateFilter.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/DateFilter.js": [
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/inquiry/utility/mapper.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/EditDialog.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/InquiryTable.js": [
-    "hr-talent-review-web/src/components/inquiry/CollapibleSummary.js",
-    "hr-talent-review-web/src/components/inquiry/InquiryTableRow.js",
-    "hr-talent-review-web/src/components/inquiry/ThirdRowHeader.js",
-    "hr-talent-review-web/src/components/inquiry/sticky-header/StickyHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/InquiryTableRow.js": [
-    "hr-talent-review-web/src/components/inquiry/CollapsibleTd.js",
-    "hr-talent-review-web/src/components/inquiry/EditDialog.js",
-    "hr-talent-review-web/src/components/inquiry/review/DisplayNameTd.js",
-    "hr-talent-review-web/src/components/inquiry/review/MCReviewTable.js",
-    "hr-talent-review-web/src/components/inquiry/review/OLReviewTable.js",
-    "hr-talent-review-web/src/components/inquiry/review/PLReviewTable.js",
-    "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/ListRenderer.js": [
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/ReviewTableRow.js": [],
-  "hr-talent-review-web/src/components/inquiry/ThirdRowHeader.js": [
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/CollapsibleTd.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/review/DisplayNameTd.js": [
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/review/MCReviewTable.js": [
-    "hr-talent-review-web/src/components/inquiry/CollapsibleTd.js",
-    "hr-talent-review-web/src/components/inquiry/EditDialog.js",
-    "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/review/OLReviewTable.js": [
-    "hr-talent-review-web/src/components/inquiry/CollapsibleTd.js",
-    "hr-talent-review-web/src/components/inquiry/EditDialog.js",
-    "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/review/PLReviewTable.js": [
-    "hr-talent-review-web/src/components/inquiry/CollapsibleTd.js",
-    "hr-talent-review-web/src/components/inquiry/EditDialog.js",
-    "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/sticky-header/CollapsibleSummaryDiv.js": [],
-  "hr-talent-review-web/src/components/inquiry/sticky-header/CollapsibleTdDiv.js": [],
-  "hr-talent-review-web/src/components/inquiry/sticky-header/StickyHeader.js": [
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/sticky-header/CollapsibleSummaryDiv.js",
-    "hr-talent-review-web/src/components/inquiry/sticky-header/CollapsibleTdDiv.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js": [
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/utility/constant.js": [
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/components/inquiry/utility/mapper.js": [],
-  "hr-talent-review-web/src/components/inquiry/utility/useFetch.js": [
-    "hr-talent-review-web/src/components/inquiry/utility/commonFunction.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/kpi-weightage/CareerWeightage.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/kpi-weightage/SipperWeightage.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/kpi-weightage/mockData.js": [],
-  "hr-talent-review-web/src/components/kpi-weightage/mockDataSipper.js": [],
-  "hr-talent-review-web/src/components/language-setting/LanguageSettingDialog.js": [
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/mapper/audit-log/auditLogMapper.js": [
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/overall/OverallFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/filterFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/overall/OverallReview.js": [
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/overall/PostMCReview.js": [
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/overall/PostOLReview.js": [
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/overall/PostPLReview.js": [
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/parameters/AddOfferingDialog.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/parameters/AddParamDialog.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/promotion-review/BudgetedSvsApprovesS.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/promotion-review/CarrerCountry.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/promotion-review/PortfolioCarrer.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/promotion-review/PortfolioCountry.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/promotion-review/PromotionFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/filterFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/quaterlyKpi/CoachView.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/quaterlyKpi/KpiDataTable.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js",
-    "hr-talent-review-web/src/view/QuarterlyKPI.js"
-  ],
-  "hr-talent-review-web/src/components/quaterlyKpi/CoacheeView.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/quaterlyKpi/KpiDataTable.js",
-    "hr-talent-review-web/src/view/QuarterlyKPI.js"
-  ],
-  "hr-talent-review-web/src/components/quaterlyKpi/KpiDataTable.js": [
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/score-outcome-table/KPITab.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/score-outcome-table/KPITabRow.js",
-    "hr-talent-review-web/src/components/score-outcome-table/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/score-outcome-table/KPITabRow.js": [
-    "hr-talent-review-web/src/components/score-outcome-table/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/score-outcome-table/SnapshotKPI.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/score-outcome-table/utility/constant.js": [],
-  "hr-talent-review-web/src/components/shared/DeleteIcon.js": [],
-  "hr-talent-review-web/src/components/shared/EditIcon.js": [],
-  "hr-talent-review-web/src/components/shared/HostPagination.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js"
-  ],
-  "hr-talent-review-web/src/components/shared/IconFilter.js": [
-    "hr-talent-review-web/src/components/AuditLogRefactor/AuditLogFilter.js",
-    "hr-talent-review-web/src/components/cnb/ReleaseLetterFilter.js",
-    "hr-talent-review-web/src/components/distribution-curve/DistributionFilter.js",
-    "hr-talent-review-web/src/components/gender-review/GenderFilter.js",
-    "hr-talent-review-web/src/components/iam/utils/IAMFilter.js",
-    "hr-talent-review-web/src/components/overall/OverallFilter.js",
-    "hr-talent-review-web/src/components/promotion-review/PromotionFilter.js",
-    "hr-talent-review-web/src/components/upload-file/UploadFilter.js",
-    "hr-talent-review-web/src/components/zone-movement/ZoneFilter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/shared/Loader.js": [],
-  "hr-talent-review-web/src/components/shared/NavBarLoader.js": [],
-  "hr-talent-review-web/src/components/shared/NumericInput.js": [
-    "hr-talent-review-web/src/utility/commonFunction.js"
-  ],
-  "hr-talent-review-web/src/components/shared/OverflowCell.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js"
-  ],
-  "hr-talent-review-web/src/components/shared/PaginationIconFilter.js": [
-    "hr-talent-review-web/src/components/AuditLogRefactor/AuditLogFilter.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/shared/PopUpDialog.js": [],
-  "hr-talent-review-web/src/components/shared/RangeFilter.js": [
-    "hr-talent-review-web/src/utility/commonFunction.js"
-  ],
-  "hr-talent-review-web/src/components/shared/SkeletonCloner.js": [],
-  "hr-talent-review-web/src/components/shared/WarningDialogs.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js"
-  ],
-  "hr-talent-review-web/src/components/system-maintenance/NSROffering.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js",
-    "hr-talent-review-web/src/components/system-maintenance/offering.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/system-maintenance/NSRSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/system-maintenance/SystemSetting.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/system-maintenance/UserSetting.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/system-maintenance/offering.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/parameters/AddOfferingDialog.js",
-    "hr-talent-review-web/src/components/parameters/AddParamDialog.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/system-maintenance/portfolio.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/parameters/AddParamDialog.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/upload-file/FileUploadHistory.js": [
-    "hr-talent-review-web/src/PopupContent/UploadCrash.js",
-    "hr-talent-review-web/src/PopupContent/UploadError.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/upload-file/FileUploadList.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/upload-file/UploadFile.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/upload-file/UploadFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/filterFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/AfterGuideline.js": [
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/zone-movement/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/Final.js": [
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/zone-movement/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/PostOL.js": [
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/zone-movement/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/PostPL.js": [
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/zone-movement/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/SystemGenerated.js": [
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/components/zone-movement/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/ZoneFilter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/filterFunction.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/components/zone-movement/utility/commonFunction.js": [],
-  "hr-talent-review-web/src/config.js": [],
-  "hr-talent-review-web/src/context/DataContext.js": [
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/context/PathContext.js": [],
-  "hr-talent-review-web/src/event/AuthEventListener.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useInterval.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/hook/useAFKDetection.js": [],
-  "hr-talent-review-web/src/hook/useInterval.js": [],
-  "hr-talent-review-web/src/hook/usePerfCycle.js": [
-    "hr-talent-review-web/src/context/DataContext.js"
-  ],
-  "hr-talent-review-web/src/hook/useViewPermissionChecker.js": [
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/i18n.js": [],
-  "hr-talent-review-web/src/index.css": [],
-  "hr-talent-review-web/src/index.js": [
-    "hr-talent-review-web/src/components/shared/Loader.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/i18n.js",
-    "hr-talent-review-web/src/index.css",
-    "hr-talent-review-web/src/layout/Auth.js",
-    "hr-talent-review-web/src/layout/Authenticated.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/signinUtils.js",
-    "hr-talent-review-web/src/view/Inquiry.js"
-  ],
-  "hr-talent-review-web/src/layout/Auth.js": [
-    "hr-talent-review-web/src/routes.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/layout/Authenticated.js": [
-    "hr-talent-review-web/src/components/Navbar.js",
-    "hr-talent-review-web/src/context/PathContext.js",
-    "hr-talent-review-web/src/event/AuthEventListener.js",
-    "hr-talent-review-web/src/routes.js"
-  ],
-  "hr-talent-review-web/src/routes.js": [
-    "hr-talent-review-web/src/components/cnb-maintenance/SystemSetting.js",
-    "hr-talent-review-web/src/components/iam/AccessGroupSetting.js",
-    "hr-talent-review-web/src/components/system-maintenance/NSROffering.js",
-    "hr-talent-review-web/src/components/system-maintenance/NSRSetting.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/view/AccessGrpConfiguration.js",
-    "hr-talent-review-web/src/view/ActionConfiguration.js",
-    "hr-talent-review-web/src/view/AuditReviewRefactor.js",
-    "hr-talent-review-web/src/view/CRAnalysis.js",
-    "hr-talent-review-web/src/view/CnbInquiry.js",
-    "hr-talent-review-web/src/view/CnbLetterRecommend.js",
-    "hr-talent-review-web/src/view/CnbLetterTemplate.js",
-    "hr-talent-review-web/src/view/CnbLetterTemplateDetails.js",
-    "hr-talent-review-web/src/view/CnbReleasedLetterInquiry.js",
-    "hr-talent-review-web/src/view/CnbSignatoryDetails.js",
-    "hr-talent-review-web/src/view/CnbSignatoryMaintenance.js",
-    "hr-talent-review-web/src/view/DevSignin.js",
-    "hr-talent-review-web/src/view/DistributionCurve.js",
-    "hr-talent-review-web/src/view/EmployeeProfile.js",
-    "hr-talent-review-web/src/view/FileUpload.js",
-    "hr-talent-review-web/src/view/FinKPISummary.js",
-    "hr-talent-review-web/src/view/FinancialTarget.js",
-    "hr-talent-review-web/src/view/ForgotPassword.js",
-    "hr-talent-review-web/src/view/FunctionMaintenanceConfiguration.js",
-    "hr-talent-review-web/src/view/Gender.js",
-    "hr-talent-review-web/src/view/Home.js",
-    "hr-talent-review-web/src/view/IAMMaintenance.js",
-    "hr-talent-review-web/src/view/Inquiry.js",
-    "hr-talent-review-web/src/view/KPIWeightage.js",
-    "hr-talent-review-web/src/view/LogoutPage.js",
-    "hr-talent-review-web/src/view/MandotoryELearning.js",
-    "hr-talent-review-web/src/view/NSRInquiry.js",
-    "hr-talent-review-web/src/view/Overall.js",
-    "hr-talent-review-web/src/view/Parameter.js",
-    "hr-talent-review-web/src/view/ParameterDetail.js",
-    "hr-talent-review-web/src/view/PerformanceOutcomeandZone.js",
-    "hr-talent-review-web/src/view/PortfolioNOffering.js",
-    "hr-talent-review-web/src/view/PromotionDetails.js",
-    "hr-talent-review-web/src/view/PromotionSlots.js",
-    "hr-talent-review-web/src/view/QuarterlyKPI.js",
-    "hr-talent-review-web/src/view/ScoreOutcomeTable.js",
-    "hr-talent-review-web/src/view/Signin.js",
-    "hr-talent-review-web/src/view/SystemMaintenance.js",
-    "hr-talent-review-web/src/view/UnauthorizedErrorPage.js",
-    "hr-talent-review-web/src/view/UserGroupConfiguration.js",
-    "hr-talent-review-web/src/view/UserMaintenanceConfiguration.js",
-    "hr-talent-review-web/src/view/UserRoleConfiguration.js",
-    "hr-talent-review-web/src/view/ZoneMovement.js"
-  ],
-  "hr-talent-review-web/src/setupTests.js": [],
-  "hr-talent-review-web/src/utility/api.js": [
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/utility/commonFunction.js": [
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js"
-  ],
-  "hr-talent-review-web/src/utility/constant.js": [],
-  "hr-talent-review-web/src/utility/errorConstant.js": [],
-  "hr-talent-review-web/src/utility/filterFunction.js": [
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js"
-  ],
-  "hr-talent-review-web/src/utility/formatter/displayFormatter.js": [
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js"
-  ],
-  "hr-talent-review-web/src/utility/formatter/formatType.js": [],
-  "hr-talent-review-web/src/utility/permission.js": [],
-  "hr-talent-review-web/src/utility/routesConstant.js": [],
-  "hr-talent-review-web/src/utility/signinUtils.js": [
-    "hr-talent-review-web/src/utility/api.js"
-  ],
-  "hr-talent-review-web/src/utility/translation.js": [],
-  "hr-talent-review-web/src/view/AccessGrpConfiguration.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/AccessGroupSetting.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/ActionConfiguration.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/ActionSetting.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/AuditReviewRefactor.js": [
-    "hr-talent-review-web/src/components/AuditLogRefactor/ActivityLog.js",
-    "hr-talent-review-web/src/components/AuditLogRefactor/AuditLog.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CRAnalysis.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/cr-analysis/PostMCReview.js",
-    "hr-talent-review-web/src/components/cr-analysis/PostOLReview.js",
-    "hr-talent-review-web/src/components/cr-analysis/PostPLReview.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbInquiry.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/cnb/CnbTable.js",
-    "hr-talent-review-web/src/components/cnb/MultiUpdateDialog.js",
-    "hr-talent-review-web/src/components/cnb/SelectAllDialog.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbLetterRecommend.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbLetterTemplate.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/cnb-maintenance/TemplateTable.js",
-    "hr-talent-review-web/src/components/cnb/CnbPerfCycleDropdown.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbLetterTemplateDetails.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/cnb-maintenance/CustomClipboard.js",
-    "hr-talent-review-web/src/components/cnb-maintenance/SuggestionBlot.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbReleasedLetterInquiry.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/cnb/CnbReleasedLetterInquiryTable.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbSignatoryDetails.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/CnbSignatoryMaintenance.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/cnb-maintenance/SignatoryTable.js",
-    "hr-talent-review-web/src/components/cnb/CnbPerfCycleDropdown.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/DevSignin.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/view/DistributionCurve.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/distribution-curve/Distribution.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/EmployeeProfile.js": [
-    "hr-talent-review-web/src/PopupContent/Popup1.js",
-    "hr-talent-review-web/src/PopupContent/Popup3.js",
-    "hr-talent-review-web/src/PopupContent/Popup4.js",
-    "hr-talent-review-web/src/PopupContent/Popup5.js",
-    "hr-talent-review-web/src/PopupContent/Popup6.js",
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/employee-profile/ComplianceSection.js",
-    "hr-talent-review-web/src/components/employee-profile/KPIAchievement.js",
-    "hr-talent-review-web/src/components/employee-profile/Notes.js",
-    "hr-talent-review-web/src/components/employee-profile/PerformanceSnapshot.js",
-    "hr-talent-review-web/src/components/employee-profile/PerformanceZoneDec.js",
-    "hr-talent-review-web/src/components/employee-profile/ProfileSection.js",
-    "hr-talent-review-web/src/components/employee-profile/ProfileSectionSkeleton.js",
-    "hr-talent-review-web/src/components/employee-profile/PromotionDecision.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/FileUpload.js": [
-    "hr-talent-review-web/src/components/upload-file/FileUploadHistory.js",
-    "hr-talent-review-web/src/components/upload-file/FileUploadList.js",
-    "hr-talent-review-web/src/components/upload-file/UploadFile.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/FinKPISummary.js": [
-    "hr-talent-review-web/src/components/NSRAutomation/DirectorSMList.js",
-    "hr-talent-review-web/src/components/NSRAutomation/ManagerList.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/FinancialTarget.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/financialTarget/FinTargetTableRow.js",
-    "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/ForgotPassword.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/view/FunctionMaintenanceConfiguration.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/FunctionMaintenanceSetting.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/Gender.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/gender-review/PostMCReview.js",
-    "hr-talent-review-web/src/components/gender-review/PostPLReview.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/Home.js": [
-    "hr-talent-review-web/src/assets/Talent.jpg",
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/SwitchComponent.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/IAMMaintenance.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/table/AccessGroupTable.js",
-    "hr-talent-review-web/src/components/iam/table/ActionTable.js",
-    "hr-talent-review-web/src/components/iam/table/FunctionMaintenanceTable.js",
-    "hr-talent-review-web/src/components/iam/table/UserGroupTable.js",
-    "hr-talent-review-web/src/components/iam/table/UserMaintenanceTable.js",
-    "hr-talent-review-web/src/components/iam/table/UserRoleTable.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/Inquiry.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/InquiryTable.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/inquiry/utility/useFetch.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/context/PathContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/KPIWeightage.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/kpi-weightage/CareerWeightage.js",
-    "hr-talent-review-web/src/components/kpi-weightage/mockData.js",
-    "hr-talent-review-web/src/components/kpi-weightage/mockDataSipper.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/LogoutPage.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/view/MandotoryELearning.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/NSRInquiry.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/NSRAutomation/StickyHeader.js",
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/NSRInquiry/NSRInquiryPopup.js",
-    "hr-talent-review-web/src/components/NSRInquiry/NSRInquiryTableRow.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/inquiry/ColFilterHeader.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/formatter/displayFormatter.js",
-    "hr-talent-review-web/src/utility/formatter/formatType.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/Overall.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/overall/OverallReview.js",
-    "hr-talent-review-web/src/components/shared/IconFilter.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/Parameter.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/parameters/AddParamDialog.js",
-    "hr-talent-review-web/src/components/shared/DeleteIcon.js",
-    "hr-talent-review-web/src/components/shared/EditIcon.js",
-    "hr-talent-review-web/src/components/shared/HostPagination.js",
-    "hr-talent-review-web/src/components/shared/SkeletonCloner.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/ParameterDetail.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/PerformanceOutcomeandZone.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/PortfolioNOffering.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/PerformanceCyleDropdown.js",
-    "hr-talent-review-web/src/components/system-maintenance/offering.js",
-    "hr-talent-review-web/src/components/system-maintenance/portfolio.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/PromotionDetails.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/promotion-review/BudgetedSvsApprovesS.js",
-    "hr-talent-review-web/src/components/promotion-review/CarrerCountry.js",
-    "hr-talent-review-web/src/components/promotion-review/PortfolioCarrer.js",
-    "hr-talent-review-web/src/components/promotion-review/PortfolioCountry.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/PromotionSlots.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/shared/NumericInput.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/QuarterlyKPI.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/quaterlyKpi/CoachView.js",
-    "hr-talent-review-web/src/components/quaterlyKpi/CoacheeView.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/ScoreOutcomeTable.js": [
-    "hr-talent-review-web/src/components/score-outcome-table/KPITab.js",
-    "hr-talent-review-web/src/components/score-outcome-table/SnapshotKPI.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/Signin.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/signinUtils.js"
-  ],
-  "hr-talent-review-web/src/view/SystemMaintenance.js": [
-    "hr-talent-review-web/src/components/system-maintenance/SystemSetting.js",
-    "hr-talent-review-web/src/components/system-maintenance/UserSetting.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/UnauthorizedErrorPage.js": [
-    "hr-talent-review-web/src/components/ButtonPrimary.js",
-    "hr-talent-review-web/src/utility/routesConstant.js"
-  ],
-  "hr-talent-review-web/src/view/UserGroupConfiguration.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/UserGroupSetting.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/UserMaintenanceConfiguration.js": [
-    "hr-talent-review-web/src/components/NSRAutomation/utility/constant.js",
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/UserMaintenanceSetting.js",
-    "hr-talent-review-web/src/components/inquiry/utility/constant.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/context/DataContext.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/UserRoleConfiguration.js": [
-    "hr-talent-review-web/src/components/SnackbarWrapper.js",
-    "hr-talent-review-web/src/components/iam/UserRoleSetting.js",
-    "hr-talent-review-web/src/components/shared/WarningDialogs.js",
-    "hr-talent-review-web/src/utility/api.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
-  ],
-  "hr-talent-review-web/src/view/ZoneMovement.js": [
-    "hr-talent-review-web/src/components/ButtonSecondary.js",
-    "hr-talent-review-web/src/components/zone-movement/AfterGuideline.js",
-    "hr-talent-review-web/src/components/zone-movement/Final.js",
-    "hr-talent-review-web/src/components/zone-movement/PostOL.js",
-    "hr-talent-review-web/src/components/zone-movement/PostPL.js",
-    "hr-talent-review-web/src/components/zone-movement/SystemGenerated.js",
-    "hr-talent-review-web/src/hook/usePerfCycle.js",
-    "hr-talent-review-web/src/hook/useViewPermissionChecker.js",
-    "hr-talent-review-web/src/utility/commonFunction.js",
-    "hr-talent-review-web/src/utility/constant.js",
-    "hr-talent-review-web/src/utility/permission.js",
-    "hr-talent-review-web/src/utility/routesConstant.js",
-    "hr-talent-review-web/src/utility/translation.js"
+  "src/PopupContent/AuditDetails.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/Popup1.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/Popup2.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/Popup3.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/Popup4.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/Popup5.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/Popup6.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/UploadCrash.js": [
+    "src/assets/img/Error.png",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/translation.js"
+  ],
+  "src/PopupContent/UploadError.js": [
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/translation.js"
+  ],
+  "src/assets/Talent.jpg": [],
+  "src/assets/img/Error.png": [],
+  "src/assets/img/deloitte_logo-removebg-preview.png": [],
+  "src/components/AuditLogRefactor/ActivityLog.js": [
+    "src/components/AuditLogRefactor/AuditLogTable.js",
+    "src/components/AuditLogRefactor/useFetch.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/mapper/audit-log/auditLogMapper.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/PaginationIconFilter.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/AuditLogRefactor/AuditLog.js": [
+    "src/components/AuditLogRefactor/AuditLogTable.js",
+    "src/components/AuditLogRefactor/useFetch.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/mapper/audit-log/auditLogMapper.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/PaginationIconFilter.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/AuditLogRefactor/AuditLogFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/AuditLogRefactor/AuditLogTable.js": [
+    "src/PopupContent/AuditDetails.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/AuditLogRefactor/useFetch.js": [
+    "src/components/AuditLogRefactor/ActivityLog.js",
+    "src/components/AuditLogRefactor/AuditLog.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/components/ButtonPrimary.js": [
+    "src/utility/translation.js"
+  ],
+  "src/components/ButtonSecondary.js": [
+    "src/utility/translation.js"
+  ],
+  "src/components/Filter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js"
+  ],
+  "src/components/NSRAutomation/DirectorSMList.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/NSRAutomation/FinanceStickyHeader.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/NSRAutomation/FinanceStickyHeader.js": [
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/NSRAutomation/ManagerList.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/NSRAutomation/StickyHeader.js": [
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/NSRAutomation/utility/constant.js": [],
+  "src/components/NSRInquiry/NSRInquiryPopup.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/shared/PopUpDialog.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/NSRInquiry/NSRInquiryTableRow.js": [
+    "src/components/shared/NumericInput.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/Navbar.js": [
+    "src/assets/img/deloitte_logo-removebg-preview.png",
+    "src/components/NavigationDropdown.js",
+    "src/components/language-setting/LanguageSettingDialog.js",
+    "src/components/shared/NavBarLoader.js",
+    "src/context/DataContext.js",
+    "src/routes.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/components/NavigationDropdown.js": [
+    "src/context/PathContext.js",
+    "src/utility/constant.js"
+  ],
+  "src/components/Pagination.js": [],
+  "src/components/PopUpModel.js": [],
+  "src/components/SnackbarWrapper.js": [
+    "src/utility/constant.js"
+  ],
+  "src/components/SwitchComponent.js": [],
+  "src/components/TableWrapper.js": [],
+  "src/components/cnb-maintenance/CustomClipboard.js": [],
+  "src/components/cnb-maintenance/SignatoryTable.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb-maintenance/SuggestionBlot.js": [],
+  "src/components/cnb-maintenance/SystemSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb-maintenance/TemplateTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/CnbPerfCycleDropdown.js": [
+    "src/components/ButtonPrimary.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/CnbReleasedLetterInquiryTable.js": [
+    "src/components/shared/DeleteIcon.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js"
+  ],
+  "src/components/cnb/CnbTable.js": [
+    "src/components/cnb/CnbTableRow.js",
+    "src/components/cnb/ColFIlterHeader.js",
+    "src/components/cnb/CommentDialog.js",
+    "src/components/cnb/StatusHistoryDialog.js",
+    "src/components/cnb/StickyHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/utility/commonFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/CnbTableRow.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/cnb/MemoizedSelect.js",
+    "src/components/cnb/MemoizedTextField.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js",
+    "src/view/CnbInquiry.js"
+  ],
+  "src/components/cnb/ColFIlterHeader.js": [
+    "src/components/cnb/ColumnFilter.js",
+    "src/components/cnb/DateColumnFilter.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js"
+  ],
+  "src/components/cnb/ColumnFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/cnb/ListRenderer.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/CommentDialog.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/DateColumnFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/inquiry/DateFilter.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/ListRenderer.js": [
+    "src/utility/commonFunction.js"
+  ],
+  "src/components/cnb/MemoizedSelect.js": [],
+  "src/components/cnb/MemoizedTextField.js": [],
+  "src/components/cnb/MultiUpdateDialog.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/ReleaseLetterFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/SelectAllDialog.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/StatusHistoryDialog.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/StickyHeader.js": [
+    "src/components/cnb/ColFIlterHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cnb/permissionWorker.js": [
+    "src/utility/constant.js",
+    "src/utility/permission.js"
+  ],
+  "src/components/cnb/worker.js": [],
+  "src/components/cr-analysis/PostMCReview.js": [
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cr-analysis/PostOLReview.js": [
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/cr-analysis/PostPLReview.js": [
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/distribution-curve/Distribution.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js",
+    "src/view/DistributionCurve.js"
+  ],
+  "src/components/distribution-curve/DistributionFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/filterFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/ComplianceSection.js": [
+    "src/config.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/KPIAchievement.js": [
+    "src/PopupContent/Popup2.js",
+    "src/config.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/Notes.js": [
+    "src/config.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/PerformanceSnapshot.js": [
+    "src/config.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/PerformanceZoneDec.js": [
+    "src/components/ButtonSecondary.js",
+    "src/config.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/ProfileSection.js": [
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/employee-profile/ProfileSectionSkeleton.js": [],
+  "src/components/employee-profile/PromotionDecision.js": [
+    "src/components/ButtonSecondary.js",
+    "src/config.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/financialTarget/FinTargetTableRow.js": [
+    "src/components/shared/NumericInput.js",
+    "src/utility/commonFunction.js",
+    "src/view/FinancialTarget.js"
+  ],
+  "src/components/gender-review/GenderFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/filterFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/gender-review/PostMCReview.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/IconFilter.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/gender-review/PostPLReview.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/IconFilter.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/AccessGroupSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/iam/utils/IAMFormSkeleton.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/ActionSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/iam/utils/IAMFormSkeleton.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/FunctionMaintenanceSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/iam/utils/IAMFormSkeleton.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/UserGroupSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/iam/utils/IAMFormSkeleton.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/UserMaintenanceSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/iam/utils/IAMFormSkeleton.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/UserRoleSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/iam/table/RoleFunctionActionTable.js",
+    "src/components/iam/utils/IAMFormSkeleton.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/AccessGroupTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/ActionTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/FunctionMaintenanceTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/RoleFunctionActionTable.js": [
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/UserGroupTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/UserMaintenanceTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/table/UserRoleTable.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/utils/IAMFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/iam/utils/IAMFormSkeleton.js": [],
+  "src/components/inquiry/ColFilterHeader.js": [
+    "src/components/inquiry/ColumnFilter.js",
+    "src/components/inquiry/DateColumnFilter.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js"
+  ],
+  "src/components/inquiry/CollapibleSummary.js": [],
+  "src/components/inquiry/CollapsibleTd.js": [],
+  "src/components/inquiry/ColumnFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/inquiry/ListRenderer.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/DateColumnFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/inquiry/DateFilter.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/DateFilter.js": [
+    "src/components/inquiry/utility/constant.js",
+    "src/components/inquiry/utility/mapper.js"
+  ],
+  "src/components/inquiry/EditDialog.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js"
+  ],
+  "src/components/inquiry/InquiryTable.js": [
+    "src/components/inquiry/CollapibleSummary.js",
+    "src/components/inquiry/InquiryTableRow.js",
+    "src/components/inquiry/ThirdRowHeader.js",
+    "src/components/inquiry/sticky-header/StickyHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/InquiryTableRow.js": [
+    "src/components/inquiry/CollapsibleTd.js",
+    "src/components/inquiry/EditDialog.js",
+    "src/components/inquiry/review/DisplayNameTd.js",
+    "src/components/inquiry/review/MCReviewTable.js",
+    "src/components/inquiry/review/OLReviewTable.js",
+    "src/components/inquiry/review/PLReviewTable.js",
+    "src/components/inquiry/utility/commonFunction.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/ListRenderer.js": [
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/inquiry/utility/commonFunction.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js"
+  ],
+  "src/components/inquiry/ReviewTableRow.js": [],
+  "src/components/inquiry/ThirdRowHeader.js": [
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/CollapsibleTd.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/review/DisplayNameTd.js": [
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/components/inquiry/review/MCReviewTable.js": [
+    "src/components/inquiry/CollapsibleTd.js",
+    "src/components/inquiry/EditDialog.js",
+    "src/components/inquiry/utility/commonFunction.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/review/OLReviewTable.js": [
+    "src/components/inquiry/CollapsibleTd.js",
+    "src/components/inquiry/EditDialog.js",
+    "src/components/inquiry/utility/commonFunction.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/review/PLReviewTable.js": [
+    "src/components/inquiry/CollapsibleTd.js",
+    "src/components/inquiry/EditDialog.js",
+    "src/components/inquiry/utility/commonFunction.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/sticky-header/CollapsibleSummaryDiv.js": [],
+  "src/components/inquiry/sticky-header/CollapsibleTdDiv.js": [],
+  "src/components/inquiry/sticky-header/StickyHeader.js": [
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/sticky-header/CollapsibleSummaryDiv.js",
+    "src/components/inquiry/sticky-header/CollapsibleTdDiv.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/inquiry/utility/commonFunction.js": [
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/api.js",
+    "src/utility/constant.js"
+  ],
+  "src/components/inquiry/utility/constant.js": [
+    "src/utility/api.js",
+    "src/utility/constant.js"
+  ],
+  "src/components/inquiry/utility/mapper.js": [],
+  "src/components/inquiry/utility/useFetch.js": [
+    "src/components/inquiry/utility/commonFunction.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/kpi-weightage/CareerWeightage.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/kpi-weightage/SipperWeightage.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/kpi-weightage/mockData.js": [],
+  "src/components/kpi-weightage/mockDataSipper.js": [],
+  "src/components/language-setting/LanguageSettingDialog.js": [
+    "src/utility/translation.js"
+  ],
+  "src/components/mapper/audit-log/auditLogMapper.js": [
+    "src/utility/translation.js"
+  ],
+  "src/components/overall/OverallFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/filterFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/overall/OverallReview.js": [
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/overall/PostMCReview.js": [
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/overall/PostOLReview.js": [
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/overall/PostPLReview.js": [
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/parameters/AddOfferingDialog.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/parameters/AddParamDialog.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/promotion-review/BudgetedSvsApprovesS.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/promotion-review/CarrerCountry.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/promotion-review/PortfolioCarrer.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/promotion-review/PortfolioCountry.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/IconFilter.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/promotion-review/PromotionFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/constant.js",
+    "src/utility/filterFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/quaterlyKpi/CoachView.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/quaterlyKpi/KpiDataTable.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js",
+    "src/view/QuarterlyKPI.js"
+  ],
+  "src/components/quaterlyKpi/CoacheeView.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/quaterlyKpi/KpiDataTable.js",
+    "src/view/QuarterlyKPI.js"
+  ],
+  "src/components/quaterlyKpi/KpiDataTable.js": [
+    "src/components/shared/SkeletonCloner.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/score-outcome-table/KPITab.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/score-outcome-table/KPITabRow.js",
+    "src/components/score-outcome-table/utility/constant.js",
+    "src/components/shared/PerformanceCyleDropdown.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/score-outcome-table/KPITabRow.js": [
+    "src/components/score-outcome-table/utility/constant.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/NumericInput.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/score-outcome-table/SnapshotKPI.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/PerformanceCyleDropdown.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/score-outcome-table/utility/constant.js": [],
+  "src/components/shared/DeleteIcon.js": [],
+  "src/components/shared/EditIcon.js": [],
+  "src/components/shared/HostPagination.js": [
+    "src/components/ButtonPrimary.js"
+  ],
+  "src/components/shared/IconFilter.js": [
+    "src/components/AuditLogRefactor/AuditLogFilter.js",
+    "src/components/cnb/ReleaseLetterFilter.js",
+    "src/components/distribution-curve/DistributionFilter.js",
+    "src/components/gender-review/GenderFilter.js",
+    "src/components/iam/utils/IAMFilter.js",
+    "src/components/overall/OverallFilter.js",
+    "src/components/promotion-review/PromotionFilter.js",
+    "src/components/upload-file/UploadFilter.js",
+    "src/components/zone-movement/ZoneFilter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/shared/Loader.js": [],
+  "src/components/shared/NavBarLoader.js": [],
+  "src/components/shared/NumericInput.js": [
+    "src/utility/commonFunction.js"
+  ],
+  "src/components/shared/OverflowCell.js": [
+    "src/components/ButtonPrimary.js"
+  ],
+  "src/components/shared/PaginationIconFilter.js": [
+    "src/components/AuditLogRefactor/AuditLogFilter.js",
+    "src/components/shared/IconFilter.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/shared/PerformanceCyleDropdown.js": [
+    "src/components/ButtonPrimary.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/shared/PopUpDialog.js": [],
+  "src/components/shared/RangeFilter.js": [
+    "src/utility/commonFunction.js"
+  ],
+  "src/components/shared/SkeletonCloner.js": [],
+  "src/components/shared/WarningDialogs.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js"
+  ],
+  "src/components/system-maintenance/NSROffering.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/PerformanceCyleDropdown.js",
+    "src/components/system-maintenance/offering.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/system-maintenance/NSRSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/system-maintenance/SystemSetting.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/system-maintenance/UserSetting.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/NumericInput.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/system-maintenance/offering.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/parameters/AddOfferingDialog.js",
+    "src/components/parameters/AddParamDialog.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/system-maintenance/portfolio.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/parameters/AddParamDialog.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/upload-file/FileUploadHistory.js": [
+    "src/PopupContent/UploadCrash.js",
+    "src/PopupContent/UploadError.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/upload-file/FileUploadList.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/upload-file/UploadFile.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/upload-file/UploadFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/constant.js",
+    "src/utility/filterFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/AfterGuideline.js": [
+    "src/components/shared/IconFilter.js",
+    "src/components/zone-movement/utility/commonFunction.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/Final.js": [
+    "src/components/shared/IconFilter.js",
+    "src/components/zone-movement/utility/commonFunction.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/PostOL.js": [
+    "src/components/shared/IconFilter.js",
+    "src/components/zone-movement/utility/commonFunction.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/PostPL.js": [
+    "src/components/shared/IconFilter.js",
+    "src/components/zone-movement/utility/commonFunction.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/SystemGenerated.js": [
+    "src/components/shared/IconFilter.js",
+    "src/components/zone-movement/utility/commonFunction.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/ZoneFilter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/filterFunction.js",
+    "src/utility/translation.js"
+  ],
+  "src/components/zone-movement/utility/commonFunction.js": [],
+  "src/config.js": [],
+  "src/context/DataContext.js": [
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js"
+  ],
+  "src/context/PathContext.js": [],
+  "src/event/AuthEventListener.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/context/DataContext.js",
+    "src/hook/useInterval.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/hook/useAFKDetection.js": [],
+  "src/hook/useInterval.js": [],
+  "src/hook/usePerfCycle.js": [
+    "src/context/DataContext.js"
+  ],
+  "src/hook/useViewPermissionChecker.js": [
+    "src/utility/routesConstant.js"
+  ],
+  "src/i18n.js": [],
+  "src/index.css": [],
+  "src/index.js": [
+    "src/components/shared/Loader.js",
+    "src/context/DataContext.js",
+    "src/i18n.js",
+    "src/index.css",
+    "src/layout/Auth.js",
+    "src/layout/Authenticated.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/signinUtils.js",
+    "src/view/Inquiry.js"
+  ],
+  "src/layout/Auth.js": [
+    "src/routes.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/layout/Authenticated.js": [
+    "src/components/Navbar.js",
+    "src/context/PathContext.js",
+    "src/event/AuthEventListener.js",
+    "src/routes.js"
+  ],
+  "src/routes.js": [
+    "src/components/cnb-maintenance/SystemSetting.js",
+    "src/components/iam/AccessGroupSetting.js",
+    "src/components/system-maintenance/NSROffering.js",
+    "src/components/system-maintenance/NSRSetting.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/view/AccessGrpConfiguration.js",
+    "src/view/ActionConfiguration.js",
+    "src/view/AuditReviewRefactor.js",
+    "src/view/CRAnalysis.js",
+    "src/view/CnbInquiry.js",
+    "src/view/CnbLetterRecommend.js",
+    "src/view/CnbLetterTemplate.js",
+    "src/view/CnbLetterTemplateDetails.js",
+    "src/view/CnbReleasedLetterInquiry.js",
+    "src/view/CnbSignatoryDetails.js",
+    "src/view/CnbSignatoryMaintenance.js",
+    "src/view/DevSignin.js",
+    "src/view/DistributionCurve.js",
+    "src/view/EmployeeProfile.js",
+    "src/view/FileUpload.js",
+    "src/view/FinKPISummary.js",
+    "src/view/FinancialTarget.js",
+    "src/view/ForgotPassword.js",
+    "src/view/FunctionMaintenanceConfiguration.js",
+    "src/view/Gender.js",
+    "src/view/Home.js",
+    "src/view/IAMMaintenance.js",
+    "src/view/Inquiry.js",
+    "src/view/KPIWeightage.js",
+    "src/view/LogoutPage.js",
+    "src/view/MandotoryELearning.js",
+    "src/view/NSRInquiry.js",
+    "src/view/Overall.js",
+    "src/view/Parameter.js",
+    "src/view/ParameterDetail.js",
+    "src/view/PerformanceOutcomeandZone.js",
+    "src/view/PortfolioNOffering.js",
+    "src/view/PromotionDetails.js",
+    "src/view/PromotionSlots.js",
+    "src/view/QuarterlyKPI.js",
+    "src/view/ScoreOutcomeTable.js",
+    "src/view/Signin.js",
+    "src/view/SystemMaintenance.js",
+    "src/view/UnauthorizedErrorPage.js",
+    "src/view/UserGroupConfiguration.js",
+    "src/view/UserMaintenanceConfiguration.js",
+    "src/view/UserRoleConfiguration.js",
+    "src/view/ZoneMovement.js"
+  ],
+  "src/setupTests.js": [],
+  "src/utility/api.js": [
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/utility/commonFunction.js": [
+    "src/utility/api.js",
+    "src/utility/constant.js"
+  ],
+  "src/utility/constant.js": [],
+  "src/utility/errorConstant.js": [],
+  "src/utility/filterFunction.js": [
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js"
+  ],
+  "src/utility/formatter/displayFormatter.js": [
+    "src/utility/commonFunction.js",
+    "src/utility/formatter/formatType.js"
+  ],
+  "src/utility/formatter/formatType.js": [],
+  "src/utility/permission.js": [],
+  "src/utility/routesConstant.js": [],
+  "src/utility/signinUtils.js": [
+    "src/utility/api.js"
+  ],
+  "src/utility/translation.js": [],
+  "src/view/AccessGrpConfiguration.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/AccessGroupSetting.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/ActionConfiguration.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/ActionSetting.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/AuditReviewRefactor.js": [
+    "src/components/AuditLogRefactor/ActivityLog.js",
+    "src/components/AuditLogRefactor/AuditLog.js",
+    "src/hook/usePerfCycle.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CRAnalysis.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/cr-analysis/PostMCReview.js",
+    "src/components/cr-analysis/PostOLReview.js",
+    "src/components/cr-analysis/PostPLReview.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbInquiry.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/cnb/CnbTable.js",
+    "src/components/cnb/MultiUpdateDialog.js",
+    "src/components/cnb/SelectAllDialog.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbLetterRecommend.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbLetterTemplate.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/cnb-maintenance/TemplateTable.js",
+    "src/components/cnb/CnbPerfCycleDropdown.js",
+    "src/context/DataContext.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbLetterTemplateDetails.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/cnb-maintenance/CustomClipboard.js",
+    "src/components/cnb-maintenance/SuggestionBlot.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbReleasedLetterInquiry.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/cnb/CnbReleasedLetterInquiryTable.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/IconFilter.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbSignatoryDetails.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/CnbSignatoryMaintenance.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/cnb-maintenance/SignatoryTable.js",
+    "src/components/cnb/CnbPerfCycleDropdown.js",
+    "src/context/DataContext.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/DevSignin.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/view/DistributionCurve.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/distribution-curve/Distribution.js",
+    "src/components/shared/IconFilter.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/EmployeeProfile.js": [
+    "src/PopupContent/Popup1.js",
+    "src/PopupContent/Popup3.js",
+    "src/PopupContent/Popup4.js",
+    "src/PopupContent/Popup5.js",
+    "src/PopupContent/Popup6.js",
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/employee-profile/ComplianceSection.js",
+    "src/components/employee-profile/KPIAchievement.js",
+    "src/components/employee-profile/Notes.js",
+    "src/components/employee-profile/PerformanceSnapshot.js",
+    "src/components/employee-profile/PerformanceZoneDec.js",
+    "src/components/employee-profile/ProfileSection.js",
+    "src/components/employee-profile/ProfileSectionSkeleton.js",
+    "src/components/employee-profile/PromotionDecision.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/hook/usePerfCycle.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/FileUpload.js": [
+    "src/components/upload-file/FileUploadHistory.js",
+    "src/components/upload-file/FileUploadList.js",
+    "src/components/upload-file/UploadFile.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/FinKPISummary.js": [
+    "src/components/NSRAutomation/DirectorSMList.js",
+    "src/components/NSRAutomation/ManagerList.js",
+    "src/hook/usePerfCycle.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/FinancialTarget.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/financialTarget/FinTargetTableRow.js",
+    "src/components/shared/PerformanceCyleDropdown.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/ForgotPassword.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/utility/commonFunction.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/view/FunctionMaintenanceConfiguration.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/FunctionMaintenanceSetting.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/Gender.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/gender-review/PostMCReview.js",
+    "src/components/gender-review/PostPLReview.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/Home.js": [
+    "src/assets/Talent.jpg",
+    "src/components/ButtonPrimary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/SwitchComponent.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/IAMMaintenance.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/table/AccessGroupTable.js",
+    "src/components/iam/table/ActionTable.js",
+    "src/components/iam/table/FunctionMaintenanceTable.js",
+    "src/components/iam/table/UserGroupTable.js",
+    "src/components/iam/table/UserMaintenanceTable.js",
+    "src/components/iam/table/UserRoleTable.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/Inquiry.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/InquiryTable.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/inquiry/utility/useFetch.js",
+    "src/components/shared/HostPagination.js",
+    "src/context/DataContext.js",
+    "src/context/PathContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/KPIWeightage.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/kpi-weightage/CareerWeightage.js",
+    "src/components/kpi-weightage/mockData.js",
+    "src/components/kpi-weightage/mockDataSipper.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/LogoutPage.js": [
+    "src/components/ButtonPrimary.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/view/MandotoryELearning.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/PerformanceCyleDropdown.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/NSRInquiry.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/NSRAutomation/StickyHeader.js",
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/NSRInquiry/NSRInquiryPopup.js",
+    "src/components/NSRInquiry/NSRInquiryTableRow.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/inquiry/ColFilterHeader.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/formatter/displayFormatter.js",
+    "src/utility/formatter/formatType.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/Overall.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/overall/OverallReview.js",
+    "src/components/shared/IconFilter.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/Parameter.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/parameters/AddParamDialog.js",
+    "src/components/shared/DeleteIcon.js",
+    "src/components/shared/EditIcon.js",
+    "src/components/shared/HostPagination.js",
+    "src/components/shared/SkeletonCloner.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/ParameterDetail.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/context/DataContext.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/PerformanceOutcomeandZone.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/NumericInput.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/PortfolioNOffering.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/PerformanceCyleDropdown.js",
+    "src/components/system-maintenance/offering.js",
+    "src/components/system-maintenance/portfolio.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/PromotionDetails.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/promotion-review/BudgetedSvsApprovesS.js",
+    "src/components/promotion-review/CarrerCountry.js",
+    "src/components/promotion-review/PortfolioCarrer.js",
+    "src/components/promotion-review/PortfolioCountry.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/PromotionSlots.js": [
+    "src/components/ButtonPrimary.js",
+    "src/components/ButtonSecondary.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/shared/NumericInput.js",
+    "src/context/DataContext.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/QuarterlyKPI.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/quaterlyKpi/CoachView.js",
+    "src/components/quaterlyKpi/CoacheeView.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/ScoreOutcomeTable.js": [
+    "src/components/score-outcome-table/KPITab.js",
+    "src/components/score-outcome-table/SnapshotKPI.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/Signin.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/signinUtils.js"
+  ],
+  "src/view/SystemMaintenance.js": [
+    "src/components/system-maintenance/SystemSetting.js",
+    "src/components/system-maintenance/UserSetting.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/UnauthorizedErrorPage.js": [
+    "src/components/ButtonPrimary.js",
+    "src/utility/routesConstant.js"
+  ],
+  "src/view/UserGroupConfiguration.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/UserGroupSetting.js",
+    "src/utility/api.js",
+    "src/utility/constant.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/UserMaintenanceConfiguration.js": [
+    "src/components/NSRAutomation/utility/constant.js",
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/UserMaintenanceSetting.js",
+    "src/components/inquiry/utility/constant.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/context/DataContext.js",
+    "src/hook/usePerfCycle.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/UserRoleConfiguration.js": [
+    "src/components/SnackbarWrapper.js",
+    "src/components/iam/UserRoleSetting.js",
+    "src/components/shared/WarningDialogs.js",
+    "src/utility/api.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
+  ],
+  "src/view/ZoneMovement.js": [
+    "src/components/ButtonSecondary.js",
+    "src/components/zone-movement/AfterGuideline.js",
+    "src/components/zone-movement/Final.js",
+    "src/components/zone-movement/PostOL.js",
+    "src/components/zone-movement/PostPL.js",
+    "src/components/zone-movement/SystemGenerated.js",
+    "src/hook/usePerfCycle.js",
+    "src/hook/useViewPermissionChecker.js",
+    "src/utility/commonFunction.js",
+    "src/utility/constant.js",
+    "src/utility/permission.js",
+    "src/utility/routesConstant.js",
+    "src/utility/translation.js"
   ]
 }
