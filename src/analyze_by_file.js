@@ -10,39 +10,22 @@ const langMap = {
     '.java': Java
 };
 
-// recursively get all files in a directory
-async function getAllFiles(dir) {
-    let files = [];
-    const items = await fs.readdir(dir, { withFileTypes: true });
-    for (const item of items) {
-        const fullPath = path.join(dir, item.name);
-        if (item.isDirectory()) {
-            files = files.concat(await getAllFiles(fullPath));
-        } else {
-            files.push(fullPath);
-        }
-    }
-    return files;
-}
-
 // serialize AST to JSON
 function serializeNode(node, filePath, fileContent) {
-    // filter out node types
     if (node.type === 'comment' || node.type === 'whitespace') {
         return null;
     }
 
     const startIndex = node.startIndex;
     const endIndex = node.endIndex;
-    const snippet = fileContent.slice(startIndex, endIndex); // Extract the code for the node
+    const snippet = fileContent.slice(startIndex, endIndex);
+
     return {
         type: node.type,
         file: filePath,
         startLine: node.startPosition.row + 1,
-        startCol: node.startPosition.column + 1,
         endLine: node.endPosition.row + 1,
-        endCol: node.endPosition.column + 1,
-        text: snippet.trim(), // Code snippet text
+        text: snippet.trim(),
         children: node.children
             .map(child => serializeNode(child, filePath, fileContent))
             .filter(Boolean),
@@ -64,61 +47,51 @@ function astToDot(node, parentId = null, nodeIdRef = { current: 0 }, lines = [])
 }
 
 // Main function
-async function main(projectPath) {
+async function main(inputPath) {
     try {
-        const files = await getAllFiles(projectPath);
-        const supportedFiles = files.filter(f => langMap[path.extname(f)]);
-
-        if (supportedFiles.length === 0) {
-            console.log("No supported files found.");
-            return;
-        }
+        const stat = await fs.stat(inputPath);
 
         // verify output folder exists
         const outputDir = path.join(__dirname, "..", "Output");
         await fs.mkdir(outputDir, { recursive: true });
 
-        // build hierarchical JSON root
-        const treeRoot = {
-            type: 'Project folder',
-            name: path.basename(projectPath),
-            children: [],
-        };
-
-        let combinedDotLines = ['digraph AST {']; //DOT storage
+        let treeRoot;
+        let combinedDotLines = ['digraph AST {'];
         let nodeIdRef = { current: 0 };
 
-        for (const file of supportedFiles) {
-            const ext = path.extname(file);
-            const language = langMap[ext];
+        // ensure file as an input
+        if (stat.isFile()) {
+            // === single file case ===
+            const ext = path.extname(inputPath);
+            if (!langMap[ext]) {
+                console.log(`Unsupported file type: ${ext}`);
+                return;
+            }
 
-            // parse code logic
-            const codeContent = await fs.readFile(file, 'utf8');
+            const language = langMap[ext];
+            const codeContent = await fs.readFile(inputPath, 'utf8');
             const parser = new TreeSitter();
             parser.setLanguage(language);
             const tree = parser.parse(codeContent);
 
-            const astRoot = serializeNode(tree.rootNode, file, codeContent);
-            if (!astRoot) continue;
+            const astRoot = serializeNode(tree.rootNode, inputPath, codeContent);
+            if (!astRoot) return;
 
-            // insert into folder hierarchy
-            const rel = path.relative(projectPath, file);
-            const parts = rel.split(path.sep);
-            const fileName = parts.pop();
-            let cursor = treeRoot;
-
-            // create File node with AST as its single child
-            const fileNode = {
+            treeRoot = {
                 type: 'File',
-                name: fileName,
-                file,
+                name: path.basename(inputPath),
+                file: inputPath,
                 children: [astRoot],
             };
-            cursor.children.push(fileNode);
 
-            combinedDotLines.push(`subgraph cluster_${nodeIdRef.current} { label="${file}";`);
+            combinedDotLines.push(`subgraph cluster_${nodeIdRef.current} { label="${inputPath}";`);
             astToDot(tree.rootNode, null, nodeIdRef, combinedDotLines);
             combinedDotLines.push('}');
+
+        } else {
+            // fallback: folder as an input
+            console.log("Folder input detected. Only files are supported.");
+            return;
         }
 
         combinedDotLines.push('}');
@@ -148,11 +121,10 @@ async function main(projectPath) {
     }
 }
 
-// CLI usage for error input
+// CLI usage
 if (process.argv.length < 3) {
-    console.error("Usage: node analyze_code.js <project-folder-path>");
+    console.error("Usage: node analyze_code.js <file-path>");
     process.exit(1);
 }
 
-// execute main function
 main(process.argv[2]);
