@@ -107,8 +107,8 @@ function update(source) {
                 .html(
                     `<b>Type:</b> ${d.data.type || "N/A"}<br>` +
                     `<b>File path:</b> ${d.data.file || "N/A"}<br>` +
-                    `<b>Start line:</b> ${d.data.startLine || "?"}, <b>End line:</b> ${d.data.endLine || "?"}<br>` +
-                    `<b>Snippet code:</b><br><pre>${snippet}</pre>`
+                    `<b>Start line:</b> ${d.data.startLine || "?"}, <b>End line:</b> ${d.data.endLine || "?"}<br>`
+                    // `<b>Snippet code:</b><br><pre>${snippet}</pre>`
                 )
                 .style("left", (event.pageX + 15) + "px")
                 .style("top", (event.pageY + 15) + "px");

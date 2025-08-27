@@ -1,4 +1,3 @@
-
 const width = window.innerWidth;
 const height = window.innerHeight;
 const tooltip = d3.select(".tooltip");
@@ -43,17 +42,10 @@ function expandAll(d) {
         d.children = d._children;
         d._children = null;
     }
-    if (d.children) {
-        d.children.forEach(expandAll);
-    }
-}
-
-// Expand only direct children
-function expandChildren(d) {
-    if (d._children) {
-        d.children = d._children;
-        d._children = null;
-    }
+    console.log(d)
+    // if (d.children) {
+    //     d.children.forEach(expandAll);
+    // }
 }
 
 // extract the code from file
@@ -80,13 +72,10 @@ function update(source) {
         .on("click", (event, d) => {
             if (d.children) {
                 collapseAll(d); // collapase all nodes
-            } else if (d._children) {
-                if (d.data.type == "Project folder") {
-                    expandChildren(d); // collapse only their children
-                } else {
-                    expandAll(d); // expand all nodes
-                }
+            } else {
+                expandAll(d); // expand all nodes
             }
+
             update(d);
         })
         .on("mousedown", (event, d) => { // mouse wheel click node will redirect to the file in VSCode
@@ -96,16 +85,16 @@ function update(source) {
             }
         })
         .on("mouseover", (event, d) => { // show information about the node
-            const snippet = d.data.text
-                ? d.data.text.substring(0, 200) + (d.data.text.length > 200 ? "..." : "")
-                : "No snippet available";
+            // const snippet = d.data.text
+            //     ? d.data.text.substring(0, 200) + (d.data.text.length > 200 ? "..." : "")
+            //     : "No snippet available";
 
             tooltip.style("opacity", 1)
                 .html(
                     `<b>Type:</b> ${d.data.type || "N/A"}<br>` +
                     `<b>File path:</b> ${d.data.file || "N/A"}<br>` +
-                    `<b>Start line:</b> ${d.data.startLine || "?"}, <b>End line:</b> ${d.data.endLine || "?"}<br>` +
-                    `<b>Snippet code:</b><br><pre>${snippet}</pre>`
+                    `<b>Start line:</b> ${d.data.startLine || "?"}, <b>End line:</b> ${d.data.endLine || "?"}<br>`
+                    // `<b>Snippet code:</b><br><pre>${snippet}</pre>`
                 )
                 .style("left", (event.pageX + 15) + "px")
                 .style("top", (event.pageY + 15) + "px");

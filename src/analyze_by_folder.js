@@ -32,17 +32,16 @@ function serializeNode(node, filePath, fileContent) {
         return null;
     }
 
-    const startIndex = node.startIndex;
-    const endIndex = node.endIndex;
-    const snippet = fileContent.slice(startIndex, endIndex); // Extract the code for the node
+    // const startIndex = node.startIndex;
+    // const endIndex = node.endIndex;
+    // const snippet = fileContent.slice(startIndex, endIndex); // Extract the code for the node
+    
     return {
         type: node.type,
         file: filePath,
         startLine: node.startPosition.row + 1,
-        startCol: node.startPosition.column + 1,
         endLine: node.endPosition.row + 1,
-        endCol: node.endPosition.column + 1,
-        text: snippet.trim(), // Code snippet text
+        // text: snippet.trim(), // Code snippet text
         children: node.children
             .map(child => serializeNode(child, filePath, fileContent))
             .filter(Boolean),
@@ -152,14 +151,14 @@ async function main(projectPath) {
         console.log(`AST DOT exported to ${dotOutputPath}`);
 
         // export DOT to PNG format
-        const { exec } = require('child_process');
-        exec(`dot -Tpng ${dotOutputPath} -o ${path.join(outputDir, 'project_ast.png')}`, (err) => {
-            if (err) {
-                console.error('Graphviz PNG export failed. Make sure Graphviz is installed.');
-            } else {
-                console.log(`AST PNG exported to ${path.join(outputDir, 'project_ast.png')}`);
-            }
-        });
+        // const { exec } = require('child_process');
+        // exec(`dot -Tpng ${dotOutputPath} -o ${path.join(outputDir, 'project_ast.png')}`, (err) => {
+        //     if (err) {
+        //         console.error('Graphviz PNG export failed. Make sure Graphviz is installed.');
+        //     } else {
+        //         console.log(`AST PNG exported to ${path.join(outputDir, 'project_ast.png')}`);
+        //     }
+        // });
 
     } catch (err) {
         console.error("Error:", err);
