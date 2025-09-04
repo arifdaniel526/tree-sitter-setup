@@ -1,18 +1,29 @@
 const TreeSitter = require('tree-sitter');
 const Python = require('tree-sitter-python');
 const Java = require('tree-sitter-java');
+const JavaScript = require('tree-sitter-javascript');
+
 const fs = require('fs').promises;
 const path = require('path');
 
 // map extensions to grammars
 const langMap = {
-    '.py': Python,
-    '.java': Java
+    ".py": Python,
+    ".java": Java,
+    ".js": JavaScript,
+    // ".jsx": JavaScript,
+    // ".mjs": JavaScript,
+    // ".cjs": JavaScript,
 };
 
 // serialize AST to JSON
 function serializeNode(node, filePath, fileContent) {
-    if (node.type === 'comment' || node.type === 'whitespace') {
+    if (
+        node.type === 'line_comment' ||  // Python, Java
+        node.type === 'block_comment' || // Java block comments
+        node.type === 'comment' ||       // JavaScript single + multi-line
+        node.type === 'whitespace'
+    ) {
         return null;
     }
 
@@ -26,7 +37,7 @@ function serializeNode(node, filePath, fileContent) {
         startLine: node.startPosition.row + 1,
         endLine: node.endPosition.row + 1,
         text: snippet.trim(),
-        children: node.children
+        children: (node.children || [])
             .map(child => serializeNode(child, filePath, fileContent))
             .filter(Boolean),
     };
@@ -40,7 +51,7 @@ function astToDot(node, parentId = null, nodeIdRef = { current: 0 }, lines = [])
     if (parentId !== null) {
         lines.push(`  node${parentId} -> node${currentId};`);
     }
-    for (const child of node.children) {
+    for (const child of (node.children || [])) {
         astToDot(child, currentId, nodeIdRef, lines);
     }
     return lines;
@@ -61,8 +72,7 @@ async function main(inputPath) {
 
         // ensure file as an input
         if (stat.isFile()) {
-            // === single file case ===
-            const ext = path.extname(inputPath);
+            const ext = path.extname(inputPath).toLowerCase();
             if (!langMap[ext]) {
                 console.log(`Unsupported file type: ${ext}`);
                 return;
@@ -70,7 +80,6 @@ async function main(inputPath) {
 
             const language = langMap[ext];
             const codeContent = await fs.readFile(inputPath, 'utf8');
-            console.log("codeContent length: ", codeContent.length)
             const parser = new TreeSitter();
             parser.setLanguage(language);
             const tree = parser.parse(codeContent);
@@ -106,16 +115,6 @@ async function main(inputPath) {
         const dotOutputPath = path.join(outputDir, 'project_ast.dot');
         await fs.writeFile(dotOutputPath, combinedDotLines.join('\n'), 'utf8');
         console.log(`AST DOT exported to ${dotOutputPath}`);
-
-        // export DOT to PNG format
-        // const { exec } = require('child_process');
-        // exec(`dot -Tpng ${dotOutputPath} -o ${path.join(outputDir, 'project_ast.png')}`, (err) => {
-        //     if (err) {
-        //         console.error('Graphviz PNG export failed. Make sure Graphviz is installed.');
-        //     } else {
-        //         console.log(`AST PNG exported to ${path.join(outputDir, 'project_ast.png')}`);
-        //     }
-        // });
 
     } catch (err) {
         console.error("Error:", err);
